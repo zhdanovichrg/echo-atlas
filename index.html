@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><meta name="description" content="Пять проекций ЭхоКГ. Реальные петли, схемы с обозначениями и тест из 30 вопросов с разбором.">
+<title>Как узнать проекцию ЭхоКГ · Интерактивный атлас</title>
+<style>@font-face{font-family:Atlas;src:url('assets/3b031aa4216174205bd8471f.ttf') format('truetype');font-weight:100 700;font-display:swap}:root{color-scheme:light;--paper:#f7f3ed;--white:#fffdf9;--ink:#282d32;--muted:#535d62;--burg:#78334b;--peach:#f7dbcb;--line:#d2c7c1;--blue:#c0e7ec;--dark:#1f282d;--max:990px}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.52 Atlas,"Segoe UI",Arial,sans-serif}
+a{color:var(--burg);text-underline-offset:.2em}
+button,a,summary{touch-action:manipulation}
+:is(button,a,summary):focus-visible{outline:3px solid #128296;outline-offset:3px}
+header{background:var(--burg);color:var(--paper)}
+.head,.page,nav,.signature{max-width:var(--max);margin:auto;padding-left:clamp(17px,4vw,44px);padding-right:clamp(17px,4vw,44px)}
+.head{padding-top:clamp(21px,4vw,44px);padding-bottom:clamp(24px,4.4vw,48px)}
+.byline{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--peach);font-size:.89rem}
+.byline p{margin:0;font-weight:550}
+.byline a{color:inherit}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3,summary{line-height:1.12}
+h1{font-weight:580;font-size:clamp(2.2rem,5vw,4.1rem);letter-spacing:-.044em;margin-top:clamp(20px,3.4vw,37px)}
+.deck{margin-top:12px;font-size:clamp(1rem,2.3vw,1.27rem);color:var(--peach)}
+nav{display:flex;flex-wrap:wrap;gap:7px;padding-top:20px;padding-bottom:20px}
+nav a{font-size:.93rem;letter-spacing:.01em;font-weight:550;text-decoration:none;color:var(--ink);border:1px solid #b9ada9;padding:7px 13px;border-radius:30px;line-height:1.4}
+nav a[aria-current=page]{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.page{padding-bottom:28px}
+section{scroll-margin-top:10px;padding:16px 0 32px;border-top:1px solid var(--line)}
+.position-name{font-size:clamp(1.7rem,3.3vw,2.6rem);letter-spacing:-.035em;font-weight:590}
+.lead{font-size:1.02rem;color:var(--muted);margin:10px 0 20px;max-width:65ch}
+.spread{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,0.92fr);gap:clamp(14px,2.5vw,25px);align-items:start}
+.film{min-width:0}
+.screen{position:relative;background:#000;border-radius:9px;overflow:hidden;display:grid;place-items:center;aspect-ratio:4/3}
+.screen video{display:block;width:100%;height:100%;object-fit:contain}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px}
+.bar p{font-size:.9rem;color:var(--muted)}
+button{background:transparent;border:1px solid #9f9193;color:var(--burg);font:600 .94rem/1.2 Atlas,"Segoe UI",sans-serif;cursor:pointer;border-radius:6px;padding:9px 13px}
+button:hover,nav a:hover:not([aria-current=page]){background:#ecdfdf}
+button[data-play]{background:var(--burg);color:var(--white);border-color:var(--burg)}
+button[data-play]:hover{background:#683048}
+.clinical{border-top:1px solid var(--line);padding-top:15px;margin-top:16px}
+.clinical h3{font-size:1rem;color:var(--burg);font-weight:600;margin-bottom:5px}
+.clinical p{font-size:1.02rem}
+details{border:1px solid var(--line);border-radius:8px;background:var(--white);overflow:hidden}
+summary{font-weight:560;cursor:pointer;padding:13px 15px;min-height:44px}
+details[open] summary{border-bottom:1px solid var(--line)}
+.compare img{display:block;width:100%;height:auto}
+.compare{margin-bottom:12px}
+.check{margin-top:9px}
+.check summary{font-size:.94rem}
+.compare figure{background:#000}
+.credits{margin-top:22px;background:none}
+.credits summary{font-size:.94rem}
+.sources{padding:13px 15px;color:var(--muted);font-size:.93rem}
+.sources p+p{margin-top:8px}
+.sources a{overflow-wrap:anywhere}
+.signature{border-top:1px solid var(--line);padding-top:15px;padding-bottom:27px;color:var(--muted);font-size:.87rem}
+[hidden]{display:none!important}
+@media(max-width:660px){.spread{display:flex;flex-direction:column}.film,.sheets{width:100%}.byline{font-size:.81rem}nav{gap:7px;padding-top:14px;padding-bottom:14px}nav a{font-size:.86rem;padding:7px 10px}.lead{margin-bottom:14px}.screen{border-radius:6px}.page{padding-bottom:4px}section{padding-top:17px}.clinical{margin-top:14px;padding-top:12px}.position-name{line-height:1.15}.sheets{margin-top:1px}}
+@media print{section[hidden]{display:block!important}.bar,nav{display:none}section{break-before:page}.spread{display:block}.sheets{margin-top:12px}}
+
+:root{--max:1110px}
+.head{padding-top:clamp(16px,3vw,30px);padding-bottom:clamp(22px,3vw,36px)}
+.print-edition{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:18px}
+.print-edition a{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border-radius:7px;background:var(--paper);color:var(--burg);font-weight:600;text-decoration:none}
+.print-edition a:hover{background:var(--peach)}
+.print-edition a:focus-visible{outline-color:var(--blue)}
+.print-edition span{color:var(--peach);font-size:.95rem}
+.menu {row-gap:9px;column-gap:7px}
+.skip{position:absolute;left:.75rem;top:-5rem;z-index:3;background:var(--white);padding:9px 15px;border-radius:5px}
+.skip:focus{top:.6rem}
+.view-code{display:inline-block;vertical-align:middle;letter-spacing:.025em;font-size:.46em;color:var(--burg);font-weight:600;margin-left:5px}
+.position-name{max-width:40ch}
+.legend{padding:6px 15px 10px;margin:0}
+.legend>div{display:grid;grid-template-columns:minmax(54px,auto) 1fr;gap:12px;font-size:.92rem;padding:4px 0}
+.legend dt{font-weight:600;color:var(--burg)}
+.legend dd{margin:0}
+.detail-lesson{margin-top:clamp(24px,4vw,45px);padding-top:clamp(16px,2.5vw,25px);border-top:1px solid var(--line)}
+.detail-lesson>h3{color:var(--burg);font-size:clamp(1.45rem,2.35vw,2.1rem);font-weight:580;margin-bottom:17px;letter-spacing:-.028em}
+.clinical h4{font-size:1rem;color:var(--burg);font-weight:600;margin:0 0 5px}
+.detail-lesson .film>.clinical:first-child{border-top:0;margin-top:0;padding-top:0}
+.phase-caption{padding:8px 13px;color:var(--peach);background:#171c20;font-size:.89rem}
+.phase-pair img{vertical-align:middle}
+.anatomy-pair figure{margin:0}
+.anatomy-pair figure+figure{border-top:1px solid var(--line)}
+.anatomy-pair [data-phase-time]{margin:8px 12px;color:var(--peach);background:#20272c;border-color:#6c7880;min-height:42px;font-size:.92rem}
+.chapter-next{margin-top:22px}
+.chapter-next a,.quiz-compare{font-weight:600;color:var(--burg)}
+.player-message{margin:8px 0 0;color:var(--burg);font-size:.9rem}
+.exercise-index{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:14px 0 24px}
+.exercise-index>span{margin-right:4px;color:var(--muted);font-size:.94rem}
+.exercise-index a{display:grid;place-items:center;width:39px;min-height:37px;border:1px solid #b9ada9;border-radius:7px;text-decoration:none;color:var(--ink);font-weight:550}
+.exercise-index a:hover{background:#ecdfdf}
+.quiz-list .quiz-card{border-top:1px solid var(--line);padding:clamp(18px,3vw,29px) 0 0;margin-top:22px;scroll-margin-top:14px}
+.quiz-heading,.source-item h3{font-size:clamp(1.27rem,2.2vw,1.55rem);color:var(--burg);font-weight:590;letter-spacing:-.018em;margin:0 0 14px}
+.quiz-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(16px,3vw,35px);align-items:start}
+.quiz-frame{min-width:0}
+@media(min-width:661px) and (min-height:650px){
+ .quiz-frame{position:sticky;top:12px}
+}
+.quiz-motion video{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#000}
+.quiz-still{position:relative;overflow:hidden;border-radius:8px;background:#000}
+.quiz-still img{display:block;width:100%;height:auto}
+.quiz-frame:has(.quiz-motion[open])>.quiz-still{display:none}
+.quiz-marks{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.quiz-marks g{filter:drop-shadow(0 1px 1px #111)}
+.quiz-marks line,.quiz-marks circle{stroke:#bce9ed;stroke-width:1.6}
+.quiz-marks .mark-tip{fill:none}
+.quiz-marks .mark-badge{fill:#20383b}
+.quiz-marks text{text-anchor:middle;fill:white;font:600 15px Atlas,Arial,sans-serif}
+.quiz-mark-key{margin:.45rem 0 .8rem;padding-left:1.7rem}
+.quiz-mark-key li::marker{font-weight:650;color:var(--burg)}
+.quiz-motion{margin-top:8px}
+.quiz-motion[open]{margin-top:0}
+.quiz-motion .bar{padding:1px 10px 10px}
+.quiz-body{min-width:0}
+.quiz-questions{margin:0 0 17px;padding-left:1.45rem}
+.quiz-questions>li+li{margin-top:.55em}
+.quiz-questions li::marker{color:var(--burg);font-weight:600}
+.test-progress{font-weight:550;color:var(--burg)}
+.exercise-index a.is-graded{background:var(--burg);color:var(--white);border-color:var(--burg)}
+[data-case-form] fieldset{min-width:0;border:0;margin:0 0 20px;padding:0}
+[data-case-form] legend{width:100%;font-weight:600;line-height:1.34;margin:0 0 8px;padding:0}
+.test-option{display:flex;align-items:baseline;gap:.65rem;min-height:44px;background:var(--white);border:1px solid var(--line);border-radius:7px;padding:9px 12px;margin-top:5px;cursor:pointer}
+.test-option input{margin:0;flex:none;accent-color:var(--burg)}
+.test-option:has(:checked){border-color:var(--burg);background:#f6eaed}
+.test-option:focus-within{outline:2px solid #128296;outline-offset:2px}
+.test-option.is-correct{border-color:#35705c;background:#edf5ee}
+.test-option.is-incorrect{border-color:#9b4353;background:#fbeced}
+[data-question-feedback]{font-size:.94rem;margin-top:7px}
+.reason-label{display:block;font-weight:600;margin-bottom:6px}
+.reason-label small{margin-left:5px;font-weight:400;color:var(--muted)}
+[data-reasoning]{display:block;width:100%;resize:vertical;min-height:68px;padding:9px 12px;border:1px solid #a89b96;border-radius:7px;color:var(--ink);background:var(--white);font:inherit}
+.test-actions,.test-finish{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;margin:14px 0}
+.test-actions a{padding:9px 0;font-weight:550}
+.test-check{background:var(--burg);border-color:var(--burg);color:var(--white)}
+[data-case-result],[data-test-summary]{font-weight:600}
+.test-hint{margin:12px 0}
+.test-hint p{padding:12px 15px}
+.test-finish:has([data-reset-test]:not([hidden])){border-top:1px solid var(--line);padding-top:16px}
+.quiz-hint{border-left:2px solid #c8a598;margin:0 0 15px;padding-left:12px;color:var(--muted);font-size:.94rem}
+.quiz-answer summary{color:var(--burg)}
+.quiz-explanation{padding:14px}
+.quiz-explanation h4{margin:0 0 .45rem;font-size:1.08rem;line-height:1.35}
+.quiz-explanation p+p,.quiz-compare{margin-top:.6rem}
+.quiz-compare{display:inline-block}
+.quiz-source{color:var(--muted);margin-top:.9rem}
+.source-grid{margin-top:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 26px}
+.source-item{padding:18px;border:1px solid var(--line);background:var(--white);border-radius:8px}
+.source-item h3{font-size:1.25rem;line-height:1.22;margin-bottom:9px}
+.source-item p{font-size:.97rem}
+.source-links{display:flex;gap:6px 14px;flex-wrap:wrap;margin-top:12px}
+.source-links a{font-size:.91rem}
+.signature{display:flex;align-items:baseline;justify-content:space-between;gap:14px}
+.rating-card{max-width:34rem;margin-top:1.15rem;padding:clamp(14px,4vw,28px);border:1px solid var(--line);border-radius:10px;background:var(--white)}
+.rating-card fieldset{min-width:0;margin:0;padding:0;border:0}
+.rating-card legend{padding:0;font-size:1.2rem;font-weight:600;line-height:1.3}
+.rating-choices{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin-top:18px}
+.rating-choices label{position:relative;cursor:pointer}
+.rating-choices input{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.rating-choice{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1px;min-height:57px;border:1px solid #b9ada9;border-radius:6px;color:var(--burg);font-size:.87rem;font-weight:600}
+.rating-star{font:1.28rem/1.2 Arial,sans-serif}
+.rating-star::before{content:"☆"}
+.rating-choices label:has(~ label input:checked) .rating-star::before,.rating-choices input:checked+.rating-choice .rating-star::before{content:"★"}
+.rating-choices input:checked+.rating-choice{background:var(--burg);color:var(--white);border-color:var(--burg)}
+.rating-choices input:focus-visible+.rating-choice{outline:3px solid #128296;outline-offset:1px}
+.rating-scale{display:flex;justify-content:space-between;gap:8px;margin-top:6px;font-size:.8rem;color:var(--muted)}
+.rating-scale span:last-child{text-align:right}
+.rating-comment{margin-top:22px}
+.rating-comment label{display:block;font-weight:600;line-height:1.35}
+.rating-comment-meta{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:2px 8px;margin:4px 0 7px;color:var(--muted);font-size:.8rem}
+.rating-comment textarea{display:block;width:100%;min-height:90px;resize:vertical;padding:9px 12px;border:1px solid #a89b96;border-radius:7px;background:var(--white);color:var(--ink);font:inherit}
+.rating-comment textarea:focus-visible{outline:2px solid #128296;outline-offset:2px}
+.rating-comment textarea[aria-invalid="true"]{border-color:#9b4353}
+.rating-privacy{font-size:.93rem;color:var(--muted);margin-top:17px}
+.rating-once{margin-top:8px;font-size:.93rem}
+.rating-receipt{margin-top:12px}
+.rating-receipt p{white-space:pre-wrap;overflow-wrap:anywhere;margin:4px 0 0}
+.rating-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.rating-card button{min-height:44px}
+.rating-submit,.rating-submit:hover{background:var(--burg);color:var(--white);border-color:var(--burg)}
+.rating-card button:disabled{opacity:.6;cursor:default}
+[data-rating-status]:not(:empty){margin-top:12px}
+.rating-results{border-top:1px solid var(--line);margin-top:18px;padding-top:14px;font-size:.95rem}
+.rating-results button{margin-top:8px}
+@media(max-width:660px){
+ .menu a{padding:8px 10px}.quiz-grid,.source-grid{grid-template-columns:minmax(0,1fr)}
+ .quiz-questions{margin-top:0}.phase-pair img{max-height:none}.source-item{padding:15px}
+ .quiz-source{overflow-wrap:anywhere}
+}
+</style></head>
+<body><a href="#contents" class="skip">К оглавлению</a><header><div class="head"><div class="byline"><p>Роман Жданович</p><a href="https://www.instagram.com/dr.zhdanovich.rg/" target="_blank" rel="noopener noreferrer">@dr.zhdanovich.rg</a></div>
+<h1>Как узнать проекцию ЭхоКГ</h1>
+<p class="deck">Пять проекций в движении. Изучи петли и схемы, затем проверь себя на клинических кадрах.</p>
+<div class="print-edition"><a href="atlas.pdf" download="ЭхоКГ — атлас пяти проекций.pdf" type="application/pdf">Скачать PDF</a><span>20 страниц · 7,3 МБ</span></div>
+</div></header>
+<nav class="menu" id="contents" tabindex="-1" aria-label="Оглавление"><a href="#plax">Длинная ось</a><a href="#psax">Короткая ось</a><a href="#a4c">Четыре камеры</a><a href="#subcostal">Субкостальная</a><a href="#arch">Супрастернальная</a><a href="#practice">Самопроверка</a><a href="#feedback">Оценить атлас</a><a href="#sources">Источники</a></nav>
+<main class="page"><section id="plax" data-page aria-label="Длинная ось"><h2 class="position-name" id="plax-name">Парастернальная длинная ось <span class="view-code">PLAX</span></h2>
+      <p class="lead">На схеме и реальном кадре показана систола. Левый желудочек вытянут вдоль среза. Позади корня аорты видно левое предсердие, а между левыми камерами — сомкнутый митральный клапан.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-plax" controls playsinline loop muted preload="none" aria-label="Парастернальная длинная ось" data-web-poster="assets/395ca648e9d265db54fc19f8.webp" src="assets/60ad4f6518dbe6700f73a2b1.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-plax">Запустить петлю</button>
+      <button type="button" data-speed hidden aria-controls="film-plax" aria-pressed="false" aria-label="Замедление в два раза">Скорость ×1</button></div></div>
+        <div class="clinical"><h3>Что проследить в движении</h3><p>Начни с сомкнутого митрального клапана. Проследи, как створки расходятся в диастолу и вновь смыкаются в систолу.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Схема и кадр с обозначениями</summary><figure><img width="1050" height="1045" decoding="async" loading="lazy" src="assets/c95b4a68d3b55b0364b0d0a9.webp" alt="Систола в парастернальной длинной оси. На схеме и ЭхоКГ подписаны ПЖ, ЛЖ, ЛП и корень аорты. Тонкие выноски указывают на сомкнутый митральный клапан и межжелудочковую перегородку."></figure><dl class="legend"><div><dt>ПЖ</dt><dd>Правый желудочек, видимая часть</dd></div><div><dt>ЛЖ</dt><dd>Левый желудочек</dd></div><div><dt>ЛП</dt><dd>Левое предсердие</dd></div><div><dt>Ао</dt><dd>Корень аорты</dd></div><div><dt>МК</dt><dd>Митральный клапан</dd></div><div><dt>МЖП</dt><dd>Межжелудочковая перегородка</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>От предсердия к аорте</h3>
+        <div class="spread"><div class="film"><div class="clinical"><h4>Найди обе створки</h4><p>В диастолу передняя створка направляется к межжелудочковой перегородке, задняя — к задней стенке левого желудочка. Между ними кровь поступает из предсердия в желудочек.</p></div><div class="clinical"><h4>Найди перикард</h4><p>Проследи заднюю стенку левого желудочка в глубину. За миокардом видна яркая линия перикарда.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Диастола · открытый митральный клапан</summary><figure><img width="906" height="710" decoding="async" loading="lazy" src="assets/4e9b6634f30b5b4089f4a18e.webp" alt="Открытый митральный клапан. Отдельные выноски ведут к обеим створкам, перикарду за задней стенкой ЛЖ, межжелудочковой перегородке и корню аорты."></figure><dl class="legend"><div><dt>ПС МК</dt><dd>Передняя створка митрального клапана</dd></div><div><dt>ЗС МК</dt><dd>Задняя створка митрального клапана</dd></div><div><dt>Перикард</dt><dd>Яркая линия за задней стенкой ЛЖ</dd></div><div><dt>МЖП</dt><dd>Межжелудочковая перегородка</dd></div><div><dt>Ао</dt><dd>Корень аорты</dd></div></dl></details>
+        </div></div>
+      </div>
+      <p class="chapter-next"><a href="#quiz-v">Перейти к заданию В</a></p>
+      <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://commons.wikimedia.org/wiki/File:PLAXnormal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Исходная петля PLAX</a></p>
+      <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="psax" data-page aria-label="Короткая ось"><h2 class="position-name" id="psax-name">Парастернальная короткая ось <span class="view-code">PSAX</span></h2>
+      <p class="lead">Срез проходит на уровне аортального клапана. Корень аорты виден в поперечном сечении. Спереди его огибает выносящий тракт правого желудочка, позади лежит левое предсердие.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-psax" controls playsinline loop muted preload="none" aria-label="Парастернальная короткая ось" data-web-poster="assets/168a7700492734962d8c5c23.webp" src="assets/ef677fbefe5439aa08b51998.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-psax">Запустить петлю</button>
+      <button type="button" data-speed hidden aria-controls="film-psax" aria-pressed="false" aria-label="Замедление в два раза">Скорость ×1</button></div></div>
+        <div class="clinical"><h3>Что проследить в движении</h3><p>Найди аортальный клапан в центре и проследи несколько сердечных циклов. В диастолу створки смыкаются, в систолу расходятся.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Схема и кадр с обозначениями</summary><figure><img width="1050" height="1046" decoding="async" loading="lazy" src="assets/a65b218117310c38adc61818.webp" alt="Короткая ось на уровне аортального клапана. На схеме и реальном кадре отмечены аортальный клапан, выносящий тракт правого желудочка и оба предсердия."></figure><dl class="legend"><div><dt>АК</dt><dd>Аортальный клапан</dd></div><div><dt>ВТПЖ</dt><dd>Выносящий тракт правого желудочка</dd></div><div><dt>ПП</dt><dd>Правое предсердие</dd></div><div><dt>ЛП</dt><dd>Левое предсердие</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>Три створки аортального клапана</h3>
+        <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-psax-valve" controls playsinline loop muted preload="none" aria-label="Аортальный клапан крупным планом" data-web-poster="assets/b0eb2a1b58854e1e7fa6721b.webp" src="assets/57a12caf80437f4153916173.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-psax-valve">Запустить петлю</button>
+      <button type="button" data-speed hidden aria-controls="film-psax-valve" aria-pressed="false" aria-label="Замедление в два раза">Скорость ×1</button></div></div><div class="clinical"><h4>Две фазы одной петли</h4><p>Сначала найди в центре место смыкания трёх створок. В начале систолы их края расходятся, и на этом же месте появляется тёмный просвет.</p></div><div class="clinical"><h4>Ориентиры створок</h4><p>Правая коронарная створка прилежит к выносящему тракту правого желудочка. Некоронарная створка соседствует с межпредсердной перегородкой.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Две фазы клапана</summary><div class="anatomy-pair" data-valve-phases><figure><figcaption class="phase-caption">Диастола · створки сомкнуты</figcaption><img width="640" height="480" decoding="async" src="assets/789f558350cb38682e52c360.webp" alt="Три створки аортального клапана в короткой оси. Отмечены правая коронарная, левая коронарная и некоронарная створки." loading="lazy"><button type="button" data-phase-time="0.01" aria-controls="film-psax-valve" aria-label="Диастола · створки сомкнуты. Показать этот кадр на петле" hidden>Показать этот кадр на петле</button></figure><figure><figcaption class="phase-caption">Начало систолы · створки раскрываются</figcaption><img width="640" height="480" decoding="async" src="assets/b2d1362c5b268475d2c91663.webp" alt="Тот же клапан в том же масштабе. Выноска указывает на просвет между разошедшимися краями створок." loading="lazy"><button type="button" data-phase-time="0.21" aria-controls="film-psax-valve" aria-label="Начало систолы · створки раскрываются. Показать этот кадр на петле" hidden>Показать этот кадр на петле</button></figure></div><dl class="legend"><div><dt>ПКС</dt><dd>Правая коронарная створка</dd></div><div><dt>НКС</dt><dd>Некоронарная створка</dd></div><div><dt>ЛКС</dt><dd>Левая коронарная створка</dd></div></dl></details>
+        </div></div>
+      </div>
+      <p class="chapter-next"><a href="#quiz-b">Перейти к заданию Б</a></p>
+      <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://www.youtube.com/watch?v=Xmf_tCZhBZo" target="_blank" rel="noopener noreferrer">Обзорная петля</a> · <a href="https://www.youtube.com/watch?v=xbpzwJRL0iA" target="_blank" rel="noopener noreferrer">Крупный план клапана</a></p>
+      <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="a4c" data-page aria-label="Четыре камеры"><h2 class="position-name" id="a4c-name">Апикальная четырёхкамерная позиция <span class="view-code">A4C</span></h2>
+      <p class="lead">Верхушка ближе к датчику, предсердия глубже. В правом желудочке найди модераторный пучок — мышечную перемычку, которая отходит от межжелудочковой перегородки.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-a4c" controls playsinline loop muted preload="none" aria-label="Апикальная четырёхкамерная позиция" data-web-poster="assets/1814e4e82eafed52eb3b3cd6.webp" src="assets/58c230d228c4da64bf4259fa.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-a4c">Запустить петлю</button>
+      <button type="button" data-speed hidden aria-controls="film-a4c" aria-pressed="false" aria-label="Замедление в два раза">Скорость ×1</button></div></div>
+        <div class="clinical"><h3>Что проследить в движении</h3><p>Останови петлю при сомкнутых клапанах и найди их септальные точки прикрепления. Сравни обе точки на одном кадре.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Четыре камеры и модераторный пучок</summary><div data-apical-moderator class="anatomy-pair"><figure><figcaption class="phase-caption">Схема</figcaption><img width="920" height="832" decoding="async" src="assets/32d0cb8f1d11b709a6d19457.webp" alt="Учебный четырёхкамерный срез. Отмечены ПЖ, ЛЖ, ПП, ЛП и модераторный пучок (МП) в правом желудочке." loading="lazy"></figure><figure><figcaption class="phase-caption">Реальная ЭхоКГ · отдельный стоп-кадр</figcaption><img width="920" height="832" decoding="async" src="assets/02a58c48c42076e3548c091b.webp" alt="Кадр Kim и Jung, рис. 6A. Авторская белая стрелка и выноска МП указывают на модераторный пучок в правом желудочке." loading="lazy"></figure></div><dl class="legend"><div><dt>МП</dt><dd>Модераторный пучок</dd></div><div><dt>ПЖ / RV</dt><dd>Правый желудочек</dd></div><div><dt>ЛЖ / LV</dt><dd>Левый желудочек</dd></div><div><dt>ПП / RA</dt><dd>Правое предсердие</dd></div><div><dt>ЛП / LA</dt><dd>Левое предсердие</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>Два уровня клапанов</h3>
+        <div class="spread"><div class="film"><div class="clinical"><h4>Сравни точки у перегородки</h4><p>Трикуспидальный клапан находится между правыми камерами, митральный — между левыми. Точка прикрепления трикуспидального клапана к перегородке ближе к верхушке. На реальном снимке эти уровни отмечены пунктиром.</p></div><div class="clinical"><h4>Две перегородки</h4><p>Межжелудочковая перегородка разделяет желудочки, межпредсердная — предсердия. Проследи обе до центра сердца.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Клинический кадр с обозначениями</summary><figure><img width="1050" height="780" decoding="async" loading="lazy" src="assets/261a0a6f189e169577c0e1f8.webp" alt="Две пунктирные линии отмечают уровни септального прикрепления трикуспидального и митрального клапанов, двумя выносками отмечены перегородки."></figure><dl class="legend"><div><dt>ТК</dt><dd>Трикуспидальный клапан</dd></div><div><dt>МК</dt><dd>Митральный клапан</dd></div><div><dt>МЖП</dt><dd>Межжелудочковая перегородка</dd></div><div><dt>МПП</dt><dd>Межпредсердная перегородка</dd></div></dl></details>
+        </div></div>
+      </div>
+      <p class="chapter-next"><a href="#quiz-a">Перейти к заданию А</a></p>
+      <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://commons.wikimedia.org/wiki/File:A4C_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Исходная петля A4C</a> · <a href="https://doi.org/10.4250/jcu.2013.21.3.103" target="_blank" rel="noopener noreferrer">Кадр с модераторным пучком · Kim и Jung, рис. 6A</a></p>
+      <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="subcostal" data-page aria-label="Субкостальная"><h2 class="position-name" id="subcostal-name">Субкостальная четырёхкамерная позиция <span class="view-code">SC4C</span></h2>
+      <p class="lead">Сначала луч проходит через печень. Из камер ближе всего к датчику расположен правый желудочек.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-subcostal" controls playsinline loop muted preload="none" aria-label="Субкостальная четырёхкамерная позиция" data-web-poster="assets/632803ca8863492ac8f91be1.webp" src="assets/61341dc80e4750370ee319b6.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-subcostal">Запустить петлю</button>
+      <button type="button" data-speed hidden aria-controls="film-subcostal" aria-pressed="false" aria-label="Замедление в два раза">Скорость ×1</button></div></div>
+        <div class="clinical"><h3>Что проследить в движении</h3><p>Найди правый желудочек под печенью и левый желудочек глубже. Переведи взгляд к предсердиям и проследи движение створок клапанов между камерами.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Схема и кадр с обозначениями</summary><figure><img width="1050" height="1046" decoding="async" loading="lazy" src="assets/899c8192ce1a60e8c005e035.webp" alt="Субкостальная проекция. На схеме и ЭхоКГ печень в ближнем поле, под ней ПЖ, глубже ЛЖ. Подписаны также оба предсердия."></figure><dl class="legend"><div><dt>ПЖ</dt><dd>Правый желудочек</dd></div><div><dt>ЛЖ</dt><dd>Левый желудочек</dd></div><div><dt>ПП</dt><dd>Правое предсердие</dd></div><div><dt>ЛП</dt><dd>Левое предсердие</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>Клапаны и перегородки</h3>
+        <div class="spread"><div class="film"><div class="clinical"><h4>Найди центр сердца</h4><p>Трикуспидальный клапан разделяет правое предсердие и правый желудочек, митральный — левое предсердие и левый желудочек.</p></div><div class="clinical"><h4>Проследи межпредсердную перегородку</h4><p>Найди перегородку между предсердиями и проследи её до центра сердца. В этом доступе ультразвуковой луч пересекает её почти под прямым углом.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Схема и клинический кадр</summary><figure><img width="1050" height="1046" decoding="async" loading="lazy" src="assets/5992dd4e763525ea6f43f5ff.webp" alt="Схема и реальная субкостальная запись с одинаковыми обозначениями митрального и трикуспидального клапанов и обеих перегородок."></figure><dl class="legend"><div><dt>ТК</dt><dd>Трикуспидальный клапан</dd></div><div><dt>МК</dt><dd>Митральный клапан</dd></div><div><dt>МЖП</dt><dd>Межжелудочковая перегородка</dd></div><div><dt>МПП</dt><dd>Межпредсердная перегородка</dd></div></dl></details>
+        </div></div>
+      </div>
+      <p class="chapter-next"><a href="#quiz-g">Перейти к заданию Г</a></p>
+      <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://commons.wikimedia.org/wiki/File:Subcostal_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Исходная субкостальная петля</a></p>
+      <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="arch" data-page aria-label="Супрастернальная"><h2 class="position-name" id="arch-name">Супрастернальная позиция <span class="view-code">SSN</span></h2>
+      <p class="lead">Продольный срез дуги аорты из яремной вырезки. Под дугой в поперечном срезе видна правая лёгочная артерия.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-arch" controls playsinline loop muted preload="none" aria-label="Супрастернальная позиция" data-web-poster="assets/a6ca501c1befa96bee7eb890.webp" src="assets/b5769873904bc4b31a03b694.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-arch">Запустить петлю</button>
+      <button type="button" data-speed hidden aria-controls="film-arch" aria-pressed="false" aria-label="Замедление в два раза">Скорость ×1</button></div></div>
+        <div class="clinical"><h3>Что проследить в движении</h3><p>Проследи восходящую аорту, изгиб дуги и начало нисходящей грудной аорты. Под изгибом найди поперечное сечение правой лёгочной артерии.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Схема и кадр с обозначениями</summary><figure><img width="1050" height="1046" decoding="async" loading="lazy" src="assets/b4e9ac92c265b070c7857919.webp" alt="Супрастернальный срез дуги аорты. На схеме и ЭхоКГ подписаны восходящий и нисходящий отделы аорты, дуга и правая лёгочная артерия."></figure><dl class="legend"><div><dt>Восх.</dt><dd>Восходящая аорта</dd></div><div><dt>Дуга</dt><dd>Дуга аорты</dd></div><div><dt>Нисх.</dt><dd>Нисходящая грудная аорта</dd></div><div><dt>ПЛА</dt><dd>Правая лёгочная артерия</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>Три ветви дуги аорты</h3>
+        <div class="spread"><div class="film"><div class="clinical"><h4>Порядок ветвления</h4><p>Иди от восходящей аорты к нисходящей. При обычном ветвлении первым отходит плечеголовной ствол, затем левая общая сонная и левая подключичная артерии.</p></div><div class="clinical"><h4>Сверь устья артерий</h4><p>Для ветвей приведён отдельный клинический кадр. На нём сохранились английские обозначения авторов. Они соответствуют русским в легенде.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Схема и клинический кадр</summary><div data-arch-branches class="anatomy-pair"><figure><figcaption class="phase-caption">Схема</figcaption><img width="960" height="780" decoding="async" src="assets/c42add15eec8557c20e7ac3a.webp" alt="От дуги по порядку отходят плечеголовной ствол, левая общая сонная и левая подключичная артерии." loading="lazy"></figure><figure><figcaption class="phase-caption">Реальная ЭхоКГ · обозначения авторов</figcaption><img width="565" height="439" decoding="async" src="assets/ee96a208de6b81b62c48bb2e.webp" alt="На эхограмме сохранены три подписи у сосудов: BCA, LCCA и LSA. Русские соответствия приведены под кадром." loading="lazy"></figure></div><dl class="legend"><div><dt>ПГС / BCA</dt><dd>Плечеголовной ствол</dd></div><div><dt>ЛОСА / LCCA</dt><dd>Левая общая сонная артерия</dd></div><div><dt>ЛПкА / LSA</dt><dd>Левая подключичная артерия</dd></div></dl></details>
+        </div></div>
+      </div>
+      <p class="chapter-next"><a href="#quiz-d">Перейти к заданию Д</a></p>
+      <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://www.youtube.com/watch?v=Za7dgzuzsA0" target="_blank" rel="noopener noreferrer">Исходная петля дуги</a> · <a href="https://doi.org/10.1186/s44156-022-00006-5" target="_blank" rel="noopener noreferrer">Кадр трёх ветвей, таблица 1, стр. 27</a></p>
+      <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="practice" data-page aria-label="Самопроверка"><div data-atlas-test><h2 class="position-name">Самопроверка</h2><p class="lead">Пять клинических петель, 30 вопросов. Определи структуры под номерами 1, 2 и 3 на каждом кадре. Запусти петлю, чтобы рассмотреть движение клапанов. После каждого задания можно проверить ответы и прочитать разбор. Твои ответы сохраняются в этом браузере.</p><div class="exercise-index" role="navigation" aria-label="Перейти к заданию"><span>Задания</span><a href="#quiz-a" aria-label="Задание А">А</a><a href="#quiz-b" aria-label="Задание Б">Б</a><a href="#quiz-v" aria-label="Задание В">В</a><a href="#quiz-g" aria-label="Задание Г">Г</a><a href="#quiz-d" aria-label="Задание Д">Д</a></div><p class="test-progress" data-test-status role="status" hidden></p><div class="quiz-list">
+            <article class="quiz-card" id="quiz-a" data-case-id="quiz-a" aria-labelledby="quiz-a-name">
+              <h3 class="quiz-heading" id="quiz-a-name">Задание А</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="477" height="445" decoding="async" src="assets/88ba0aafdd3b1418700df352.webp" loading="lazy" alt="Стоп-кадр ЭхоКГ к заданию А. На изображении отмечены структуры от 1 до 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="83%" y1="25%" x2="52.0%" y2="41.8%"/><circle class="mark-tip" cx="52.0%" cy="41.8%" r="3"/><circle class="mark-badge" cx="83%" cy="25%" r="11"/><text x="83%" y="25%" dy=".35em">1</text></g><g data-mark="2"><line x1="88%" y1="49%" x2="53.04%" y2="56.18%"/><circle class="mark-tip" cx="53.04%" cy="56.18%" r="3"/><circle class="mark-badge" cx="88%" cy="49%" r="11"/><text x="88%" y="49%" dy=".35em">2</text></g><g data-mark="3"><line x1="87%" y1="82%" x2="52.6%" y2="74.2%"/><circle class="mark-tip" cx="52.6%" cy="74.2%" r="3"/><circle class="mark-badge" cx="87%" cy="82%" r="11"/><text x="87%" y="82%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Посмотреть в движении</summary>
+                    <div class="player">
+                      <video src="assets/cd0210dfb98c5161d388c976.mp4" data-web-poster="assets/88ba0aafdd3b1418700df352.webp" id="quiz-a-film"
+                             controls loop muted playsinline preload="none" aria-label="Петля к заданию А"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-a-film">Запустить петлю</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-a-film" aria-pressed="false"
+                                aria-label="Переключить замедление в два раза">Скорость ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Назови каждую структуру, отмеченную цифрой.</p><ol class="quiz-questions"><li>Назови проекцию. В какой стороне кадра находится левый желудочек?</li><li>Какой клапан соединяет его с левым предсердием?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-lv" data-correct="lv"><legend>Какая камера обозначена цифрой 1?</legend><label class="test-option"><input type="radio" name="quiz-a-marked-lv" value="rv" required><span>Правый желудочек</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-lv" value="lv" required><span>Левый желудочек</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-lv" value="la" required><span>Левое предсердие</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-mv" data-correct="mitral"><legend>Какой клапан обозначен цифрой 2?</legend><label class="test-option"><input type="radio" name="quiz-a-marked-mv" value="mitral" required><span>Митральный</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-mv" value="tricuspid" required><span>Трикуспидальный</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-mv" value="aortic" required><span>Аортальный</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-la" data-correct="la"><legend>Какая камера обозначена цифрой 3?</legend><label class="test-option"><input type="radio" name="quiz-a-marked-la" value="ra" required><span>Правое предсердие</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-la" value="lv" required><span>Левый желудочек</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-la" value="la" required><span>Левое предсердие</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="view" data-correct="apical"><legend>В какой проекции записана петля?</legend><label class="test-option"><input type="radio" name="quiz-a-view" value="long" required><span>Парастернальная длинная ось</span></label><label class="test-option"><input type="radio" name="quiz-a-view" value="apical" required><span>Апикальная четырёхкамерная</span></label><label class="test-option"><input type="radio" name="quiz-a-view" value="subcostal" required><span>Субкостальная четырёхкамерная</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="filling" data-correct="larger"><legend>Запусти петлю. Как меняется полость желудочка № 1, пока открыт клапан № 2?</legend><label class="test-option"><input type="radio" name="quiz-a-filling" value="smaller" required><span>Уменьшается</span></label><label class="test-option"><input type="radio" name="quiz-a-filling" value="larger" required><span>Увеличивается</span></label><label class="test-option"><input type="radio" name="quiz-a-filling" value="steady" required><span>Сохраняет один размер</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="insertion" data-correct="tricuspid"><legend>Сравни места прикрепления клапанов у перегородки. Какой клапан в норме прикрепляется ближе к верхушке?</legend><label class="test-option"><input type="radio" name="quiz-a-insertion" value="tricuspid" required><span>Трикуспидальный</span></label><label class="test-option"><input type="radio" name="quiz-a-insertion" value="mitral" required><span>Митральный</span></label><label class="test-option"><input type="radio" name="quiz-a-insertion" value="level" required><span>Оба на одном уровне</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-a-reason">Мой ответ своими словами <small>По желанию</small></label><textarea id="quiz-a-reason" data-reasoning rows="2" maxlength="1500" placeholder="Какие ориентиры помогли тебе ответить?"></textarea><div class="test-actions"><button class="test-check" type="submit">Проверить задание</button><a href="#quiz-b" data-next-case hidden>Перейти к заданию Б</a></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Подсказка</summary><p>При записи захвати истинную верхушку. Если плоскость проходит мимо неё, левый желудочек выглядит короче.</p></details>
+                  <details class="quiz-answer">
+                    <summary>Открыть ответ</summary>
+                    <div class="quiz-explanation">
+                      <h4>Апикальная четырёхкамерная</h4>
+                      <p>Верхушка вверху, оба предсердия внизу. Справа на этом экране расположен левый желудочек. Между ним и левым предсердием находится митральный клапан.</p><p>При открытом митральном клапане кровь поступает из левого предсердия в левый желудочек, и его полость увеличивается. Если проследить место прикрепления створок к перегородке, трикуспидальный клапан в норме находится чуть ближе к верхушке.</p>
+                      <ol class="quiz-mark-key" aria-label="Обозначения на кадре"><li>Левый желудочек</li><li>Митральный клапан</li><li>Левое предсердие</li></ol>
+                      <a class="quiz-compare" href="#a4c">Сверить обозначения</a>
+                      <p class="quiz-source"><small>M. L. de Alcantara и соавт., Brazilian Society of Cardiology, 2026. Приложение 2, видео 03. Кадр извлечён и кадрирован.
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/42307308/" target="_blank" rel="noopener noreferrer">Источник</a>
+                      · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article>
+            <article class="quiz-card" id="quiz-b" data-case-id="quiz-b" aria-labelledby="quiz-b-name">
+              <h3 class="quiz-heading" id="quiz-b-name">Задание Б</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="830" height="642" decoding="async" src="assets/d871671fea599e6f8198f87f.webp" loading="lazy" alt="Стоп-кадр ЭхоКГ к заданию Б. На изображении отмечены структуры от 1 до 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="83%" y1="39%" x2="46.2%" y2="47.7%"/><circle class="mark-tip" cx="46.2%" cy="47.7%" r="3"/><circle class="mark-badge" cx="83%" cy="39%" r="11"/><text x="83%" y="39%" dy=".35em">1</text></g><g data-mark="2"><line x1="84%" y1="78%" x2="46.5%" y2="67.4%"/><circle class="mark-tip" cx="46.5%" cy="67.4%" r="3"/><circle class="mark-badge" cx="84%" cy="78%" r="11"/><text x="84%" y="78%" dy=".35em">2</text></g><g data-mark="3"><line x1="21%" y1="14%" x2="44.6%" y2="26.3%"/><circle class="mark-tip" cx="44.6%" cy="26.3%" r="3"/><circle class="mark-badge" cx="21%" cy="14%" r="11"/><text x="21%" y="14%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Посмотреть в движении</summary>
+                    <div class="player">
+                      <video src="assets/ef677fbefe5439aa08b51998.mp4" data-web-poster="assets/d871671fea599e6f8198f87f.webp" id="quiz-b-film"
+                             controls loop muted playsinline preload="none" aria-label="Петля к заданию Б"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-b-film">Запустить петлю</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-b-film" aria-pressed="false"
+                                aria-label="Переключить замедление в два раза">Скорость ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Назови каждую структуру, отмеченную цифрой.</p><ol class="quiz-questions"><li>Что видно в центре среза? Какая камера расположена позади этой структуры?</li><li>В какую фазу удобнее проверить число створок аортального клапана?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-av" data-correct="aortic"><legend>Какой клапан обозначен цифрой 1?</legend><label class="test-option"><input type="radio" name="quiz-b-marked-av" value="pulmonary" required><span>Клапан лёгочной артерии</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-av" value="mitral" required><span>Митральный</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-av" value="aortic" required><span>Аортальный</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-la" data-correct="la"><legend>Какая камера обозначена цифрой 2?</legend><label class="test-option"><input type="radio" name="quiz-b-marked-la" value="la" required><span>Левое предсердие</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-la" value="ra" required><span>Правое предсердие</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-la" value="rv" required><span>Правый желудочек</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-rvot" data-correct="rvot"><legend>Какой отдел сердца обозначен цифрой 3?</legend><label class="test-option"><input type="radio" name="quiz-b-marked-rvot" value="lvot" required><span>Выносящий тракт левого желудочка</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-rvot" value="rvot" required><span>Выносящий тракт правого желудочка</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-rvot" value="laa" required><span>Ушко левого предсердия</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="phase" data-correct="systole"><legend>В какую фазу лучше считать створки по их раскрытию?</legend><label class="test-option"><input type="radio" name="quiz-b-phase" value="diastole" required><span>В диастолу желудочков</span></label><label class="test-option"><input type="radio" name="quiz-b-phase" value="systole" required><span>В систолу желудочков</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="outflow" data-correct="pulmonary"><legend>В какой сосуд кровь поступает непосредственно из отдела № 3?</legend><label class="test-option"><input type="radio" name="quiz-b-outflow" value="pulmonary" required><span>В лёгочный ствол</span></label><label class="test-option"><input type="radio" name="quiz-b-outflow" value="aorta" required><span>В восходящую аорту</span></label><label class="test-option"><input type="radio" name="quiz-b-outflow" value="pulmonary-vein" required><span>В лёгочную вену</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="closure" data-correct="three-rays"><legend>Запусти петлю. Какой рисунок образуют линии смыкания трёх створок аортального клапана в диастолу?</legend><label class="test-option"><input type="radio" name="quiz-b-closure" value="ring" required><span>Кольцо по краю просвета</span></label><label class="test-option"><input type="radio" name="quiz-b-closure" value="one-line" required><span>Одну прямую через центр</span></label><label class="test-option"><input type="radio" name="quiz-b-closure" value="three-rays" required><span>Три линии, сходящиеся в центре</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-b-reason">Мой ответ своими словами <small>По желанию</small></label><textarea id="quiz-b-reason" data-reasoning rows="2" maxlength="1500" placeholder="Какие ориентиры помогли тебе ответить?"></textarea><div class="test-actions"><button class="test-check" type="submit">Проверить задание</button><a href="#quiz-v" data-next-case hidden>Перейти к заданию В</a></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Подсказка</summary><p>При записи слегка наклоняй датчик, пока в одном поперечном срезе не увидишь свободные края створок.</p></details>
+                  <details class="quiz-answer">
+                    <summary>Открыть ответ</summary>
+                    <div class="quiz-explanation">
+                      <h4>Короткая ось на уровне АК</h4>
+                      <p>Корень аорты пересечён поперёк. В центре виден аортальный клапан, позади него располагается левое предсердие. Число створок проверяют по их раскрытию в систолу.</p><p>Кпереди от корня аорты проходит выносящий тракт правого желудочка. Через него кровь поступает в лёгочный ствол. На закрытом аортальном клапане три линии смыкания створок в норме сходятся в центре, как буква Y.</p>
+                      <ol class="quiz-mark-key" aria-label="Обозначения на кадре"><li>Аортальный клапан</li><li>Левое предсердие</li><li>Выносящий тракт правого желудочка</li></ol>
+                      <a class="quiz-compare" href="#psax">Сверить обозначения</a>
+                      <p class="quiz-source"><small>Atif Qasim, Echocardiographer.org. Из петли выбран и кадрирован кадр.
+                      <a href="https://www.echocardiographer.org/tte-psax" target="_blank" rel="noopener noreferrer">Источник</a>
+                      · <a href="https://www.echocardiographer.org/about-3" target="_blank" rel="noopener noreferrer">Условия автора</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article>
+            <article class="quiz-card" id="quiz-v" data-case-id="quiz-v" aria-labelledby="quiz-v-name">
+              <h3 class="quiz-heading" id="quiz-v-name">Задание В</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="453" height="355" decoding="async" src="assets/d9f2eb0ecbeca7469766f1e4.webp" loading="lazy" alt="Стоп-кадр ЭхоКГ к заданию В. На изображении отмечены структуры от 1 до 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="12%" y1="37%" x2="35%" y2="50%"/><circle class="mark-tip" cx="35%" cy="50%" r="3"/><circle class="mark-badge" cx="12%" cy="37%" r="11"/><text x="12%" y="37%" dy=".35em">1</text></g><g data-mark="2"><line x1="87%" y1="49%" x2="68%" y2="65%"/><circle class="mark-tip" cx="68%" cy="65%" r="3"/><circle class="mark-badge" cx="87%" cy="49%" r="11"/><text x="87%" y="49%" dy=".35em">2</text></g><g data-mark="3"><line x1="23%" y1="19%" x2="46.8%" y2="33.5%"/><circle class="mark-tip" cx="46.8%" cy="33.5%" r="3"/><circle class="mark-badge" cx="23%" cy="19%" r="11"/><text x="23%" y="19%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Посмотреть в движении</summary>
+                    <div class="player">
+                      <video src="assets/a6973cfb3f5c6a87f368dbf7.mp4" data-web-poster="assets/d9f2eb0ecbeca7469766f1e4.webp" id="quiz-v-film"
+                             controls loop muted playsinline preload="none" aria-label="Петля к заданию В"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-v-film">Запустить петлю</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-v-film" aria-pressed="false"
+                                aria-label="Переключить замедление в два раза">Скорость ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Назови каждую структуру, отмеченную цифрой.</p><ol class="quiz-questions"><li>Назови проекцию. Какая камера лежит позади корня аорты?</li><li>Какой клапан отделяет эту камеру от левого желудочка?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-lv" data-correct="lv"><legend>Какая камера обозначена цифрой 1?</legend><label class="test-option"><input type="radio" name="quiz-v-marked-lv" value="rv" required><span>Правый желудочек</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-lv" value="la" required><span>Левое предсердие</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-lv" value="lv" required><span>Левый желудочек</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-la" data-correct="la"><legend>Какая камера обозначена цифрой 2?</legend><label class="test-option"><input type="radio" name="quiz-v-marked-la" value="ra" required><span>Правое предсердие</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-la" value="la" required><span>Левое предсердие</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-la" value="lv" required><span>Левый желудочек</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-ivs" data-correct="ivs"><legend>Какая структура обозначена цифрой 3?</legend><label class="test-option"><input type="radio" name="quiz-v-marked-ivs" value="ias" required><span>Межпредсердная перегородка</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-ivs" value="posterior" required><span>Задняя стенка левого желудочка</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-ivs" value="ivs" required><span>Межжелудочковая перегородка</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="view" data-correct="long"><legend>В какой проекции виден левый желудочек на этом кадре?</legend><label class="test-option"><input type="radio" name="quiz-v-view" value="short" required><span>Парастернальная короткая ось</span></label><label class="test-option"><input type="radio" name="quiz-v-view" value="apical" required><span>Апикальная четырёхкамерная</span></label><label class="test-option"><input type="radio" name="quiz-v-view" value="long" required><span>Парастернальная длинная ось</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="valve" data-correct="mitral"><legend>Какой клапан разделяет камеры № 1 и № 2?</legend><label class="test-option"><input type="radio" name="quiz-v-valve" value="aortic" required><span>Аортальный</span></label><label class="test-option"><input type="radio" name="quiz-v-valve" value="tricuspid" required><span>Трикуспидальный</span></label><label class="test-option"><input type="radio" name="quiz-v-valve" value="mitral" required><span>Митральный</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="leaflet" data-correct="septum"><legend>Проследи за передней створкой митрального клапана. К чему она приближается при открытии?</legend><label class="test-option"><input type="radio" name="quiz-v-leaflet" value="septum" required><span>К межжелудочковой перегородке</span></label><label class="test-option"><input type="radio" name="quiz-v-leaflet" value="posterior" required><span>К задней стенке левого желудочка</span></label><label class="test-option"><input type="radio" name="quiz-v-leaflet" value="atrial-roof" required><span>К крыше левого предсердия</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-v-reason">Мой ответ своими словами <small>По желанию</small></label><textarea id="quiz-v-reason" data-reasoning rows="2" maxlength="1500" placeholder="Какие ориентиры помогли тебе ответить?"></textarea><div class="test-actions"><button class="test-check" type="submit">Проверить задание</button><a href="#quiz-g" data-next-case hidden>Перейти к заданию Г</a></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Подсказка</summary><p>При записи выведи длинную ось ЛЖ. Истинная верхушка в этой проекции обычно остаётся за краем кадра.</p></details>
+                  <details class="quiz-answer">
+                    <summary>Открыть ответ</summary>
+                    <div class="quiz-explanation">
+                      <h4>Парастернальная длинная ось</h4>
+                      <p>Левый желудочек вытянут по длинной оси. Левое предсердие лежит позади корня аорты. Митральный клапан расположен между предсердием и левым желудочком.</p><p>Цифра 3 указывает на стенку между желудочками. В начале диастолы кончик передней митральной створки движется к этой перегородке.</p>
+                      <ol class="quiz-mark-key" aria-label="Обозначения на кадре"><li>Левый желудочек</li><li>Левое предсердие</li><li>Межжелудочковая перегородка</li></ol>
+                      <a class="quiz-compare" href="#plax">Сверить обозначения</a>
+                      <p class="quiz-source"><small>I. A. C. van der Bilt (Vdbilt), CardioNetworks / ECHOpedia, отделение эхокардиографии AMC. Кадр извлечён и кадрирован.
+                      <a href="https://commons.wikimedia.org/wiki/File:PLAXnormal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Источник</a>
+                      · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article>
+            <article class="quiz-card" id="quiz-g" data-case-id="quiz-g" aria-labelledby="quiz-g-name">
+              <h3 class="quiz-heading" id="quiz-g-name">Задание Г</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="410" height="382" decoding="async" src="assets/0246bdd85cbaa9bb7853ce6d.webp" loading="lazy" alt="Стоп-кадр ЭхоКГ к заданию Г. На изображении отмечены структуры от 1 до 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="21%" y1="16%" x2="49%" y2="27%"/><circle class="mark-tip" cx="49%" cy="27%" r="3"/><circle class="mark-badge" cx="21%" cy="16%" r="11"/><text x="21%" y="16%" dy=".35em">1</text></g><g data-mark="2"><line x1="88%" y1="73%" x2="66%" y2="62%"/><circle class="mark-tip" cx="66%" cy="62%" r="3"/><circle class="mark-badge" cx="88%" cy="73%" r="11"/><text x="88%" y="73%" dy=".35em">2</text></g><g data-mark="3"><line x1="12%" y1="48%" x2="33.2%" y2="56.0%"/><circle class="mark-tip" cx="33.2%" cy="56.0%" r="3"/><circle class="mark-badge" cx="12%" cy="48%" r="11"/><text x="12%" y="48%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Посмотреть в движении</summary>
+                    <div class="player">
+                      <video src="assets/61341dc80e4750370ee319b6.mp4" data-web-poster="assets/0246bdd85cbaa9bb7853ce6d.webp" id="quiz-g-film"
+                             controls loop muted playsinline preload="none" aria-label="Петля к заданию Г"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-g-film">Запустить петлю</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-g-film" aria-pressed="false"
+                                aria-label="Переключить замедление в два раза">Скорость ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Назови каждую структуру, отмеченную цифрой.</p><ol class="quiz-questions"><li>Какой орган лежит перед сердцем? Какой желудочек ближе к нему?</li><li>Найди перегородку между предсердиями. Куда она направляется?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-liver" data-correct="liver"><legend>Какой орган обозначен цифрой 1?</legend><label class="test-option"><input type="radio" name="quiz-g-marked-liver" value="liver" required><span>Печень</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-liver" value="spleen" required><span>Селезёнка</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-liver" value="kidney" required><span>Почка</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-lv" data-correct="lv"><legend>Какая камера обозначена цифрой 2?</legend><label class="test-option"><input type="radio" name="quiz-g-marked-lv" value="ra" required><span>Правое предсердие</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-lv" value="lv" required><span>Левый желудочек</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-lv" value="rv" required><span>Правый желудочек</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-ra" data-correct="ra"><legend>Какая камера обозначена цифрой 3?</legend><label class="test-option"><input type="radio" name="quiz-g-marked-ra" value="rv" required><span>Правый желудочек</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-ra" value="ra" required><span>Правое предсердие</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-ra" value="la" required><span>Левое предсердие</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="chamber" data-correct="rv"><legend>Какой желудочек находится ближе к органу под номером 1?</legend><label class="test-option"><input type="radio" name="quiz-g-chamber" value="lv" required><span>Левый желудочек</span></label><label class="test-option"><input type="radio" name="quiz-g-chamber" value="rv" required><span>Правый желудочек</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="septum" data-correct="crux"><legend>Проследи межпредсердную перегородку в сторону желудочков. К какому ориентиру она подходит?</legend><label class="test-option"><input type="radio" name="quiz-g-septum" value="apex" required><span>К верхушке сердца</span></label><label class="test-option"><input type="radio" name="quiz-g-septum" value="root" required><span>К корню аорты</span></label><label class="test-option"><input type="radio" name="quiz-g-septum" value="crux" required><span>К месту соединения перегородок и атриовентрикулярных клапанов</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="apex" data-correct="right"><legend>Куда на этом изображении направлена верхушка сердца?</legend><label class="test-option"><input type="radio" name="quiz-g-apex" value="left" required><span>Влево на экране</span></label><label class="test-option"><input type="radio" name="quiz-g-apex" value="top" required><span>К верхнему краю экрана</span></label><label class="test-option"><input type="radio" name="quiz-g-apex" value="right" required><span>Вправо на экране</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-g-reason">Мой ответ своими словами <small>По желанию</small></label><textarea id="quiz-g-reason" data-reasoning rows="2" maxlength="1500" placeholder="Какие ориентиры помогли тебе ответить?"></textarea><div class="test-actions"><button class="test-check" type="submit">Проверить задание</button><a href="#quiz-d" data-next-case hidden>Перейти к заданию Д</a></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Подсказка</summary><p>Сравни с апикальной позицией. Куда на этом кадре направлена верхушка сердца?</p></details>
+                  <details class="quiz-answer">
+                    <summary>Открыть ответ</summary>
+                    <div class="quiz-explanation">
+                      <h4>Субкостальная позиция</h4>
+                      <p>Слой ткани перед сердцем — печень. Между печенью и левым желудочком видна полость правого желудочка. Верхушка на этом изображении направлена вправо.</p><p>Межпредсердная перегородка разделяет правое и левое предсердия. Она продолжается к месту соединения перегородок и клапанов.</p><p>Метка 3 стоит в правом предсердии. Отсюда через трикуспидальный клапан можно проследить путь в правый желудочек, прилежащий к печени.</p>
+                      <ol class="quiz-mark-key" aria-label="Обозначения на кадре"><li>Печень</li><li>Левый желудочек</li><li>Правое предсердие</li></ol>
+                      <a class="quiz-compare" href="#subcostal">Сверить обозначения</a>
+                      <p class="quiz-source"><small>I. A. C. van der Bilt (Vdbilt), CardioNetworks / ECHOpedia, отделение эхокардиографии AMC. Кадр извлечён и кадрирован.
+                      <a href="https://commons.wikimedia.org/wiki/File:Subcostal_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Источник</a>
+                      · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article>
+            <article class="quiz-card" id="quiz-d" data-case-id="quiz-d" aria-labelledby="quiz-d-name">
+              <h3 class="quiz-heading" id="quiz-d-name">Задание Д</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="410" height="292" decoding="async" src="assets/c5d41cbc420903e8fac4f047.webp" loading="lazy" alt="Стоп-кадр ЭхоКГ к заданию Д. На изображении отмечены структуры от 1 до 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="21%" y1="23%" x2="43%" y2="37%"/><circle class="mark-tip" cx="43%" cy="37%" r="3"/><circle class="mark-badge" cx="21%" cy="23%" r="11"/><text x="21%" y="23%" dy=".35em">1</text></g><g data-mark="2"><line x1="17%" y1="66%" x2="37.6%" y2="51.4%"/><circle class="mark-tip" cx="37.6%" cy="51.4%" r="3"/><circle class="mark-badge" cx="17%" cy="66%" r="11"/><text x="17%" y="66%" dy=".35em">2</text></g><g data-mark="3"><line x1="7.5%" y1="39%" x2="23.9%" y2="49.3%"/><circle class="mark-tip" cx="23.9%" cy="49.3%" r="3"/><circle class="mark-badge" cx="7.5%" cy="39%" r="11"/><text x="7.5%" y="39%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Посмотреть в движении</summary>
+                    <div class="player">
+                      <video src="assets/b5769873904bc4b31a03b694.mp4" data-web-poster="assets/c5d41cbc420903e8fac4f047.webp" id="quiz-d-film"
+                             controls loop muted playsinline preload="none" aria-label="Петля к заданию Д"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-d-film">Запустить петлю</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-d-film" aria-pressed="false"
+                                aria-label="Переключить замедление в два раза">Скорость ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Назови каждую структуру, отмеченную цифрой.</p><ol class="quiz-questions"><li>Какой сосуд под дугой аорты виден в поперечном сечении?</li><li>В каком порядке обычно отходят три ветви дуги аорты?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-arch" data-correct="arch"><legend>Какой отдел аорты обозначен цифрой 1?</legend><label class="test-option"><input type="radio" name="quiz-d-marked-arch" value="ascending" required><span>Восходящая аорта</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-arch" value="arch" required><span>Дуга аорты</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-arch" value="descending" required><span>Нисходящая аорта</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-rpa" data-correct="rpa"><legend>Какой сосуд обозначен цифрой 2?</legend><label class="test-option"><input type="radio" name="quiz-d-marked-rpa" value="svc" required><span>Верхняя полая вена</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-rpa" value="rpa" required><span>Правая лёгочная артерия</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-rpa" value="lpa" required><span>Левая лёгочная артерия</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-ascending" data-correct="ascending"><legend>Какой отдел аорты обозначен цифрой 3?</legend><label class="test-option"><input type="radio" name="quiz-d-marked-ascending" value="arch" required><span>Дуга аорты</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-ascending" value="descending" required><span>Нисходящая аорта</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-ascending" value="ascending" required><span>Восходящая аорта</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="branches" data-correct="usual"><legend>Как обычно отходят ветви дуги, если идти от восходящей аорты к нисходящей?</legend><label class="test-option"><input type="radio" name="quiz-d-branches" value="carotid-first" required><span>Левая общая сонная → плечеголовной ствол → левая подключичная</span></label><label class="test-option"><input type="radio" name="quiz-d-branches" value="usual" required><span>Плечеголовной ствол → левая общая сонная → левая подключичная</span></label><label class="test-option"><input type="radio" name="quiz-d-branches" value="subclavian-second" required><span>Плечеголовной ствол → левая подключичная → левая общая сонная</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="plane" data-correct="cross"><legend>Посмотри на форму просвета сосуда № 2. Как он пересечён ультразвуковой плоскостью?</legend><label class="test-option"><input type="radio" name="quiz-d-plane" value="cross" required><span>Поперёк сосуда</span></label><label class="test-option"><input type="radio" name="quiz-d-plane" value="long" required><span>Вдоль сосуда</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="continuation" data-correct="descending"><legend>Проследи дугу по ходу кровотока. В какой отдел аорты она переходит?</legend><label class="test-option"><input type="radio" name="quiz-d-continuation" value="ascending" required><span>В восходящую аорту</span></label><label class="test-option"><input type="radio" name="quiz-d-continuation" value="descending" required><span>В нисходящую грудную аорту</span></label><label class="test-option"><input type="radio" name="quiz-d-continuation" value="abdominal" required><span>В брюшную аорту</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-d-reason">Мой ответ своими словами <small>По желанию</small></label><textarea id="quiz-d-reason" data-reasoning rows="2" maxlength="1500" placeholder="Какие ориентиры помогли тебе ответить?"></textarea><div class="test-actions"><button class="test-check" type="submit">Проверить задание</button></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Подсказка</summary><p>Чтобы проследить устья ветвей, слегка меняй наклон датчика.</p></details>
+                  <details class="quiz-answer">
+                    <summary>Открыть ответ</summary>
+                    <div class="quiz-explanation">
+                      <h4>Супрастернальная позиция</h4>
+                      <p>Восходящая аорта переходит в дугу, затем в нисходящую аорту. Под дугой видна правая лёгочная артерия в поперечном сечении.</p><p>При обычном ветвлении первым отходит плечеголовной ствол, второй — левая общая сонная артерия, третьей — левая подключичная артерия.</p><p>Начни с метки 3 и проследи изгиб сосуда к метке 1. Так виден переход восходящей аорты в дугу. У сосуда под дугой виден округлый просвет, характерный для поперечного среза.</p>
+                      <ol class="quiz-mark-key" aria-label="Обозначения на кадре"><li>Дуга аорты</li><li>Правая лёгочная артерия</li><li>Восходящая аорта</li></ol>
+                      <a class="quiz-compare" href="#arch">Сверить обозначения</a>
+                      <p class="quiz-source"><small>Atif Qasim, Echocardiographer.org. Из петли выбран и кадрирован кадр.
+                      <a href="https://www.echocardiographer.org/tte-suprasternal" target="_blank" rel="noopener noreferrer">Источник</a>
+                      · <a href="https://www.echocardiographer.org/about-3" target="_blank" rel="noopener noreferrer">Условия автора</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article></div><div class="test-finish"><p data-test-summary role="status" hidden></p><button type="button" data-reset-test hidden>Пройти тест заново</button><a href="#feedback">Оценить атлас</a></div></div></section><section id="feedback" data-page aria-label="Оценить атлас"><h2 class="position-name">Оценить атлас</h2><div class="rating-card"><p class="lead">Поставь атласу от одной до пяти звёзд. Если хочешь, напиши, что помогло в учёбе и чего не хватило.</p><p><a href="https://zhdanovich-echo.pages.dev/#feedback">Открыть форму оценки и отзыва</a></p></div></section><section id="sources" data-page aria-label="Источники"><h2 class="position-name">Кадры и источники</h2><div class="source-grid"><article class="source-item"><h3>Длинная ось, четыре камеры и субкостальный доступ</h3><p>Петли I. A. C. van der Bilt (CardioNetworks / ECHOpedia, AMC) кадрированы и перекодированы. Русские выноски добавлены к кадрам. Лицензия петель — CC BY-SA 3.0. Отдельный кадр с модераторным пучком взят из работы M. J. Kim и H. O. Jung (2013), рис. 6A. Панель кадрирована, добавлена выноска МП. Лицензия кадра — CC BY-NC 3.0.</p><div class="source-links"><a href="https://commons.wikimedia.org/wiki/File:PLAXnormal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">PLAXnormal</a><a href="https://commons.wikimedia.org/wiki/File:A4C_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">A4C normal</a><a href="https://commons.wikimedia.org/wiki/File:Subcostal_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Subcostal normal</a><a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><a href="https://doi.org/10.4250/jcu.2013.21.3.103" target="_blank" rel="noopener noreferrer">Kim и Jung · рис. 6A</a><a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 3.0</a></div></article><article class="source-item"><h3>Короткая ось и створки аортального клапана</h3><p>Atif Qasim, MD MSCE, Echocardiographer.org. Обзорный срез и отдельная запись клапана крупным планом. Из петель выбраны фрагменты и кадры, выполнено кадрирование, добавлены русские обозначения. Автор разрешает использовать материалы с указанием авторства.</p><div class="source-links"><a href="https://www.youtube.com/watch?v=Xmf_tCZhBZo" target="_blank" rel="noopener noreferrer">Обзорная петля</a><a href="https://www.youtube.com/watch?v=xbpzwJRL0iA" target="_blank" rel="noopener noreferrer">Клапан крупным планом</a><a href="https://www.echocardiographer.org/tte-psax" target="_blank" rel="noopener noreferrer">Авторская разметка</a><a href="https://www.echocardiographer.org/about-3" target="_blank" rel="noopener noreferrer">Условия автора</a></div></article><article class="source-item"><h3>Супрастернальная петля</h3><p>Atif Qasim, MD MSCE, Echocardiographer.org. Продольный срез дуги аорты. Выбран и кадрирован фрагмент записи, к стоп-кадру добавлены обозначения.</p><div class="source-links"><a href="https://www.youtube.com/watch?v=Za7dgzuzsA0" target="_blank" rel="noopener noreferrer">Исходная петля</a><a href="https://www.echocardiographer.org/tte-suprasternal" target="_blank" rel="noopener noreferrer">Авторская разметка</a><a href="https://www.echocardiographer.org/about-3" target="_blank" rel="noopener noreferrer">Условия автора</a></div></article><article class="source-item"><h3>Три ветви дуги аорты</h3><p>L. Corbett и соавт., British Society of Echocardiography, 2022. Эхограмма выделена из таблицы 1 на странице 27. Сохранены авторские обозначения BCA, LCCA и LSA. Русские обозначения даны на схеме и в легенде.</p><div class="source-links"><a href="https://doi.org/10.1186/s44156-022-00006-5" target="_blank" rel="noopener noreferrer">Рекомендации BSE и снимок</a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></div></article><article class="source-item"><h3>Независимое исследование в задании А</h3><p>Monica Luiza de Alcantara и соавт., Brazilian Society of Cardiology, 2026. Приложение 2, видео 03. Для задания взяты кадр и движущаяся петля из одного исследования. Фрагмент кадрирован и перекодирован, звук удалён.</p><div class="source-links"><a href="https://pubmed.ncbi.nlm.nih.gov/42307308/" target="_blank" rel="noopener noreferrer">Публикация</a><a href="https://abccardiol.org/supplementary-material/2026/12304/PosicionamentoPOCUS/Video%2003%20A4C%20normal.mp4" target="_blank" rel="noopener noreferrer">Видео 03</a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></div></article><article class="source-item"><h3>Методические рекомендации</h3><p>Стандартные трансторакальные проекции и оценка строения аортального клапана.</p><div class="source-links"><a href="https://www.asecho.org/wp-content/uploads/2019/01/2019_Comprehensive-TTE.pdf" target="_blank" rel="noopener noreferrer">ASE · Стандартное исследование, 2019</a><a href="https://www.asecho.org/wp-content/uploads/2017/04/2017ValveStenosisGuideline.pdf" target="_blank" rel="noopener noreferrer">EACVI и ASE · Аортальный клапан, 2017</a></div></article></div></section></main>
+<footer class="signature"><a href="#contents">К оглавлению</a><span>Роман Жданович · ЭхоКГ</span></footer>
+<script>(() => {
+  const pages = Array.from(document.querySelectorAll('main > [data-page]'));
+  const tabs = Array.from(document.querySelectorAll('.menu a'));
+  const menu = document.getElementById('contents');
+  let current = pages[0];
+  const videos = Array.from(document.querySelectorAll('video'));
+
+  function navigate({scroll = true, focus = false} = {}) {
+    const key = location.hash.slice(1);
+    const target = document.getElementById(key);
+    const choice = target?.closest('main > [data-page]') ?? (key === 'contents' ? current : pages[0]);
+    current = choice;
+    for (const page of pages) {
+      page.hidden = page !== choice;
+      if (page.hidden) {
+        for (const video of page.querySelectorAll('video')) video.pause();
+      }
+    }
+    for (const tab of tabs) {
+      if (tab.hash === '#' + choice.id) tab.setAttribute('aria-current','page');
+      else tab.removeAttribute('aria-current');
+    }
+    if (!scroll) return;
+    const anchor = key === 'contents' ? menu : target?.classList.contains('quiz-card') ? target : menu;
+    anchor.scrollIntoView({block:'start', behavior:'instant'});
+    if (focus) {
+      const heading = anchor.classList.contains('quiz-card') ? anchor.querySelector('h3') :
+                      key === 'contents' ? menu : choice.querySelector('h2');
+      if (heading) {
+        heading.setAttribute('tabindex','-1');
+        heading.focus({preventScroll:true});
+      }
+    }
+  }
+
+  document.addEventListener('click', event => {
+    const a = event.target.closest('a[href^="#"]');
+    if (!a || !a.hash || event.button !== 0 || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
+    if (!document.getElementById(a.hash.slice(1))) return;
+    event.preventDefault();
+    if (location.hash !== a.hash) {
+      // File attachments may disallow pushState. Changing the hash also
+      // preserves deep links and browser back/forward in that context.
+      try { history.pushState(null,'',a.hash); }
+      catch { location.hash = a.hash; }
+    }
+    navigate({focus:event.detail===0});
+  });
+  window.addEventListener('hashchange', () => navigate());
+  window.addEventListener('popstate', () => navigate());
+  navigate({scroll:Boolean(location.hash)});
+
+  for (const player of document.querySelectorAll('.player')) {
+    const video = player.querySelector('video');
+    const play = player.querySelector('[data-play]');
+    const speed = player.querySelector('[data-speed]');
+    if (!video || !play || !speed) continue;
+    play.hidden = speed.hidden = false;
+    const status = document.createElement('p');
+    status.setAttribute('role','status'); status.className='player-message'; status.hidden=true;
+    player.append(status);
+    const appearance = () => {
+      play.textContent = video.paused ? 'Запустить петлю' : 'Пауза';
+      const slow = video.playbackRate===0.5;
+      speed.setAttribute('aria-pressed', String(slow));
+      speed.textContent = slow ? 'Скорость ×0,5' : 'Скорость ×1';
+    };
+    const warn = () => {
+      status.hidden = false;
+      status.textContent = 'Открой скачанный HTML в браузере, чтобы запустить встроенное видео.';
+      appearance();
+    };
+    play.addEventListener('click', () => {
+      if (video.paused) video.play().catch(warn);
+      else video.pause();
+    });
+    speed.addEventListener('click', () => {
+      video.playbackRate = video.playbackRate === 1 ? 0.5 : 1;
+      appearance();
+    });
+    video.addEventListener('play', () => {
+      for (const other of videos) if (other !== video && !other.paused) other.pause();
+      status.hidden=true; appearance();
+    });
+    video.addEventListener('error',warn);
+    video.addEventListener('pause',appearance);
+    video.addEventListener('ratechange',appearance);
+    appearance();
+  }
+  for (const details of document.querySelectorAll('details')) {
+    details.addEventListener('toggle', () => {
+      if (!details.open) for (const video of details.querySelectorAll('video')) video.pause();
+      const summary = details.querySelector(':scope > summary');
+      if (details.classList.contains('quiz-answer')) {
+        summary.textContent = details.open ? 'Скрыть ответ' : 'Открыть ответ';
+      } else if (details.classList.contains('quiz-motion')) {
+        summary.textContent = details.open ? 'Вернуться к кадру с номерами' : 'Посмотреть в движении';
+      }
+    });
+  }
+  for (const button of document.querySelectorAll('[data-phase-time]')) {
+    const video = document.getElementById(button.getAttribute('aria-controls'));
+    if (!video) continue;
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      video.pause();
+      video.currentTime = Number(button.dataset.phaseTime);
+      const bounds = video.getBoundingClientRect();
+      if (bounds.top < 0 || bounds.bottom > innerHeight) video.scrollIntoView({block:'center'});
+      video.focus({preventScroll:true});
+    });
+  }
+})();
+
+(() => {
+  const test = document.querySelector('[data-atlas-test]');
+  if (!test) return;
+
+  const progress = test.querySelector('[data-test-status]');
+  const summary = test.querySelector('[data-test-summary]');
+  const reset = test.querySelector('[data-reset-test]');
+  const indexLinks = Array.from(document.querySelectorAll('.exercise-index a'));
+  const cases = Array.from(test.querySelectorAll('.quiz-card[data-case-id]'), card => {
+    const indexLink = indexLinks.find(link => link.hash === '#' + card.id);
+    return {
+      key: 'zhdanovich.echo.practice.v1.' + card.dataset.caseId,
+      form: card.querySelector('[data-case-form]'),
+      fields: Array.from(card.querySelectorAll('fieldset[data-question-id]')),
+      note: card.querySelector('[data-reasoning]'),
+      result: card.querySelector('[data-case-result]'),
+      explanation: card.querySelector('details.quiz-answer'),
+      next: card.querySelector('[data-next-case]'),
+      indexLink,
+      indexLabel: indexLink?.getAttribute('aria-label') || card.querySelector('h3')?.textContent,
+      graded: false,
+      score: 0,
+    };
+  });
+  if (!cases.length) return;
+
+  const totalQuestions = cases.reduce((total, item) => total + item.fields.length, 0);
+  const selected = field => field.querySelector('input[type="radio"]:checked');
+
+  function renderProgress() {
+    const completed = cases.filter(item => item.graded).length;
+    const finished = completed === cases.length;
+    const score = cases.reduce((total, item) => total + item.score, 0);
+    const scoreText = `Тест пройден. Верных ответов — ${score} из ${totalQuestions}.`;
+    const progressText = finished ? scoreText : `Проверено заданий — ${completed} из ${cases.length}`;
+    progress.hidden = false;
+    if (progress.textContent !== progressText) progress.textContent = progressText;
+    summary.hidden = !finished;
+    const summaryText = finished ? scoreText : '';
+    if (summary.textContent !== summaryText) summary.textContent = summaryText;
+    reset.hidden = !cases.some(item => item.note?.value || item.fields.some(selected));
+  }
+
+  function renderGrade(item, graded) {
+    item.graded = graded && item.fields.every(selected);
+    if (item.next) item.next.hidden = !item.graded;
+    if (item.indexLink) {
+      item.indexLink.classList.toggle('is-graded', item.graded);
+      item.indexLink.setAttribute('aria-label', item.indexLabel + (item.graded ? ', проверено' : ''));
+    }
+    item.score = 0;
+    for (const field of item.fields) {
+      const options = Array.from(field.querySelectorAll('input[type="radio"]'));
+      const correct = options.find(option => option.value === field.dataset.correct);
+      const chosen = selected(field);
+      const feedback = field.querySelector('[data-question-feedback]');
+      for (const option of options) {
+        const label = option.closest('.test-option') || option.labels[0];
+        label.classList.toggle('is-correct', item.graded && option === correct);
+        label.classList.toggle('is-incorrect', item.graded && option === chosen && chosen !== correct);
+      }
+      feedback.hidden = !item.graded;
+      feedback.textContent = '';
+      if (item.graded) {
+        if (chosen === correct) {
+          item.score++;
+          feedback.textContent = 'Верно.';
+        } else {
+          const answer = correct.labels[0].textContent.trim();
+          feedback.textContent = 'Правильный ответ — ' + answer + '.';
+        }
+      }
+    }
+    item.result.hidden = !item.graded;
+    item.result.textContent = item.graded ? `Верных ответов — ${item.score} из ${item.fields.length}.` : '';
+  }
+
+  function save(item) {
+    const answers = {};
+    for (const field of item.fields) {
+      const choice = selected(field);
+      if (choice) answers[field.dataset.questionId] = choice.value;
+    }
+    const record = {answers, reasoning: item.note?.value || '', graded: item.graded};
+    try {
+      localStorage.setItem(item.key, JSON.stringify(record));
+    } catch {
+      // The form also works in browsers that disable persistent storage.
+    }
+  }
+
+  function restore(item) {
+    let record;
+    try {
+      record = JSON.parse(localStorage.getItem(item.key));
+    } catch {
+      // Invalid or unavailable storage leaves this case ready for a fresh attempt.
+    }
+    item.form.reset();
+    for (const field of item.fields) {
+      const value = record?.answers?.[field.dataset.questionId];
+      for (const option of field.querySelectorAll('input[type="radio"]')) {
+        option.checked = option.value === value;
+      }
+    }
+    if (item.note && typeof record?.reasoning === 'string') item.note.value = record.reasoning;
+    renderGrade(item, record?.graded === true);
+    if (item.explanation) item.explanation.open = item.graded;
+  }
+
+  for (const item of cases) {
+    restore(item);
+    item.form.hidden = false;
+    item.form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!item.form.reportValidity()) return;
+      renderGrade(item, true);
+      if (item.explanation) item.explanation.open = item.graded;
+      save(item);
+      renderProgress();
+    });
+    item.form.addEventListener('change', event => {
+      if (!event.target.matches('input[type="radio"]')) return;
+      if (item.graded) {
+        renderGrade(item, false);
+        if (item.explanation) item.explanation.open = false;
+      }
+      save(item);
+      renderProgress();
+    });
+    item.note?.addEventListener('input', () => {
+      save(item);
+      renderProgress();
+    });
+  }
+  renderProgress();
+
+  reset.addEventListener('click', () => {
+    for (const item of cases) {
+      item.form.reset();
+      renderGrade(item, false);
+      if (item.explanation) item.explanation.open = false;
+      try {
+        localStorage.removeItem(item.key);
+      } catch {
+        // In-memory answers have already been cleared.
+      }
+    }
+    renderProgress();
+    cases[0].form.querySelector('input[type="radio"]').focus();
+  });
+
+  window.addEventListener('storage', event => {
+    const affected = cases.filter(item => event.key === null || event.key === item.key);
+    if (!affected.length) return;
+    for (const item of affected) restore(item);
+    renderProgress();
+  });
+})();
+
+
+</script><script type="text/plain" id="font-license">Copyright © 2017 IBM Corp. with Reserved Font Name "Plex"
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+</script><script>(() => {
+  const videos = document.querySelectorAll('video[data-web-poster]');
+
+  function showPoster(video) {
+    video.poster = video.dataset.webPoster;
+    delete video.dataset.webPoster;
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          showPoster(entry.target);
+          observer.unobserve(entry.target);
+        }
+      }
+    }, {rootMargin: '180px'});
+    videos.forEach(video => observer.observe(video));
+  } else {
+    videos.forEach(showPoster);
+  }
+
+  // Some static hosts return the whole MP4 to Range requests. Such a URL plays
+  // normally but reports a seekable interval of [0, 0] in Chromium.
+  const pendingPhases = new WeakMap();
+  document.addEventListener('click', event => {
+    const button = event.target.closest('button[data-phase-time]');
+    if (!button) return;
+    const video = document.getElementById(button.getAttribute('aria-controls'));
+    if (!video) return;
+    const seconds = Number(button.dataset.phaseTime);
+    const pending = pendingPhases.get(video);
+    if (pending) {
+      pending.seconds = seconds;
+      return;
+    }
+    if (video.src.startsWith('blob:')) return;
+    const selection = {seconds};
+    pendingPhases.set(video, selection);
+    fetch(video.src).then(async response => {
+      if (!response.ok) throw new Error('Cannot load the phase loop');
+      const file = await response.blob();
+      const resume = !video.paused;
+      video.addEventListener('loadedmetadata', () => {
+        video.currentTime = selection.seconds;
+        pendingPhases.delete(video);
+        if (resume) video.play().catch(() => {});
+      }, {once: true});
+      video.preload = 'auto';
+      video.src = URL.createObjectURL(file);
+      video.load();
+    }).catch(() => {
+      pendingPhases.delete(video);
+      const message = video.closest('.player')?.querySelector('.player-message');
+      if (message) {
+        message.textContent = 'Не удалось загрузить петлю. Нажми на кнопку кадра ещё раз.';
+        message.hidden = false;
+      }
+    });
+  }, true);
+})();
+</script></body></html>
