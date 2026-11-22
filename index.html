@@ -190,7 +190,7 @@ details[open] summary{border-bottom:1px solid var(--line)}
 <body><a href="#contents" class="skip">К оглавлению</a><header><div class="head"><div class="byline"><p>Роман Жданович</p><a href="https://www.instagram.com/dr.zhdanovich.rg/" target="_blank" rel="noopener noreferrer">@dr.zhdanovich.rg</a></div>
 <h1>Как узнать проекцию ЭхоКГ</h1>
 <p class="deck">Пять проекций в движении. Изучи петли и схемы, затем проверь себя на клинических кадрах.</p>
-<div class="print-edition"><a href="atlas.pdf" download="ЭхоКГ — атлас пяти проекций.pdf" type="application/pdf">Скачать PDF</a><span>23 страницы · 6,8 МБ</span></div>
+<div class="print-edition"><a href="atlas.pdf" download="ЭхоКГ — атлас пяти проекций.pdf" type="application/pdf">Скачать PDF</a><span>23 страницы · 4,0 МБ</span></div>
 </div></header>
 <nav class="menu" id="contents" tabindex="-1" aria-label="Оглавление"><a href="#plax">Длинная ось</a><a href="#psax">Короткая ось</a><a href="#a4c">Четыре камеры</a><a href="#subcostal">Субкостальная</a><a href="#arch">Супрастернальная</a><a href="#practice">Самопроверка</a><a href="#feedback">Оценить атлас</a><a href="#sources">Источники</a></nav>
 <main class="page"><section id="plax" data-page aria-label="Длинная ось"><h2 class="position-name" id="plax-name">Парастернальная длинная ось <span class="view-code">PLAX</span></h2>
@@ -528,7 +528,7 @@ details[open] summary{border-bottom:1px solid var(--line)}
       else tab.removeAttribute('aria-current');
     }
     if (!scroll) return;
-    const anchor = target?.matches('.quiz-card, video[id]') ? target : menu;
+    const anchor = target?.matches('#feedback, .quiz-card, video[id]') ? target : menu;
     const collapsedLoop = anchor.closest('details.quiz-motion:not([open])');
     if (collapsedLoop) collapsedLoop.open = true;
     anchor.scrollIntoView({block:'start', behavior:'instant'});
