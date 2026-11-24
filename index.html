@@ -82,8 +82,15 @@ details[open] summary{border-bottom:1px solid var(--line)}
 .anatomy-pair figure{margin:0}
 .anatomy-pair figure+figure{border-top:1px solid var(--line)}
 .anatomy-pair [data-phase-time]{margin:8px 12px;color:var(--peach);background:#20272c;border-color:#6c7880;min-height:42px;font-size:.92rem}
-.chapter-next{margin-top:22px}
+.chapter-next{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:22px}
 .chapter-next a,.quiz-compare{font-weight:600;color:var(--burg)}
+.chapter-next a{display:inline-flex;align-items:center;min-height:44px}
+.chapter-next .projection-next{justify-content:space-between;gap:16px;max-width:100%;padding:10px 16px;border-radius:7px;background:var(--burg);color:var(--white);text-decoration:none;line-height:1.3}
+.projection-next small{display:block;margin-bottom:3px;font-size:.85rem;font-weight:450;color:var(--peach)}
+.projection-next [aria-hidden]{font-size:1.35rem}
+.chapter-next .projection-next:hover{background:#652b3f}
+.position-name[id]{scroll-margin-top:16px}
+@media(max-width:580px){.chapter-next .projection-next{width:100%}}
 .player-message{margin:8px 0 0;color:var(--burg);font-size:.9rem}
 .exercise-index{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:14px 0 24px}
 .exercise-index>span{margin-right:4px;color:var(--muted);font-size:.94rem}
@@ -207,7 +214,10 @@ details[open] summary{border-bottom:1px solid var(--line)}
         <details class="compare" open><summary>Диастола · открытый митральный клапан</summary><figure><img width="906" height="710" decoding="async" loading="lazy" src="assets/4e9b6634f30b5b4089f4a18e.webp" alt="Открытый митральный клапан. Отдельные выноски ведут к обеим створкам, перикарду за задней стенкой ЛЖ, межжелудочковой перегородке и корню аорты."></figure><dl class="legend"><div><dt>ПС МК</dt><dd>Передняя створка митрального клапана</dd></div><div><dt>ЗС МК</dt><dd>Задняя створка митрального клапана</dd></div><div><dt>Перикард</dt><dd>Яркая линия за задней стенкой ЛЖ</dd></div><div><dt>МЖП</dt><dd>Межжелудочковая перегородка</dd></div><div><dt>Ао</dt><dd>Корень аорты</dd></div></dl></details>
         </div></div>
       </div>
-      <p class="chapter-next"><a href="#quiz-v">Перейти к заданию В</a></p>
+      <div class="chapter-next">
+        <a class="projection-next" href="#psax-name"><span><small>Следующая проекция</small>Парастернальная короткая ось</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-v">Перейти к заданию В</a>
+      </div>
       <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://commons.wikimedia.org/wiki/File:PLAXnormal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Исходная петля PLAX</a></p>
       <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="psax" data-page aria-label="Короткая ось"><h2 class="position-name" id="psax-name">Парастернальная короткая ось <span class="view-code">PSAX</span></h2>
       <p class="lead">Срез проходит на уровне аортального клапана. Корень аорты виден в поперечном сечении. Спереди его огибает выносящий тракт правого желудочка, позади лежит левое предсердие.</p>
@@ -225,7 +235,10 @@ details[open] summary{border-bottom:1px solid var(--line)}
         <details class="compare" open><summary>Две фазы клапана</summary><div class="anatomy-pair" data-valve-phases><figure><figcaption class="phase-caption">Диастола · створки сомкнуты</figcaption><img width="640" height="480" decoding="async" src="assets/789f558350cb38682e52c360.webp" alt="Три створки аортального клапана в короткой оси. Отмечены правая коронарная, левая коронарная и некоронарная створки." loading="lazy"><button type="button" data-phase-time="0.01" aria-controls="film-psax-valve" aria-label="Диастола · створки сомкнуты. Показать этот кадр на петле" hidden>Показать этот кадр на петле</button></figure><figure><figcaption class="phase-caption">Начало систолы · створки раскрываются</figcaption><img width="640" height="480" decoding="async" src="assets/b2d1362c5b268475d2c91663.webp" alt="Тот же клапан в том же масштабе. Выноска указывает на просвет между разошедшимися краями створок." loading="lazy"><button type="button" data-phase-time="0.21" aria-controls="film-psax-valve" aria-label="Начало систолы · створки раскрываются. Показать этот кадр на петле" hidden>Показать этот кадр на петле</button></figure></div><dl class="legend"><div><dt>ПКС</dt><dd>Правая коронарная створка</dd></div><div><dt>НКС</dt><dd>Некоронарная створка</dd></div><div><dt>ЛКС</dt><dd>Левая коронарная створка</dd></div></dl></details>
         </div></div>
       </div>
-      <p class="chapter-next"><a href="#quiz-b">Перейти к заданию Б</a></p>
+      <div class="chapter-next">
+        <a class="projection-next" href="#a4c-name"><span><small>Следующая проекция</small>Апикальная четырёхкамерная позиция</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-b">Перейти к заданию Б</a>
+      </div>
       <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://www.youtube.com/watch?v=Xmf_tCZhBZo" target="_blank" rel="noopener noreferrer">Обзорная петля</a> · <a href="https://www.youtube.com/watch?v=xbpzwJRL0iA" target="_blank" rel="noopener noreferrer">Крупный план клапана</a></p>
       <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="a4c" data-page aria-label="Четыре камеры"><h2 class="position-name" id="a4c-name">Апикальная четырёхкамерная позиция <span class="view-code">A4C</span></h2>
       <p class="lead">Верхушка ближе к датчику, предсердия глубже. В правом желудочке найди модераторный пучок — мышечную перемычку, которая отходит от межжелудочковой перегородки.</p>
@@ -241,7 +254,10 @@ details[open] summary{border-bottom:1px solid var(--line)}
         <details class="compare" open><summary>Клинический кадр с обозначениями</summary><figure><img width="1050" height="780" decoding="async" loading="lazy" src="assets/261a0a6f189e169577c0e1f8.webp" alt="Две пунктирные линии отмечают уровни септального прикрепления трикуспидального и митрального клапанов, двумя выносками отмечены перегородки."></figure><dl class="legend"><div><dt>ТК</dt><dd>Трикуспидальный клапан</dd></div><div><dt>МК</dt><dd>Митральный клапан</dd></div><div><dt>МЖП</dt><dd>Межжелудочковая перегородка</dd></div><div><dt>МПП</dt><dd>Межпредсердная перегородка</dd></div></dl></details>
         </div></div>
       </div>
-      <p class="chapter-next"><a href="#quiz-a">Перейти к заданию А</a></p>
+      <div class="chapter-next">
+        <a class="projection-next" href="#subcostal-name"><span><small>Следующая проекция</small>Субкостальная четырёхкамерная позиция</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-a">Перейти к заданию А</a>
+      </div>
       <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://commons.wikimedia.org/wiki/File:A4C_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Исходная петля A4C</a> · <a href="https://doi.org/10.4250/jcu.2013.21.3.103" target="_blank" rel="noopener noreferrer">Кадр с модераторным пучком · Kim и Jung, рис. 6A</a></p>
       <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="subcostal" data-page aria-label="Субкостальная"><h2 class="position-name" id="subcostal-name">Субкостальная четырёхкамерная позиция <span class="view-code">SC4C</span></h2>
       <p class="lead">Сначала луч проходит через печень. Из камер ближе всего к датчику расположен правый желудочек.</p>
@@ -257,7 +273,10 @@ details[open] summary{border-bottom:1px solid var(--line)}
         <details class="compare" open><summary>Схема и клинический кадр</summary><figure><img width="1050" height="1046" decoding="async" loading="lazy" src="assets/5992dd4e763525ea6f43f5ff.webp" alt="Схема и реальная субкостальная запись с одинаковыми обозначениями митрального и трикуспидального клапанов и обеих перегородок."></figure><dl class="legend"><div><dt>ТК</dt><dd>Трикуспидальный клапан</dd></div><div><dt>МК</dt><dd>Митральный клапан</dd></div><div><dt>МЖП</dt><dd>Межжелудочковая перегородка</dd></div><div><dt>МПП</dt><dd>Межпредсердная перегородка</dd></div></dl></details>
         </div></div>
       </div>
-      <p class="chapter-next"><a href="#quiz-g">Перейти к заданию Г</a></p>
+      <div class="chapter-next">
+        <a class="projection-next" href="#arch-name"><span><small>Следующая проекция</small>Супрастернальная позиция</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-g">Перейти к заданию Г</a>
+      </div>
       <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://commons.wikimedia.org/wiki/File:Subcostal_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Исходная субкостальная петля</a></p>
       <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="arch" data-page aria-label="Супрастернальная"><h2 class="position-name" id="arch-name">Супрастернальная позиция <span class="view-code">SSN</span></h2>
       <p class="lead">Продольный срез дуги аорты из яремной вырезки. Под дугой в поперечном срезе видна правая лёгочная артерия.</p>
@@ -273,9 +292,12 @@ details[open] summary{border-bottom:1px solid var(--line)}
         <details class="compare" open><summary>Схема и клинический кадр</summary><div data-arch-branches class="anatomy-pair"><figure><figcaption class="phase-caption">Схема</figcaption><img width="960" height="780" decoding="async" src="assets/c42add15eec8557c20e7ac3a.webp" alt="От дуги по порядку отходят плечеголовной ствол, левая общая сонная и левая подключичная артерии." loading="lazy"></figure><figure><figcaption class="phase-caption">Реальная ЭхоКГ · обозначения авторов</figcaption><img width="565" height="439" decoding="async" src="assets/ee96a208de6b81b62c48bb2e.webp" alt="На эхограмме сохранены три подписи у сосудов: BCA, LCCA и LSA. Русские соответствия приведены под кадром." loading="lazy"></figure></div><dl class="legend"><div><dt>ПГС / BCA</dt><dd>Плечеголовной ствол</dd></div><div><dt>ЛОСА / LCCA</dt><dd>Левая общая сонная артерия</dd></div><div><dt>ЛПкА / LSA</dt><dd>Левая подключичная артерия</dd></div></dl></details>
         </div></div>
       </div>
-      <p class="chapter-next"><a href="#quiz-d">Перейти к заданию Д</a></p>
+      <div class="chapter-next">
+        <a class="projection-next" href="#practice-name"><span>Перейти к самопроверке</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-d">Перейти к заданию Д</a>
+      </div>
       <details class="credits"><summary>Исходные записи</summary><div class="sources"><p><a href="https://www.youtube.com/watch?v=Za7dgzuzsA0" target="_blank" rel="noopener noreferrer">Исходная петля дуги</a> · <a href="https://doi.org/10.1186/s44156-022-00006-5" target="_blank" rel="noopener noreferrer">Кадр трёх ветвей, таблица 1, стр. 27</a></p>
-      <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="practice" data-page aria-label="Самопроверка"><div data-atlas-test><h2 class="position-name">Самопроверка</h2><p class="lead">Пять клинических петель, 30 вопросов. Определи структуры под номерами 1, 2 и 3 на каждом кадре. Запусти петлю, чтобы рассмотреть движение клапанов. После каждого задания можно проверить ответы и прочитать разбор. Твои ответы сохраняются в этом браузере.</p><div class="exercise-index" role="navigation" aria-label="Перейти к заданию"><span>Задания</span><a href="#quiz-a" aria-label="Задание А">А</a><a href="#quiz-b" aria-label="Задание Б">Б</a><a href="#quiz-v" aria-label="Задание В">В</a><a href="#quiz-g" aria-label="Задание Г">Г</a><a href="#quiz-d" aria-label="Задание Д">Д</a></div><p class="test-progress" data-test-status role="status" hidden></p><div class="quiz-list">
+      <p><a href="#sources">Авторы и условия использования</a></p></div></details></section><section id="practice" data-page aria-label="Самопроверка"><div data-atlas-test><h2 class="position-name" id="practice-name">Самопроверка</h2><p class="lead">Пять клинических петель, 30 вопросов. Определи структуры под номерами 1, 2 и 3 на каждом кадре. Запусти петлю, чтобы рассмотреть движение клапанов. После каждого задания можно проверить ответы и прочитать разбор. Твои ответы сохраняются в этом браузере.</p><div class="exercise-index" role="navigation" aria-label="Перейти к заданию"><span>Задания</span><a href="#quiz-a" aria-label="Задание А">А</a><a href="#quiz-b" aria-label="Задание Б">Б</a><a href="#quiz-v" aria-label="Задание В">В</a><a href="#quiz-g" aria-label="Задание Г">Г</a><a href="#quiz-d" aria-label="Задание Д">Д</a></div><p class="test-progress" data-test-status role="status" hidden></p><div class="quiz-list">
             <article class="quiz-card" id="quiz-a" data-case-id="quiz-a" aria-labelledby="quiz-a-name">
               <h3 class="quiz-heading" id="quiz-a-name">Задание А</h3>
               <div class="quiz-grid">
@@ -528,7 +550,7 @@ details[open] summary{border-bottom:1px solid var(--line)}
       else tab.removeAttribute('aria-current');
     }
     if (!scroll) return;
-    const anchor = target?.matches('#feedback, .quiz-card, video[id]') ? target : menu;
+    const anchor = target?.matches('#feedback, .quiz-card, video[id], .position-name') ? target : menu;
     const collapsedLoop = anchor.closest('details.quiz-motion:not([open])');
     if (collapsedLoop) collapsedLoop.open = true;
     anchor.scrollIntoView({block:'start', behavior:'instant'});
@@ -553,7 +575,7 @@ details[open] summary{border-bottom:1px solid var(--line)}
       try { history.pushState(null,'',a.hash); }
       catch { location.hash = a.hash; }
     }
-    navigate({focus:event.detail===0});
+    navigate({focus:event.detail===0 || a.classList.contains('projection-next')});
   });
   window.addEventListener('hashchange', () => navigate());
   window.addEventListener('popstate', () => navigate());
