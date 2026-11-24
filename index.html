@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light"><meta name="description" content="Пять проекций ЭхоКГ. Реальные петли, схемы с обозначениями и тест из 30 вопросов с разбором.">
+<link rel="canonical" href="https://zhdanovichrg.github.io/echo-atlas/"><link rel="alternate" hreflang="ru" href="https://zhdanovichrg.github.io/echo-atlas/"><link rel="alternate" hreflang="en" href="https://zhdanovichrg.github.io/echo-atlas/en/">
 <title>Как узнать проекцию ЭхоКГ · Интерактивный атлас</title>
 <style>@font-face{font-family:Atlas;src:url('assets/3b031aa4216174205bd8471f.ttf') format('truetype');font-weight:100 700;font-display:swap}:root{color-scheme:light;--paper:#f7f3ed;--white:#fffdf9;--ink:#282d32;--muted:#535d62;--burg:#78334b;--peach:#f7dbcb;--line:#d2c7c1;--blue:#c0e7ec;--dark:#1f282d;--max:990px}
 *{box-sizing:border-box}
@@ -58,6 +59,16 @@ details[open] summary{border-bottom:1px solid var(--line)}
 @media print{section[hidden]{display:block!important}.bar,nav{display:none}section{break-before:page}.spread{display:block}.sheets{margin-top:12px}}
 
 :root{--max:1110px}
+.masthead{display:flex;align-items:center;justify-content:space-between;gap:14px 24px;flex-wrap:wrap}
+.masthead .byline{gap:5px 16px;flex-wrap:wrap;justify-content:flex-start}
+.language-switch{display:inline-flex;align-items:center;background:#682b41;border:1px solid #b68292;border-radius:24px;padding:2px;gap:2px;width:max-content}
+.language-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:5px 13px;border-radius:22px;color:#fff8f1;font-size:.92rem;font-weight:550;line-height:1.2;text-decoration:none}
+.language-link svg{width:22px;height:15px;display:block;border-radius:2px;box-shadow:0 0 0 1px #0002}
+.language-link[aria-current=page]{background:var(--paper);color:#62273c}
+.language-link:hover:not([aria-current]){background:#873e58}
+.language-link:focus-visible{outline-color:var(--blue);outline-offset:3px}
+@media(max-width:560px){.masthead{flex-direction:column-reverse;align-items:flex-start;gap:12px}.masthead .byline{font-size:.85rem}}
+@media print{.language-switch{display:none}}
 .head{padding-top:clamp(16px,3vw,30px);padding-bottom:clamp(22px,3vw,36px)}
 .print-edition{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:18px}
 .print-edition a{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border-radius:7px;background:var(--paper);color:var(--burg);font-weight:600;text-decoration:none}
@@ -194,7 +205,7 @@ details[open] summary{border-bottom:1px solid var(--line)}
  .quiz-source{overflow-wrap:anywhere}
 }
 </style></head>
-<body><a href="#contents" class="skip">К оглавлению</a><header><div class="head"><div class="byline"><p>Роман Жданович</p><a href="https://www.instagram.com/dr.zhdanovich.rg/" target="_blank" rel="noopener noreferrer">@dr.zhdanovich.rg</a></div>
+<body><a href="#contents" class="skip">К оглавлению</a><header><div class="head"><div class="masthead"><div class="byline"><p>Роман Жданович</p><a href="https://www.instagram.com/dr.zhdanovich.rg/" target="_blank" rel="noopener noreferrer">@dr.zhdanovich.rg</a></div><div class="language-switch" role="group" aria-label="Язык атласа"><a class="language-link" data-language="ru" lang="ru" hreflang="ru" href="./" aria-current="page"><svg viewBox="0 0 60 40" aria-hidden="true"><path fill="#fff" d="M0 0h60v40H0z"/><path fill="#1453a0" d="M0 13.33h60v13.34H0z"/><path fill="#d52b1e" d="M0 26.67h60V40H0z"/></svg>Русский</a><a class="language-link" data-language="en" lang="en" hreflang="en" href="en/"><svg viewBox="0 0 60 36" aria-hidden="true"><path fill="#183463" d="M0 0h60v36H0z"/><path d="m0 0 60 36m0-36L0 36" stroke="#fff" stroke-width="8"/><path d="m-1 1 28 17m5 2 28 17M61-1 32 16M28 20 0 37" stroke="#c52c42" stroke-width="2.7"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="12"/><path d="M30 0v36M0 18h60" stroke="#c52c42" stroke-width="7"/></svg>English</a></div></div>
 <h1>Как узнать проекцию ЭхоКГ</h1>
 <p class="deck">Пять проекций в движении. Изучи петли и схемы, затем проверь себя на клинических кадрах.</p>
 <div class="print-edition"><a href="atlas.pdf" download="ЭхоКГ — атлас пяти проекций.pdf" type="application/pdf">Скачать PDF</a><span>23 страницы · 4,0 МБ</span></div>
@@ -531,6 +542,8 @@ details[open] summary{border-bottom:1px solid var(--line)}
   const pages = Array.from(document.querySelectorAll('main > [data-page]'));
   const tabs = Array.from(document.querySelectorAll('.menu a'));
   const menu = document.getElementById('contents');
+  const english = document.documentElement.lang === 'en';
+  const languageLinks = Array.from(document.querySelectorAll('.language-link'));
   let current = pages[0];
   const videos = Array.from(document.querySelectorAll('video'));
 
@@ -539,6 +552,11 @@ details[open] summary{border-bottom:1px solid var(--line)}
     const target = document.getElementById(key);
     const choice = target?.closest('main > [data-page]') ?? (key === 'contents' ? current : pages[0]);
     current = choice;
+    for (const link of languageLinks) {
+      const url = new URL(link.href);
+      url.hash = key === 'contents' && current !== pages[0] ? current.id : target ? key : '';
+      link.href = url.href;
+    }
     for (const page of pages) {
       page.hidden = page !== choice;
       if (page.hidden) {
@@ -591,14 +609,14 @@ details[open] summary{border-bottom:1px solid var(--line)}
     status.setAttribute('role','status'); status.className='player-message'; status.hidden=true;
     player.append(status);
     const appearance = () => {
-      play.textContent = video.paused ? 'Запустить петлю' : 'Пауза';
+      play.textContent = video.paused ? (english ? 'Play loop' : 'Запустить петлю') : (english ? 'Pause' : 'Пауза');
       const slow = video.playbackRate===0.5;
       speed.setAttribute('aria-pressed', String(slow));
-      speed.textContent = slow ? 'Скорость ×0,5' : 'Скорость ×1';
+      speed.textContent = english ? (slow ? 'Speed ×0.5' : 'Speed ×1') : (slow ? 'Скорость ×0,5' : 'Скорость ×1');
     };
     const warn = () => {
       status.hidden = false;
-      status.textContent = 'Открой скачанный HTML в браузере, чтобы запустить встроенное видео.';
+      status.textContent = english ? 'Open the atlas in your browser to play the video.' : 'Открой скачанный HTML в браузере, чтобы запустить встроенное видео.';
       appearance();
     };
     play.addEventListener('click', () => {
@@ -623,9 +641,9 @@ details[open] summary{border-bottom:1px solid var(--line)}
       if (!details.open) for (const video of details.querySelectorAll('video')) video.pause();
       const summary = details.querySelector(':scope > summary');
       if (details.classList.contains('quiz-answer')) {
-        summary.textContent = details.open ? 'Скрыть ответ' : 'Открыть ответ';
+        summary.textContent = english ? (details.open ? 'Hide answer' : 'Show answer') : (details.open ? 'Скрыть ответ' : 'Открыть ответ');
       } else if (details.classList.contains('quiz-motion')) {
-        summary.textContent = details.open ? 'Вернуться к кадру с номерами' : 'Посмотреть в движении';
+        summary.textContent = english ? (details.open ? 'Return to numbered frame' : 'Watch the loop') : (details.open ? 'Вернуться к кадру с номерами' : 'Посмотреть в движении');
       }
     });
   }
@@ -646,6 +664,22 @@ details[open] summary{border-bottom:1px solid var(--line)}
 (() => {
   const test = document.querySelector('[data-atlas-test]');
   if (!test) return;
+  const en = document.documentElement.lang.split('-')[0] === 'en';
+  const wording = en ? {
+    completed: (score, total) => `Test complete. ${score} of ${total} answers correct.`,
+    progress: (count, total) => `Cases checked: ${count} of ${total}`,
+    checked: ', checked',
+    correct: 'Correct.',
+    correction: answer => 'Correct answer: ' + answer + '.',
+    caseScore: (score, total) => `${score} of ${total} answers correct.`,
+  } : {
+    completed: (score, total) => `Тест пройден. Верных ответов — ${score} из ${total}.`,
+    progress: (count, total) => `Проверено заданий — ${count} из ${total}`,
+    checked: ', проверено',
+    correct: 'Верно.',
+    correction: answer => 'Правильный ответ — ' + answer + '.',
+    caseScore: (score, total) => `Верных ответов — ${score} из ${total}.`,
+  };
 
   const progress = test.querySelector('[data-test-status]');
   const summary = test.querySelector('[data-test-summary]');
@@ -676,8 +710,8 @@ details[open] summary{border-bottom:1px solid var(--line)}
     const completed = cases.filter(item => item.graded).length;
     const finished = completed === cases.length;
     const score = cases.reduce((total, item) => total + item.score, 0);
-    const scoreText = `Тест пройден. Верных ответов — ${score} из ${totalQuestions}.`;
-    const progressText = finished ? scoreText : `Проверено заданий — ${completed} из ${cases.length}`;
+    const scoreText = wording.completed(score, totalQuestions);
+    const progressText = finished ? scoreText : wording.progress(completed, cases.length);
     progress.hidden = false;
     if (progress.textContent !== progressText) progress.textContent = progressText;
     summary.hidden = !finished;
@@ -691,7 +725,7 @@ details[open] summary{border-bottom:1px solid var(--line)}
     if (item.next) item.next.hidden = !item.graded;
     if (item.indexLink) {
       item.indexLink.classList.toggle('is-graded', item.graded);
-      item.indexLink.setAttribute('aria-label', item.indexLabel + (item.graded ? ', проверено' : ''));
+      item.indexLink.setAttribute('aria-label', item.indexLabel + (item.graded ? wording.checked : ''));
     }
     item.score = 0;
     for (const field of item.fields) {
@@ -709,15 +743,15 @@ details[open] summary{border-bottom:1px solid var(--line)}
       if (item.graded) {
         if (chosen === correct) {
           item.score++;
-          feedback.textContent = 'Верно.';
+          feedback.textContent = wording.correct;
         } else {
           const answer = correct.labels[0].textContent.trim();
-          feedback.textContent = 'Правильный ответ — ' + answer + '.';
+          feedback.textContent = wording.correction(answer);
         }
       }
     }
     item.result.hidden = !item.graded;
-    item.result.textContent = item.graded ? `Верных ответов — ${item.score} из ${item.fields.length}.` : '';
+    item.result.textContent = item.graded ? wording.caseScore(item.score, item.fields.length) : '';
   }
 
   function save(item) {
@@ -823,8 +857,10 @@ details[open] summary{border-bottom:1px solid var(--line)}
   const submittedKey = key + '.submitted';
   const endpoint = section.dataset.ratingApi || '/api/rating';
   const validToken = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i;
-  const plural = new Intl.PluralRules('ru');
-  const decimal = new Intl.NumberFormat('ru', {maximumFractionDigits: 1});
+  const language = document.documentElement.lang;
+  const english = language === 'en';
+  const plural = new Intl.PluralRules(language);
+  const decimal = new Intl.NumberFormat(language, {maximumFractionDigits: 1});
   let busy = false;
   let confirmedToken = null;
 
@@ -889,7 +925,7 @@ details[open] summary{border-bottom:1px solid var(--line)}
   }
 
   function showStorageNote() {
-    storageNote.textContent = 'Чтобы отправить оценку один раз, разреши сайту сохранять данные в браузере.';
+    storageNote.textContent = english ? 'Allow this site to store data in your browser so it can record your rating once.' : 'Чтобы отправить оценку один раз, разреши сайту сохранять данные в браузере.';
     storageNote.hidden = false;
     form.hidden = true;
     retry.hidden = false;
@@ -898,17 +934,24 @@ details[open] summary{border-bottom:1px solid var(--line)}
   function updateCommentCount() {
     const length = Array.from(comment.value).length;
     commentCount.textContent = length + ' / 1000';
-    comment.setCustomValidity(length > 1000 ? 'Сократи отзыв до 1000 символов.' : '');
+    const limitMessage = english ? 'Please shorten your comment to 1,000 characters.' : 'Сократи отзыв до 1000 символов.';
+    comment.setCustomValidity(length > 1000 ? limitMessage : '');
     if (length > 1000) comment.setAttribute('aria-invalid', 'true');
     else comment.removeAttribute('aria-invalid');
   }
 
   function showResult(data, thanks, token) {
     const count = data.count;
-    const word = {one:'оценка', few:'оценки', many:'оценок', other:'оценки'}[plural.select(count)];
-    results.textContent = count
-      ? 'Средняя оценка читателей — ' + decimal.format(data.average) + ' из 5 (' + count + ' ' + word + ').'
-      : 'Пока никто не оценил атлас.';
+    if (english) {
+      results.textContent = count
+        ? 'Average reader rating: ' + decimal.format(data.average) + ' out of 5 (' + count + (count === 1 ? ' rating).' : ' ratings).')
+        : 'No ratings yet.';
+    } else {
+      const word = {one:'оценка', few:'оценки', many:'оценок', other:'оценки'}[plural.select(count)];
+      results.textContent = count
+        ? 'Средняя оценка читателей — ' + decimal.format(data.average) + ' из 5 (' + count + ' ' + word + ').'
+        : 'Пока никто не оценил атлас.';
+    }
     form.hidden = data.own !== null;
     if (data.own !== null) {
       confirmedToken = token;
@@ -916,7 +959,8 @@ details[open] summary{border-bottom:1px solid var(--line)}
       try { sessionStorage.removeItem(draftKey); } catch {}
       form.reset();
       updateCommentCount();
-      status.textContent = (thanks ? 'Спасибо! ' : '') + 'Твоя оценка — ' + data.own + ' из 5.';
+      status.textContent = english ? (thanks ? 'Thank you! ' : '') + 'Your rating is ' + data.own + ' out of 5.'
+        : (thanks ? 'Спасибо! ' : '') + 'Твоя оценка — ' + data.own + ' из 5.';
     }
     ownComment.textContent = data.ownComment || '';
     receipt.hidden = !ownComment.textContent;
@@ -935,7 +979,7 @@ details[open] summary{border-bottom:1px solid var(--line)}
       form.hidden = alreadySubmitted(storedToken('localStorage'));
       receipt.hidden = true;
       ownComment.textContent = '';
-      results.textContent = 'Загружаем оценки…';
+      results.textContent = english ? 'Loading ratings…' : 'Загружаем оценки…';
     }
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 12000);
@@ -950,7 +994,7 @@ details[open] summary{border-bottom:1px solid var(--line)}
         return;
       }
       if (!reading && navigator.onLine === false) {
-        status.textContent = 'Нет соединения. Оценка и отзыв не отправлены. Введённое осталось в форме.';
+        status.textContent = english ? 'You are offline. Your rating and comment are still in the form. Reconnect to send them.' : 'Нет соединения. Оценка и отзыв не отправлены. Введённое осталось в форме.';
         return;
       }
       const headers = {};
@@ -976,13 +1020,13 @@ details[open] summary{border-bottom:1px solid var(--line)}
       if (data.own === null && !persistent) showStorageNote();
     } catch {
       if (reading) {
-        results.textContent = 'Не удалось загрузить оценки читателей.';
+        results.textContent = english ? 'Reader ratings could not be loaded.' : 'Не удалось загрузить оценки читателей.';
         form.hidden = alreadySubmitted(persistent);
-        if (form.hidden) status.textContent = 'Твою оценку уже приняли ранее.';
+        if (form.hidden) status.textContent = english ? 'Your rating has already been received.' : 'Твою оценку уже приняли ранее.';
         if (!persistent) showStorageNote();
         retry.hidden = false;
       } else {
-        status.textContent = 'Подтверждение не пришло. Введённое осталось в форме. Можно повторить отправку.';
+        status.textContent = english ? 'Your submission could not be confirmed. Your entries are still in the form. You can try again.' : 'Подтверждение не пришло. Введённое осталось в форме. Можно повторить отправку.';
       }
     } finally {
       clearTimeout(timer);
@@ -1158,7 +1202,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       pendingPhases.delete(video);
       const message = video.closest('.player')?.querySelector('.player-message');
       if (message) {
-        message.textContent = 'Не удалось загрузить петлю. Нажми на кнопку кадра ещё раз.';
+        message.textContent = document.documentElement.lang === 'en'
+          ? 'The loop could not be loaded. Select the frame again to retry.'
+          : 'Не удалось загрузить петлю. Нажми на кнопку кадра ещё раз.';
         message.hidden = false;
       }
     });

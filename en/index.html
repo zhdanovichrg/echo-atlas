@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><meta name="description" content="Five echocardiographic views, real cine loops, labeled diagrams and a 30-question self-assessment with explanations.">
+<link rel="canonical" href="https://zhdanovichrg.github.io/echo-atlas/en/"><link rel="alternate" hreflang="ru" href="https://zhdanovichrg.github.io/echo-atlas/"><link rel="alternate" hreflang="en" href="https://zhdanovichrg.github.io/echo-atlas/en/">
+<title>How to identify echocardiographic views · Interactive Atlas</title>
+<style>@font-face{font-family:Atlas;src:url('../assets/3b031aa4216174205bd8471f.ttf') format('truetype');font-weight:100 700;font-display:swap}:root{color-scheme:light;--paper:#f7f3ed;--white:#fffdf9;--ink:#282d32;--muted:#535d62;--burg:#78334b;--peach:#f7dbcb;--line:#d2c7c1;--blue:#c0e7ec;--dark:#1f282d;--max:990px}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.52 Atlas,"Segoe UI",Arial,sans-serif}
+a{color:var(--burg);text-underline-offset:.2em}
+button,a,summary{touch-action:manipulation}
+:is(button,a,summary):focus-visible{outline:3px solid #128296;outline-offset:3px}
+header{background:var(--burg);color:var(--paper)}
+.head,.page,nav,.signature{max-width:var(--max);margin:auto;padding-left:clamp(17px,4vw,44px);padding-right:clamp(17px,4vw,44px)}
+.head{padding-top:clamp(21px,4vw,44px);padding-bottom:clamp(24px,4.4vw,48px)}
+.byline{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--peach);font-size:.89rem}
+.byline p{margin:0;font-weight:550}
+.byline a{color:inherit}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3,summary{line-height:1.12}
+h1{font-weight:580;font-size:clamp(2.2rem,5vw,4.1rem);letter-spacing:-.044em;margin-top:clamp(20px,3.4vw,37px)}
+.deck{margin-top:12px;font-size:clamp(1rem,2.3vw,1.27rem);color:var(--peach)}
+nav{display:flex;flex-wrap:wrap;gap:7px;padding-top:20px;padding-bottom:20px}
+nav a{font-size:.93rem;letter-spacing:.01em;font-weight:550;text-decoration:none;color:var(--ink);border:1px solid #b9ada9;padding:7px 13px;border-radius:30px;line-height:1.4}
+nav a[aria-current=page]{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.page{padding-bottom:28px}
+section{scroll-margin-top:10px;padding:16px 0 32px;border-top:1px solid var(--line)}
+.position-name{font-size:clamp(1.7rem,3.3vw,2.6rem);letter-spacing:-.035em;font-weight:590}
+.lead{font-size:1.02rem;color:var(--muted);margin:10px 0 20px;max-width:65ch}
+.spread{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,0.92fr);gap:clamp(14px,2.5vw,25px);align-items:start}
+.film{min-width:0}
+.screen{position:relative;background:#000;border-radius:9px;overflow:hidden;display:grid;place-items:center;aspect-ratio:4/3}
+.screen video{display:block;width:100%;height:100%;object-fit:contain}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px}
+.bar p{font-size:.9rem;color:var(--muted)}
+button{background:transparent;border:1px solid #9f9193;color:var(--burg);font:600 .94rem/1.2 Atlas,"Segoe UI",sans-serif;cursor:pointer;border-radius:6px;padding:9px 13px}
+button:hover,nav a:hover:not([aria-current=page]){background:#ecdfdf}
+button[data-play]{background:var(--burg);color:var(--white);border-color:var(--burg)}
+button[data-play]:hover{background:#683048}
+.clinical{border-top:1px solid var(--line);padding-top:15px;margin-top:16px}
+.clinical h3{font-size:1rem;color:var(--burg);font-weight:600;margin-bottom:5px}
+.clinical p{font-size:1.02rem}
+details{border:1px solid var(--line);border-radius:8px;background:var(--white);overflow:hidden}
+summary{font-weight:560;cursor:pointer;padding:13px 15px;min-height:44px}
+details[open] summary{border-bottom:1px solid var(--line)}
+.compare img{display:block;width:100%;height:auto}
+.compare{margin-bottom:12px}
+.check{margin-top:9px}
+.check summary{font-size:.94rem}
+.compare figure{background:#000}
+.credits{margin-top:22px;background:none}
+.credits summary{font-size:.94rem}
+.sources{padding:13px 15px;color:var(--muted);font-size:.93rem}
+.sources p+p{margin-top:8px}
+.sources a{overflow-wrap:anywhere}
+.signature{border-top:1px solid var(--line);padding-top:15px;padding-bottom:27px;color:var(--muted);font-size:.87rem}
+[hidden]{display:none!important}
+@media(max-width:660px){.spread{display:flex;flex-direction:column}.film,.sheets{width:100%}.byline{font-size:.81rem}nav{gap:7px;padding-top:14px;padding-bottom:14px}nav a{font-size:.86rem;padding:7px 10px}.lead{margin-bottom:14px}.screen{border-radius:6px}.page{padding-bottom:4px}section{padding-top:17px}.clinical{margin-top:14px;padding-top:12px}.position-name{line-height:1.15}.sheets{margin-top:1px}}
+@media print{section[hidden]{display:block!important}.bar,nav{display:none}section{break-before:page}.spread{display:block}.sheets{margin-top:12px}}
+
+:root{--max:1110px}
+.masthead{display:flex;align-items:center;justify-content:space-between;gap:14px 24px;flex-wrap:wrap}
+.masthead .byline{gap:5px 16px;flex-wrap:wrap;justify-content:flex-start}
+.language-switch{display:inline-flex;align-items:center;background:#682b41;border:1px solid #b68292;border-radius:24px;padding:2px;gap:2px;width:max-content}
+.language-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:5px 13px;border-radius:22px;color:#fff8f1;font-size:.92rem;font-weight:550;line-height:1.2;text-decoration:none}
+.language-link svg{width:22px;height:15px;display:block;border-radius:2px;box-shadow:0 0 0 1px #0002}
+.language-link[aria-current=page]{background:var(--paper);color:#62273c}
+.language-link:hover:not([aria-current]){background:#873e58}
+.language-link:focus-visible{outline-color:var(--blue);outline-offset:3px}
+@media(max-width:560px){.masthead{flex-direction:column-reverse;align-items:flex-start;gap:12px}.masthead .byline{font-size:.85rem}}
+@media print{.language-switch{display:none}}
+.head{padding-top:clamp(16px,3vw,30px);padding-bottom:clamp(22px,3vw,36px)}
+.print-edition{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:18px}
+.print-edition a{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border-radius:7px;background:var(--paper);color:var(--burg);font-weight:600;text-decoration:none}
+.print-edition a:hover{background:var(--peach)}
+.print-edition a:focus-visible{outline-color:var(--blue)}
+.print-edition span{color:var(--peach);font-size:.95rem}
+.menu {row-gap:9px;column-gap:7px}
+.skip{position:absolute;left:.75rem;top:-5rem;z-index:3;background:var(--white);padding:9px 15px;border-radius:5px}
+.skip:focus{top:.6rem}
+.view-code{display:inline-block;vertical-align:middle;letter-spacing:.025em;font-size:.46em;color:var(--burg);font-weight:600;margin-left:5px}
+.position-name{max-width:40ch}
+.legend{padding:6px 15px 10px;margin:0}
+.legend>div{display:grid;grid-template-columns:minmax(54px,auto) 1fr;gap:12px;font-size:.92rem;padding:4px 0}
+.legend dt{font-weight:600;color:var(--burg)}
+.legend dd{margin:0}
+.detail-lesson{margin-top:clamp(24px,4vw,45px);padding-top:clamp(16px,2.5vw,25px);border-top:1px solid var(--line)}
+.detail-lesson>h3{color:var(--burg);font-size:clamp(1.45rem,2.35vw,2.1rem);font-weight:580;margin-bottom:17px;letter-spacing:-.028em}
+.clinical h4{font-size:1rem;color:var(--burg);font-weight:600;margin:0 0 5px}
+.detail-lesson .film>.clinical:first-child{border-top:0;margin-top:0;padding-top:0}
+.phase-caption{padding:8px 13px;color:var(--peach);background:#171c20;font-size:.89rem}
+.phase-pair img{vertical-align:middle}
+.anatomy-pair figure{margin:0}
+.anatomy-pair figure+figure{border-top:1px solid var(--line)}
+.anatomy-pair [data-phase-time]{margin:8px 12px;color:var(--peach);background:#20272c;border-color:#6c7880;min-height:42px;font-size:.92rem}
+.chapter-next{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:22px}
+.chapter-next a,.quiz-compare{font-weight:600;color:var(--burg)}
+.chapter-next a{display:inline-flex;align-items:center;min-height:44px}
+.chapter-next .projection-next{justify-content:space-between;gap:16px;max-width:100%;padding:10px 16px;border-radius:7px;background:var(--burg);color:var(--white);text-decoration:none;line-height:1.3}
+.projection-next small{display:block;margin-bottom:3px;font-size:.85rem;font-weight:450;color:var(--peach)}
+.projection-next [aria-hidden]{font-size:1.35rem}
+.chapter-next .projection-next:hover{background:#652b3f}
+.position-name[id]{scroll-margin-top:16px}
+@media(max-width:580px){.chapter-next .projection-next{width:100%}}
+.player-message{margin:8px 0 0;color:var(--burg);font-size:.9rem}
+.exercise-index{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:14px 0 24px}
+.exercise-index>span{margin-right:4px;color:var(--muted);font-size:.94rem}
+.exercise-index a{display:grid;place-items:center;width:39px;min-height:37px;border:1px solid #b9ada9;border-radius:7px;text-decoration:none;color:var(--ink);font-weight:550}
+.exercise-index a:hover{background:#ecdfdf}
+.quiz-list .quiz-card{border-top:1px solid var(--line);padding:clamp(18px,3vw,29px) 0 0;margin-top:22px;scroll-margin-top:14px}
+.quiz-heading,.source-item h3{font-size:clamp(1.27rem,2.2vw,1.55rem);color:var(--burg);font-weight:590;letter-spacing:-.018em;margin:0 0 14px}
+.quiz-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(16px,3vw,35px);align-items:start}
+.quiz-frame{min-width:0}
+@media(min-width:661px) and (min-height:650px){
+ .quiz-frame{position:sticky;top:12px}
+}
+.quiz-motion video{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#000}
+.quiz-still{position:relative;overflow:hidden;border-radius:8px;background:#000}
+.quiz-still img{display:block;width:100%;height:auto}
+.quiz-frame:has(.quiz-motion[open])>.quiz-still{display:none}
+.quiz-marks{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.quiz-marks g{filter:drop-shadow(0 1px 1px #111)}
+.quiz-marks line,.quiz-marks circle{stroke:#bce9ed;stroke-width:1.6}
+.quiz-marks .mark-tip{fill:none}
+.quiz-marks .mark-badge{fill:#20383b}
+.quiz-marks text{text-anchor:middle;fill:white;font:600 15px Atlas,Arial,sans-serif}
+.quiz-mark-key{margin:.45rem 0 .8rem;padding-left:1.7rem}
+.quiz-mark-key li::marker{font-weight:650;color:var(--burg)}
+.quiz-motion{margin-top:8px}
+.quiz-motion[open]{margin-top:0}
+.quiz-motion .bar{padding:1px 10px 10px}
+.quiz-body{min-width:0}
+.quiz-questions{margin:0 0 17px;padding-left:1.45rem}
+.quiz-questions>li+li{margin-top:.55em}
+.quiz-questions li::marker{color:var(--burg);font-weight:600}
+.test-progress{font-weight:550;color:var(--burg)}
+.exercise-index a.is-graded{background:var(--burg);color:var(--white);border-color:var(--burg)}
+[data-case-form] fieldset{min-width:0;border:0;margin:0 0 20px;padding:0}
+[data-case-form] legend{width:100%;font-weight:600;line-height:1.34;margin:0 0 8px;padding:0}
+.test-option{display:flex;align-items:baseline;gap:.65rem;min-height:44px;background:var(--white);border:1px solid var(--line);border-radius:7px;padding:9px 12px;margin-top:5px;cursor:pointer}
+.test-option input{margin:0;flex:none;accent-color:var(--burg)}
+.test-option:has(:checked){border-color:var(--burg);background:#f6eaed}
+.test-option:focus-within{outline:2px solid #128296;outline-offset:2px}
+.test-option.is-correct{border-color:#35705c;background:#edf5ee}
+.test-option.is-incorrect{border-color:#9b4353;background:#fbeced}
+[data-question-feedback]{font-size:.94rem;margin-top:7px}
+.reason-label{display:block;font-weight:600;margin-bottom:6px}
+.reason-label small{margin-left:5px;font-weight:400;color:var(--muted)}
+[data-reasoning]{display:block;width:100%;resize:vertical;min-height:68px;padding:9px 12px;border:1px solid #a89b96;border-radius:7px;color:var(--ink);background:var(--white);font:inherit}
+.test-actions,.test-finish{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;margin:14px 0}
+.test-actions a{padding:9px 0;font-weight:550}
+.test-check{background:var(--burg);border-color:var(--burg);color:var(--white)}
+[data-case-result],[data-test-summary]{font-weight:600}
+.test-hint{margin:12px 0}
+.test-hint p{padding:12px 15px}
+.test-finish:has([data-reset-test]:not([hidden])){border-top:1px solid var(--line);padding-top:16px}
+.quiz-hint{border-left:2px solid #c8a598;margin:0 0 15px;padding-left:12px;color:var(--muted);font-size:.94rem}
+.quiz-answer summary{color:var(--burg)}
+.quiz-explanation{padding:14px}
+.quiz-explanation h4{margin:0 0 .45rem;font-size:1.08rem;line-height:1.35}
+.quiz-explanation p+p,.quiz-compare{margin-top:.6rem}
+.quiz-compare{display:inline-block}
+.quiz-source{color:var(--muted);margin-top:.9rem}
+.source-grid{margin-top:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 26px}
+.source-item{padding:18px;border:1px solid var(--line);background:var(--white);border-radius:8px}
+.source-item h3{font-size:1.25rem;line-height:1.22;margin-bottom:9px}
+.source-item p{font-size:.97rem}
+.source-links{display:flex;gap:6px 14px;flex-wrap:wrap;margin-top:12px}
+.source-links a{font-size:.91rem}
+.signature{display:flex;align-items:baseline;justify-content:space-between;gap:14px}
+.rating-card{max-width:34rem;margin-top:1.15rem;padding:clamp(14px,4vw,28px);border:1px solid var(--line);border-radius:10px;background:var(--white)}
+.rating-card fieldset{min-width:0;margin:0;padding:0;border:0}
+.rating-card legend{padding:0;font-size:1.2rem;font-weight:600;line-height:1.3}
+.rating-choices{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin-top:18px}
+.rating-choices label{position:relative;cursor:pointer}
+.rating-choices input{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.rating-choice{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1px;min-height:57px;border:1px solid #b9ada9;border-radius:6px;color:var(--burg);font-size:.87rem;font-weight:600}
+.rating-star{font:1.28rem/1.2 Arial,sans-serif}
+.rating-star::before{content:"☆"}
+.rating-choices label:has(~ label input:checked) .rating-star::before,.rating-choices input:checked+.rating-choice .rating-star::before{content:"★"}
+.rating-choices input:checked+.rating-choice{background:var(--burg);color:var(--white);border-color:var(--burg)}
+.rating-choices input:focus-visible+.rating-choice{outline:3px solid #128296;outline-offset:1px}
+.rating-scale{display:flex;justify-content:space-between;gap:8px;margin-top:6px;font-size:.8rem;color:var(--muted)}
+.rating-scale span:last-child{text-align:right}
+.rating-comment{margin-top:22px}
+.rating-comment label{display:block;font-weight:600;line-height:1.35}
+.rating-comment-meta{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:2px 8px;margin:4px 0 7px;color:var(--muted);font-size:.8rem}
+.rating-comment textarea{display:block;width:100%;min-height:90px;resize:vertical;padding:9px 12px;border:1px solid #a89b96;border-radius:7px;background:var(--white);color:var(--ink);font:inherit}
+.rating-comment textarea:focus-visible{outline:2px solid #128296;outline-offset:2px}
+.rating-comment textarea[aria-invalid="true"]{border-color:#9b4353}
+.rating-privacy{font-size:.93rem;color:var(--muted);margin-top:17px}
+.rating-once{margin-top:8px;font-size:.93rem}
+.rating-receipt{margin-top:12px}
+.rating-receipt p{white-space:pre-wrap;overflow-wrap:anywhere;margin:4px 0 0}
+.rating-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.rating-card button{min-height:44px}
+.rating-submit,.rating-submit:hover{background:var(--burg);color:var(--white);border-color:var(--burg)}
+.rating-card button:disabled{opacity:.6;cursor:default}
+[data-rating-status]:not(:empty){margin-top:12px}
+.rating-results{border-top:1px solid var(--line);margin-top:18px;padding-top:14px;font-size:.95rem}
+.rating-results button{margin-top:8px}
+@media(max-width:660px){
+ .menu a{padding:8px 10px}.quiz-grid,.source-grid{grid-template-columns:minmax(0,1fr)}
+ .quiz-questions{margin-top:0}.phase-pair img{max-height:none}.source-item{padding:15px}
+ .quiz-source{overflow-wrap:anywhere}
+}
+</style></head>
+<body><a href="#contents" class="skip">Skip to contents</a><header><div class="head"><div class="masthead"><div class="byline"><p>Roman Zhdanovich</p><a href="https://www.instagram.com/dr.zhdanovich.rg/" target="_blank" rel="noopener noreferrer">@dr.zhdanovich.rg</a></div><div class="language-switch" role="group" aria-label="Atlas language"><a class="language-link" data-language="ru" lang="ru" hreflang="ru" href="../"><svg viewBox="0 0 60 40" aria-hidden="true"><path fill="#fff" d="M0 0h60v40H0z"/><path fill="#1453a0" d="M0 13.33h60v13.34H0z"/><path fill="#d52b1e" d="M0 26.67h60V40H0z"/></svg>Русский</a><a class="language-link" data-language="en" lang="en" hreflang="en" href="./" aria-current="page"><svg viewBox="0 0 60 36" aria-hidden="true"><path fill="#183463" d="M0 0h60v36H0z"/><path d="m0 0 60 36m0-36L0 36" stroke="#fff" stroke-width="8"/><path d="m-1 1 28 17m5 2 28 17M61-1 32 16M28 20 0 37" stroke="#c52c42" stroke-width="2.7"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="12"/><path d="M30 0v36M0 18h60" stroke="#c52c42" stroke-width="7"/></svg>English</a></div></div>
+<h1>How to identify echocardiographic views</h1>
+<p class="deck">Explore five standard views with real echo loops and labeled diagrams, then test yourself on clinical images.</p>
+<div class="print-edition"><a href="atlas.pdf" download="Echocardiography Atlas — Five Views.pdf" type="application/pdf">Download PDF</a><span>23 pages · 4.1 MB</span></div>
+</div></header>
+<nav class="menu" id="contents" tabindex="-1" aria-label="Contents"><a href="#plax">Long axis</a><a href="#psax">Short axis</a><a href="#a4c">Four chambers</a><a href="#subcostal">Subcostal</a><a href="#arch">Suprasternal</a><a href="#practice">Self-assessment</a><a href="#feedback">Rate the atlas</a><a href="#sources">Sources</a></nav>
+<main class="page"><section id="plax" data-page aria-label="Long axis"><h2 class="position-name" id="plax-name">Parasternal long-axis view <span class="view-code">PLAX</span></h2>
+      <p class="lead">The diagram and echo frame show systole. The left ventricle is seen along its long axis. The left atrium lies behind the aortic root, and the mitral valve is closed between the left atrium and ventricle.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-plax" controls playsinline loop muted preload="none" aria-label="Parasternal long-axis view" data-web-poster="../assets/395ca648e9d265db54fc19f8.webp" src="../assets/60ad4f6518dbe6700f73a2b1.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-plax">Play loop</button>
+      <button type="button" data-speed hidden aria-controls="film-plax" aria-pressed="false" aria-label="Half-speed playback">Speed ×1</button></div></div>
+        <div class="clinical"><h3>What to watch in the loop</h3><p>Start with the mitral valve closed. Watch its two leaflets move apart in diastole and come together again in systole.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Diagram and labeled echo frame</summary><figure><img width="1050" height="1045" decoding="async" loading="lazy" src="../assets/cb69aeefadd14e578dac73f5.webp" alt="Parasternal long-axis view in systole. Both images identify the right and left ventricles, left atrium and aortic root. Callouts point to the closed mitral valve and the interventricular septum."></figure><dl class="legend"><div><dt>RV</dt><dd>Right ventricle (portion in view)</dd></div><div><dt>LV</dt><dd>Left ventricle</dd></div><div><dt>LA</dt><dd>Left atrium</dd></div><div><dt>Ao</dt><dd>Aortic root</dd></div><div><dt>MV</dt><dd>Mitral valve</dd></div><div><dt>IVS</dt><dd>Interventricular septum</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>From the left atrium to the aorta</h3>
+        <div class="spread"><div class="film"><div class="clinical"><h4>Find both mitral leaflets</h4><p>In diastole, the anterior leaflet moves toward the interventricular septum and the posterior leaflet toward the posterior wall of the left ventricle. Blood flows between them from the left atrium into the ventricle.</p></div><div class="clinical"><h4>Find the pericardium</h4><p>Follow the posterior wall of the left ventricle away from the probe. The pericardium appears as a bright line just beyond the myocardium.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Diastole · open mitral valve</summary><figure><img width="906" height="710" decoding="async" loading="lazy" src="../assets/96eaabc994c9027f944cabca.webp" alt="Open mitral valve. Separate callouts identify its anterior and posterior leaflets, the pericardium behind the posterior LV wall, the interventricular septum and the aortic root."></figure><dl class="legend"><div><dt>AML</dt><dd>Anterior mitral leaflet</dd></div><div><dt>PML</dt><dd>Posterior mitral leaflet</dd></div><div><dt>Pericardium</dt><dd>Bright line behind the posterior LV wall</dd></div><div><dt>IVS</dt><dd>Interventricular septum</dd></div><div><dt>Ao</dt><dd>Aortic root</dd></div></dl></details>
+        </div></div>
+      </div>
+      <div class="chapter-next">
+        <a class="projection-next" href="#psax-name"><span><small>Next view</small>Parasternal short-axis view</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-v">Go to case C</a>
+      </div>
+      <details class="credits"><summary>Original recordings</summary><div class="sources"><p><a href="https://commons.wikimedia.org/wiki/File:PLAXnormal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Original PLAX loop</a></p>
+      <p><a href="#sources">Credits and terms of use</a></p></div></details></section><section id="psax" data-page aria-label="Short axis"><h2 class="position-name" id="psax-name">Parasternal short-axis view <span class="view-code">PSAX</span></h2>
+      <p class="lead">This short-axis section passes through the aortic valve. The aortic root is seen in cross-section. The right ventricular outflow tract curves around it anteriorly, and the left atrium sits behind it.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-psax" controls playsinline loop muted preload="none" aria-label="Parasternal short-axis view" data-web-poster="../assets/168a7700492734962d8c5c23.webp" src="../assets/ef677fbefe5439aa08b51998.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-psax">Play loop</button>
+      <button type="button" data-speed hidden aria-controls="film-psax" aria-pressed="false" aria-label="Half-speed playback">Speed ×1</button></div></div>
+        <div class="clinical"><h3>What to watch in the loop</h3><p>Find the aortic valve in the center. Follow it for several beats as its cusps close in diastole and open in systole.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Diagram and labeled echo frame</summary><figure><img width="1050" height="1045" decoding="async" loading="lazy" src="../assets/7af6bde0c55d9d16c82ab3e1.webp" alt="Short-axis view at the aortic valve. The diagram and echo frame identify the aortic valve, right ventricular outflow tract and both atria."></figure><dl class="legend"><div><dt>AV</dt><dd>Aortic valve</dd></div><div><dt>RVOT</dt><dd>Right ventricular outflow tract</dd></div><div><dt>RA</dt><dd>Right atrium</dd></div><div><dt>LA</dt><dd>Left atrium</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>The three aortic valve cusps</h3>
+        <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-psax-valve" controls playsinline loop muted preload="none" aria-label="Aortic valve close-up" data-web-poster="../assets/b0eb2a1b58854e1e7fa6721b.webp" src="../assets/57a12caf80437f4153916173.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-psax-valve">Play loop</button>
+      <button type="button" data-speed hidden aria-controls="film-psax-valve" aria-pressed="false" aria-label="Half-speed playback">Speed ×1</button></div></div><div class="clinical"><h4>Two phases from the same loop</h4><p>Find the central point where all three cusps meet in diastole. In early systole their edges separate, leaving a dark opening at the same spot.</p></div><div class="clinical"><h4>Use the surrounding structures</h4><p>The right coronary cusp lies next to the right ventricular outflow tract. The noncoronary cusp lies next to the interatrial septum.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Aortic valve in two phases</summary><div class="anatomy-pair" data-valve-phases><figure><figcaption class="phase-caption">Diastole · cusps closed</figcaption><img width="640" height="480" decoding="async" src="../assets/d937ab117d2601de774d4495.webp" alt="Short-axis view of the three aortic valve cusps. Labels identify the right coronary, left coronary and noncoronary cusps." loading="lazy"><button type="button" data-phase-time="0.01" aria-controls="film-psax-valve" aria-label="Diastole · cusps closed. Show this frame in the loop" hidden>Show this frame in the loop</button></figure><figure><figcaption class="phase-caption">Early systole · cusps opening</figcaption><img width="640" height="480" decoding="async" src="../assets/de9d6852c408ce99dce9e2ba.webp" alt="The same valve at the same scale. A callout points to the opening between the cusp edges." loading="lazy"><button type="button" data-phase-time="0.21" aria-controls="film-psax-valve" aria-label="Early systole · cusps opening. Show this frame in the loop" hidden>Show this frame in the loop</button></figure></div><dl class="legend"><div><dt>RCC</dt><dd>Right coronary cusp</dd></div><div><dt>NCC</dt><dd>Noncoronary cusp</dd></div><div><dt>LCC</dt><dd>Left coronary cusp</dd></div></dl></details>
+        </div></div>
+      </div>
+      <div class="chapter-next">
+        <a class="projection-next" href="#a4c-name"><span><small>Next view</small>Apical four-chamber view</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-b">Go to case B</a>
+      </div>
+      <details class="credits"><summary>Original recordings</summary><div class="sources"><p><a href="https://www.youtube.com/watch?v=Xmf_tCZhBZo" target="_blank" rel="noopener noreferrer">Overview loop</a> · <a href="https://www.youtube.com/watch?v=xbpzwJRL0iA" target="_blank" rel="noopener noreferrer">Aortic valve close-up</a></p>
+      <p><a href="#sources">Credits and terms of use</a></p></div></details></section><section id="a4c" data-page aria-label="Four chambers"><h2 class="position-name" id="a4c-name">Apical four-chamber view <span class="view-code">A4C</span></h2>
+      <p class="lead">The apex is nearest the probe, with the atria deeper in the image. Look inside the right ventricle for the moderator band, a muscular band arising from the interventricular septum.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-a4c" controls playsinline loop muted preload="none" aria-label="Apical four-chamber view" data-web-poster="../assets/1814e4e82eafed52eb3b3cd6.webp" src="../assets/58c230d228c4da64bf4259fa.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-a4c">Play loop</button>
+      <button type="button" data-speed hidden aria-controls="film-a4c" aria-pressed="false" aria-label="Half-speed playback">Speed ×1</button></div></div>
+        <div class="clinical"><h3>What to watch in the loop</h3><p>Pause with both atrioventricular valves closed. Find their septal attachment points and compare their levels on the same frame.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Four chambers and the moderator band</summary><div data-apical-moderator class="anatomy-pair"><figure><figcaption class="phase-caption">Diagram</figcaption><img width="920" height="832" decoding="async" src="../assets/977947f143eaf03c908e6a3e.webp" alt="Apical four-chamber diagram with the RV, LV, RA, LA and moderator band (MB) in the right ventricle labeled." loading="lazy"></figure><figure><figcaption class="phase-caption">Clinical echo · separate still image</figcaption><img width="920" height="832" decoding="async" src="../assets/36305d785b9fd07090c25918.webp" alt="Kim and Jung, Fig. 6A. The original white arrow and the MB callout point to the moderator band in the right ventricle." loading="lazy"></figure></div><dl class="legend"><div><dt>MB</dt><dd>Moderator band</dd></div><div><dt>RV</dt><dd>Right ventricle</dd></div><div><dt>LV</dt><dd>Left ventricle</dd></div><div><dt>RA</dt><dd>Right atrium</dd></div><div><dt>LA</dt><dd>Left atrium</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>Compare the valve insertion levels</h3>
+        <div class="spread"><div class="film"><div class="clinical"><h4>Find the septal attachments</h4><p>The tricuspid valve lies between the right atrium and ventricle, and the mitral valve between the left atrium and ventricle. The tricuspid valve inserts closer to the apex. Dashed lines mark the two levels on the echo frame.</p></div><div class="clinical"><h4>Trace both septa</h4><p>The interventricular septum separates the ventricles, and the interatrial septum separates the atria. Follow both toward the center of the heart.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Labeled clinical echo frame</summary><figure><img width="1050" height="780" decoding="async" loading="lazy" src="../assets/c2241ccf45874cb549e7d7a8.webp" alt="Dashed lines show the septal insertion levels of the tricuspid and mitral valves. Callouts mark the interventricular and interatrial septa."></figure><dl class="legend"><div><dt>TV</dt><dd>Tricuspid valve</dd></div><div><dt>MV</dt><dd>Mitral valve</dd></div><div><dt>IVS</dt><dd>Interventricular septum</dd></div><div><dt>IAS</dt><dd>Interatrial septum</dd></div></dl></details>
+        </div></div>
+      </div>
+      <div class="chapter-next">
+        <a class="projection-next" href="#subcostal-name"><span><small>Next view</small>Subcostal four-chamber view</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-a">Go to case A</a>
+      </div>
+      <details class="credits"><summary>Original recordings</summary><div class="sources"><p><a href="https://commons.wikimedia.org/wiki/File:A4C_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Original A4C loop</a> · <a href="https://doi.org/10.4250/jcu.2013.21.3.103" target="_blank" rel="noopener noreferrer">Moderator band image · Kim and Jung, Fig. 6A</a></p>
+      <p><a href="#sources">Credits and terms of use</a></p></div></details></section><section id="subcostal" data-page aria-label="Subcostal"><h2 class="position-name" id="subcostal-name">Subcostal four-chamber view <span class="view-code">SC4C</span></h2>
+      <p class="lead">The ultrasound beam first passes through the liver. The right ventricle is the cardiac chamber closest to the probe.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-subcostal" controls playsinline loop muted preload="none" aria-label="Subcostal four-chamber view" data-web-poster="../assets/632803ca8863492ac8f91be1.webp" src="../assets/61341dc80e4750370ee319b6.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-subcostal">Play loop</button>
+      <button type="button" data-speed hidden aria-controls="film-subcostal" aria-pressed="false" aria-label="Half-speed playback">Speed ×1</button></div></div>
+        <div class="clinical"><h3>What to watch in the loop</h3><p>Find the right ventricle just beneath the liver and the left ventricle deeper in the image. Then look toward the atria and follow the leaflets as the valves open and close.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Diagram and labeled echo frame</summary><figure><img width="1050" height="1045" decoding="async" loading="lazy" src="../assets/c9e42b8269699e356cb6047e.webp" alt="Subcostal diagram and echo frame. The liver is in the near field, with the right ventricle immediately below it and the left ventricle deeper. Both atria are labeled."></figure><dl class="legend"><div><dt>RV</dt><dd>Right ventricle</dd></div><div><dt>LV</dt><dd>Left ventricle</dd></div><div><dt>RA</dt><dd>Right atrium</dd></div><div><dt>LA</dt><dd>Left atrium</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>Valves and septa</h3>
+        <div class="spread"><div class="film"><div class="clinical"><h4>Find the center of the heart</h4><p>The tricuspid valve lies between the right atrium and right ventricle. The mitral valve lies between the left atrium and left ventricle.</p></div><div class="clinical"><h4>Trace the interatrial septum</h4><p>Find the tissue between the atria and follow it to the center of the heart. From this window, the ultrasound beam crosses the septum at nearly a right angle.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Diagram and clinical echo frame</summary><figure><img width="1050" height="1045" decoding="async" loading="lazy" src="../assets/177e263c314809a6fbcd58f8.webp" alt="Subcostal diagram and echo frame with matching labels for both atrioventricular valves and both septa."></figure><dl class="legend"><div><dt>TV</dt><dd>Tricuspid valve</dd></div><div><dt>MV</dt><dd>Mitral valve</dd></div><div><dt>IVS</dt><dd>Interventricular septum</dd></div><div><dt>IAS</dt><dd>Interatrial septum</dd></div></dl></details>
+        </div></div>
+      </div>
+      <div class="chapter-next">
+        <a class="projection-next" href="#arch-name"><span><small>Next view</small>Suprasternal aortic arch view</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-g">Go to case D</a>
+      </div>
+      <details class="credits"><summary>Original recordings</summary><div class="sources"><p><a href="https://commons.wikimedia.org/wiki/File:Subcostal_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Original subcostal loop</a></p>
+      <p><a href="#sources">Credits and terms of use</a></p></div></details></section><section id="arch" data-page aria-label="Suprasternal"><h2 class="position-name" id="arch-name">Suprasternal aortic arch view <span class="view-code">SSN</span></h2>
+      <p class="lead">From the suprasternal notch, the aortic arch is seen along its long axis. The right pulmonary artery appears in cross-section beneath it.</p>
+      <div class="spread"><div class="film"><div class="player"><div class="screen"><video id="film-arch" controls playsinline loop muted preload="none" aria-label="Suprasternal aortic arch view" data-web-poster="../assets/a6ca501c1befa96bee7eb890.webp" src="../assets/b5769873904bc4b31a03b694.mp4"></video></div>
+      <div class="bar"><button type="button" data-play hidden aria-controls="film-arch">Play loop</button>
+      <button type="button" data-speed hidden aria-controls="film-arch" aria-pressed="false" aria-label="Half-speed playback">Speed ×1</button></div></div>
+        <div class="clinical"><h3>What to watch in the loop</h3><p>Trace the ascending aorta around the arch to the start of the descending thoracic aorta. Look beneath the curve for the right pulmonary artery in cross-section.</p></div>
+      </div><div class="sheets">
+        <details class="compare" open><summary>Diagram and labeled echo frame</summary><figure><img width="1050" height="1045" decoding="async" loading="lazy" src="../assets/23959ac33d926e0fc89ad44c.webp" alt="Long-axis view of the aortic arch from the suprasternal notch. Both panels identify the ascending aorta, arch, descending aorta and right pulmonary artery."></figure><dl class="legend"><div><dt>Asc Ao</dt><dd>Ascending aorta</dd></div><div><dt>Arch</dt><dd>Aortic arch</dd></div><div><dt>Desc Ao</dt><dd>Descending thoracic aorta</dd></div><div><dt>RPA</dt><dd>Right pulmonary artery</dd></div></dl></details>
+      </div></div>
+      <div class="detail-lesson"><h3>The three aortic arch branches</h3>
+        <div class="spread"><div class="film"><div class="clinical"><h4>Follow the branches in order</h4><p>Trace the arch from the ascending to the descending aorta. In the usual branching pattern, the brachiocephalic artery comes first, followed by the left common carotid artery and then the left subclavian artery.</p></div><div class="clinical"><h4>Match the branch origins</h4><p>A separate clinical image shows the origins of all three vessels. Match the original BCA, LCCA and LSA labels to the diagram and the key.</p></div></div><div class="sheets">
+        <details class="compare" open><summary>Diagram and clinical echo frame</summary><div data-arch-branches class="anatomy-pair"><figure><figcaption class="phase-caption">Diagram</figcaption><img width="960" height="780" decoding="async" src="../assets/e5052dc2c6a039e5e529f97d.webp" alt="From proximal to distal, the branches are the brachiocephalic, left common carotid and left subclavian arteries." loading="lazy"></figure><figure><figcaption class="phase-caption">Clinical echo · original labels</figcaption><img width="565" height="439" decoding="async" src="../assets/ee96a208de6b81b62c48bb2e.webp" alt="Original clinical echo with the vessels labeled BCA, LCCA and LSA. Full names are listed below." loading="lazy"></figure></div><dl class="legend"><div><dt>BCA</dt><dd>Brachiocephalic artery (brachiocephalic trunk)</dd></div><div><dt>LCCA</dt><dd>Left common carotid artery</dd></div><div><dt>LSA</dt><dd>Left subclavian artery</dd></div></dl></details>
+        </div></div>
+      </div>
+      <div class="chapter-next">
+        <a class="projection-next" href="#practice-name"><span>Go to the self-test</span><span aria-hidden="true">→</span></a>
+        <a href="#quiz-d">Go to case E</a>
+      </div>
+      <details class="credits"><summary>Original recordings</summary><div class="sources"><p><a href="https://www.youtube.com/watch?v=Za7dgzuzsA0" target="_blank" rel="noopener noreferrer">Original aortic arch loop</a> · <a href="https://doi.org/10.1186/s44156-022-00006-5" target="_blank" rel="noopener noreferrer">Three-branch image · Table 1, p. 27</a></p>
+      <p><a href="#sources">Credits and terms of use</a></p></div></details></section><section id="practice" data-page aria-label="Self-assessment"><div data-atlas-test><h2 class="position-name" id="practice-name">Self-assessment</h2><p class="lead">Five clinical loops, 30 questions. Identify structures 1, 2 and 3 on each still. Play the loops to follow the valves in motion. After each case, check your answers and read the explanation. This browser saves your answers.</p><div class="exercise-index" role="navigation" aria-label="Go to a case"><span>Cases</span><a href="#quiz-a" aria-label="Case A">A</a><a href="#quiz-b" aria-label="Case B">B</a><a href="#quiz-v" aria-label="Case C">C</a><a href="#quiz-g" aria-label="Case D">D</a><a href="#quiz-d" aria-label="Case E">E</a></div><p class="test-progress" data-test-status role="status" hidden></p><div class="quiz-list">
+            <article class="quiz-card" id="quiz-a" data-case-id="quiz-a" aria-labelledby="quiz-a-name">
+              <h3 class="quiz-heading" id="quiz-a-name">Case A</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="477" height="445" decoding="async" src="../assets/88ba0aafdd3b1418700df352.webp" loading="lazy" alt="Echocardiogram for case A, with structures numbered 1 to 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="83%" y1="25%" x2="52.0%" y2="41.8%"/><circle class="mark-tip" cx="52.0%" cy="41.8%" r="3"/><circle class="mark-badge" cx="83%" cy="25%" r="11"/><text x="83%" y="25%" dy=".35em">1</text></g><g data-mark="2"><line x1="88%" y1="49%" x2="53.04%" y2="56.18%"/><circle class="mark-tip" cx="53.04%" cy="56.18%" r="3"/><circle class="mark-badge" cx="88%" cy="49%" r="11"/><text x="88%" y="49%" dy=".35em">2</text></g><g data-mark="3"><line x1="87%" y1="82%" x2="52.6%" y2="74.2%"/><circle class="mark-tip" cx="52.6%" cy="74.2%" r="3"/><circle class="mark-badge" cx="87%" cy="82%" r="11"/><text x="87%" y="82%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Watch the loop</summary>
+                    <div class="player">
+                      <video src="../assets/cd0210dfb98c5161d388c976.mp4" data-web-poster="../assets/88ba0aafdd3b1418700df352.webp" id="quiz-a-film"
+                             controls loop muted playsinline preload="none" aria-label="Echo loop for case A"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-a-film">Play loop</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-a-film" aria-pressed="false"
+                                aria-label="Toggle half-speed playback">Speed ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Identify each numbered structure.</p><ol class="quiz-questions"><li>Name the view. Which side of the screen shows the left ventricle?</li><li>Which valve connects the left atrium and the left ventricle?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-lv" data-correct="lv"><legend>Which chamber is labeled 1?</legend><label class="test-option"><input type="radio" name="quiz-a-marked-lv" value="rv" required><span>Right ventricle</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-lv" value="lv" required><span>Left ventricle</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-lv" value="la" required><span>Left atrium</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-mv" data-correct="mitral"><legend>Which valve is labeled 2?</legend><label class="test-option"><input type="radio" name="quiz-a-marked-mv" value="mitral" required><span>Mitral valve</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-mv" value="tricuspid" required><span>Tricuspid valve</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-mv" value="aortic" required><span>Aortic valve</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-la" data-correct="la"><legend>Which chamber is labeled 3?</legend><label class="test-option"><input type="radio" name="quiz-a-marked-la" value="ra" required><span>Right atrium</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-la" value="lv" required><span>Left ventricle</span></label><label class="test-option"><input type="radio" name="quiz-a-marked-la" value="la" required><span>Left atrium</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="view" data-correct="apical"><legend>Which view is shown in this loop?</legend><label class="test-option"><input type="radio" name="quiz-a-view" value="long" required><span>Parasternal long-axis view</span></label><label class="test-option"><input type="radio" name="quiz-a-view" value="apical" required><span>Apical four-chamber view</span></label><label class="test-option"><input type="radio" name="quiz-a-view" value="subcostal" required><span>Subcostal four-chamber view</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="filling" data-correct="larger"><legend>Play the loop. What happens to the cavity of ventricle 1 while valve 2 is open?</legend><label class="test-option"><input type="radio" name="quiz-a-filling" value="smaller" required><span>It gets smaller</span></label><label class="test-option"><input type="radio" name="quiz-a-filling" value="larger" required><span>It gets larger</span></label><label class="test-option"><input type="radio" name="quiz-a-filling" value="steady" required><span>It stays the same size</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="insertion" data-correct="tricuspid"><legend>Compare the two valves where they attach to the septum. Which valve normally inserts closer to the apex?</legend><label class="test-option"><input type="radio" name="quiz-a-insertion" value="tricuspid" required><span>Tricuspid valve</span></label><label class="test-option"><input type="radio" name="quiz-a-insertion" value="mitral" required><span>Mitral valve</span></label><label class="test-option"><input type="radio" name="quiz-a-insertion" value="level" required><span>Both valves insert at the same level</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-a-reason">My reasoning <small>Optional</small></label><textarea id="quiz-a-reason" data-reasoning rows="2" maxlength="1500" placeholder="Which landmarks helped you decide?"></textarea><div class="test-actions"><button class="test-check" type="submit">Check my answers</button><a href="#quiz-b" data-next-case hidden>Go to case B</a></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Hint</summary><p>When acquiring this view, include the true apex. An imaging plane that misses it makes the left ventricle appear shorter.</p></details>
+                  <details class="quiz-answer">
+                    <summary>Show answer</summary>
+                    <div class="quiz-explanation">
+                      <h4>Apical four-chamber view</h4>
+                      <p>The apex is at the top and both atria are at the bottom. The left ventricle is on the right of this image. The mitral valve lies between the left atrium and the left ventricle.</p><p>When the mitral valve opens, blood flows from the left atrium into the left ventricle and the ventricular cavity enlarges. At the septum, the tricuspid valve normally inserts slightly closer to the apex than the mitral valve.</p>
+                      <ol class="quiz-mark-key" aria-label="Numbered structures"><li>Left ventricle</li><li>Mitral valve</li><li>Left atrium</li></ol>
+                      <a class="quiz-compare" href="#a4c">Compare with the labeled view</a>
+                      <p class="quiz-source"><small>M. L. de Alcantara et al., Brazilian Society of Cardiology, 2026. Supplement 2, video 03. Still extracted and cropped.
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/42307308/" target="_blank" rel="noopener noreferrer">Source</a>
+                      · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article>
+            <article class="quiz-card" id="quiz-b" data-case-id="quiz-b" aria-labelledby="quiz-b-name">
+              <h3 class="quiz-heading" id="quiz-b-name">Case B</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="830" height="642" decoding="async" src="../assets/d871671fea599e6f8198f87f.webp" loading="lazy" alt="Echocardiogram for case B, with structures numbered 1 to 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="83%" y1="39%" x2="46.2%" y2="47.7%"/><circle class="mark-tip" cx="46.2%" cy="47.7%" r="3"/><circle class="mark-badge" cx="83%" cy="39%" r="11"/><text x="83%" y="39%" dy=".35em">1</text></g><g data-mark="2"><line x1="84%" y1="78%" x2="46.5%" y2="67.4%"/><circle class="mark-tip" cx="46.5%" cy="67.4%" r="3"/><circle class="mark-badge" cx="84%" cy="78%" r="11"/><text x="84%" y="78%" dy=".35em">2</text></g><g data-mark="3"><line x1="21%" y1="14%" x2="44.6%" y2="26.3%"/><circle class="mark-tip" cx="44.6%" cy="26.3%" r="3"/><circle class="mark-badge" cx="21%" cy="14%" r="11"/><text x="21%" y="14%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Watch the loop</summary>
+                    <div class="player">
+                      <video src="../assets/ef677fbefe5439aa08b51998.mp4" data-web-poster="../assets/d871671fea599e6f8198f87f.webp" id="quiz-b-film"
+                             controls loop muted playsinline preload="none" aria-label="Echo loop for case B"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-b-film">Play loop</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-b-film" aria-pressed="false"
+                                aria-label="Toggle half-speed playback">Speed ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Identify each numbered structure.</p><ol class="quiz-questions"><li>What is in the center of this view? Which chamber lies behind it?</li><li>When can you count the aortic cusps as they open?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-av" data-correct="aortic"><legend>Which valve is labeled 1?</legend><label class="test-option"><input type="radio" name="quiz-b-marked-av" value="pulmonary" required><span>Pulmonary valve</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-av" value="mitral" required><span>Mitral valve</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-av" value="aortic" required><span>Aortic valve</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-la" data-correct="la"><legend>Which chamber is labeled 2?</legend><label class="test-option"><input type="radio" name="quiz-b-marked-la" value="la" required><span>Left atrium</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-la" value="ra" required><span>Right atrium</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-la" value="rv" required><span>Right ventricle</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-rvot" data-correct="rvot"><legend>Which part of the heart is labeled 3?</legend><label class="test-option"><input type="radio" name="quiz-b-marked-rvot" value="lvot" required><span>Left ventricular outflow tract</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-rvot" value="rvot" required><span>Right ventricular outflow tract</span></label><label class="test-option"><input type="radio" name="quiz-b-marked-rvot" value="laa" required><span>Left atrial appendage</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="phase" data-correct="systole"><legend>In which phase can you count the aortic cusps as they open?</legend><label class="test-option"><input type="radio" name="quiz-b-phase" value="diastole" required><span>Ventricular diastole</span></label><label class="test-option"><input type="radio" name="quiz-b-phase" value="systole" required><span>Ventricular systole</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="outflow" data-correct="pulmonary"><legend>Which vessel receives blood directly from structure 3?</legend><label class="test-option"><input type="radio" name="quiz-b-outflow" value="pulmonary" required><span>Main pulmonary artery</span></label><label class="test-option"><input type="radio" name="quiz-b-outflow" value="aorta" required><span>Ascending aorta</span></label><label class="test-option"><input type="radio" name="quiz-b-outflow" value="pulmonary-vein" required><span>Pulmonary vein</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="closure" data-correct="three-rays"><legend>Play the loop. What pattern do the three aortic cusps form where they meet in diastole?</legend><label class="test-option"><input type="radio" name="quiz-b-closure" value="ring" required><span>A ring around the edge of the lumen</span></label><label class="test-option"><input type="radio" name="quiz-b-closure" value="one-line" required><span>One straight line through the center</span></label><label class="test-option"><input type="radio" name="quiz-b-closure" value="three-rays" required><span>Three lines meeting in the center</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-b-reason">My reasoning <small>Optional</small></label><textarea id="quiz-b-reason" data-reasoning rows="2" maxlength="1500" placeholder="Which landmarks helped you decide?"></textarea><div class="test-actions"><button class="test-check" type="submit">Check my answers</button><a href="#quiz-v" data-next-case hidden>Go to case C</a></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Hint</summary><p>Tilt the probe slightly until the free edges of the cusps are visible together in one cross-section.</p></details>
+                  <details class="quiz-answer">
+                    <summary>Show answer</summary>
+                    <div class="quiz-explanation">
+                      <h4>Parasternal short-axis view at the aortic valve</h4>
+                      <p>The aortic root is shown in cross-section. The aortic valve is in the center, with the left atrium behind it. Count the cusps as they open in systole.</p><p>The right ventricular outflow tract runs in front of the aortic root and carries blood into the main pulmonary artery. In diastole, the three lines where the closed cusps meet normally form a Y in the center of the valve.</p>
+                      <ol class="quiz-mark-key" aria-label="Numbered structures"><li>Aortic valve</li><li>Left atrium</li><li>Right ventricular outflow tract</li></ol>
+                      <a class="quiz-compare" href="#psax">Compare with the labeled view</a>
+                      <p class="quiz-source"><small>Atif Qasim, Echocardiographer.org. Still extracted from the loop and cropped.
+                      <a href="https://www.echocardiographer.org/tte-psax" target="_blank" rel="noopener noreferrer">Source</a>
+                      · <a href="https://www.echocardiographer.org/about-3" target="_blank" rel="noopener noreferrer">Author’s terms</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article>
+            <article class="quiz-card" id="quiz-v" data-case-id="quiz-v" aria-labelledby="quiz-v-name">
+              <h3 class="quiz-heading" id="quiz-v-name">Case C</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="453" height="355" decoding="async" src="../assets/d9f2eb0ecbeca7469766f1e4.webp" loading="lazy" alt="Echocardiogram for case C, with structures numbered 1 to 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="12%" y1="37%" x2="35%" y2="50%"/><circle class="mark-tip" cx="35%" cy="50%" r="3"/><circle class="mark-badge" cx="12%" cy="37%" r="11"/><text x="12%" y="37%" dy=".35em">1</text></g><g data-mark="2"><line x1="87%" y1="49%" x2="68%" y2="65%"/><circle class="mark-tip" cx="68%" cy="65%" r="3"/><circle class="mark-badge" cx="87%" cy="49%" r="11"/><text x="87%" y="49%" dy=".35em">2</text></g><g data-mark="3"><line x1="23%" y1="19%" x2="46.8%" y2="33.5%"/><circle class="mark-tip" cx="46.8%" cy="33.5%" r="3"/><circle class="mark-badge" cx="23%" cy="19%" r="11"/><text x="23%" y="19%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Watch the loop</summary>
+                    <div class="player">
+                      <video src="../assets/a6973cfb3f5c6a87f368dbf7.mp4" data-web-poster="../assets/d9f2eb0ecbeca7469766f1e4.webp" id="quiz-v-film"
+                             controls loop muted playsinline preload="none" aria-label="Echo loop for case C"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-v-film">Play loop</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-v-film" aria-pressed="false"
+                                aria-label="Toggle half-speed playback">Speed ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Identify each numbered structure.</p><ol class="quiz-questions"><li>Name the view. Which chamber lies behind the aortic root?</li><li>Which valve separates this chamber from the left ventricle?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-lv" data-correct="lv"><legend>Which chamber is labeled 1?</legend><label class="test-option"><input type="radio" name="quiz-v-marked-lv" value="rv" required><span>Right ventricle</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-lv" value="la" required><span>Left atrium</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-lv" value="lv" required><span>Left ventricle</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-la" data-correct="la"><legend>Which chamber is labeled 2?</legend><label class="test-option"><input type="radio" name="quiz-v-marked-la" value="ra" required><span>Right atrium</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-la" value="la" required><span>Left atrium</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-la" value="lv" required><span>Left ventricle</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-ivs" data-correct="ivs"><legend>Which structure is labeled 3?</legend><label class="test-option"><input type="radio" name="quiz-v-marked-ivs" value="ias" required><span>Interatrial septum</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-ivs" value="posterior" required><span>Posterior wall of the left ventricle</span></label><label class="test-option"><input type="radio" name="quiz-v-marked-ivs" value="ivs" required><span>Interventricular septum</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="view" data-correct="long"><legend>Which view of the left ventricle is shown here?</legend><label class="test-option"><input type="radio" name="quiz-v-view" value="short" required><span>Parasternal short-axis view</span></label><label class="test-option"><input type="radio" name="quiz-v-view" value="apical" required><span>Apical four-chamber view</span></label><label class="test-option"><input type="radio" name="quiz-v-view" value="long" required><span>Parasternal long-axis view</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="valve" data-correct="mitral"><legend>Which valve lies between chambers 1 and 2?</legend><label class="test-option"><input type="radio" name="quiz-v-valve" value="aortic" required><span>Aortic valve</span></label><label class="test-option"><input type="radio" name="quiz-v-valve" value="tricuspid" required><span>Tricuspid valve</span></label><label class="test-option"><input type="radio" name="quiz-v-valve" value="mitral" required><span>Mitral valve</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="leaflet" data-correct="septum"><legend>Follow the tip of the anterior mitral leaflet. Which structure does it approach as the valve opens?</legend><label class="test-option"><input type="radio" name="quiz-v-leaflet" value="septum" required><span>The interventricular septum</span></label><label class="test-option"><input type="radio" name="quiz-v-leaflet" value="posterior" required><span>The posterior wall of the left ventricle</span></label><label class="test-option"><input type="radio" name="quiz-v-leaflet" value="atrial-roof" required><span>The roof of the left atrium</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-v-reason">My reasoning <small>Optional</small></label><textarea id="quiz-v-reason" data-reasoning rows="2" maxlength="1500" placeholder="Which landmarks helped you decide?"></textarea><div class="test-actions"><button class="test-check" type="submit">Check my answers</button><a href="#quiz-g" data-next-case hidden>Go to case D</a></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Hint</summary><p>Align the imaging plane with the long axis of the left ventricle. The true apex is usually outside the field of view.</p></details>
+                  <details class="quiz-answer">
+                    <summary>Show answer</summary>
+                    <div class="quiz-explanation">
+                      <h4>Parasternal long-axis view</h4>
+                      <p>The left ventricle is seen along its long axis. The left atrium lies behind the aortic root. The mitral valve lies between the left atrium and the left ventricle.</p><p>Label 3 points to the wall between the ventricles. In early diastole, the tip of the anterior mitral leaflet moves toward this septum.</p>
+                      <ol class="quiz-mark-key" aria-label="Numbered structures"><li>Left ventricle</li><li>Left atrium</li><li>Interventricular septum</li></ol>
+                      <a class="quiz-compare" href="#plax">Compare with the labeled view</a>
+                      <p class="quiz-source"><small>I. A. C. van der Bilt (Vdbilt), CardioNetworks / ECHOpedia, AMC Echocardiography Department. Still extracted and cropped.
+                      <a href="https://commons.wikimedia.org/wiki/File:PLAXnormal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Source</a>
+                      · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article>
+            <article class="quiz-card" id="quiz-g" data-case-id="quiz-g" aria-labelledby="quiz-g-name">
+              <h3 class="quiz-heading" id="quiz-g-name">Case D</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="410" height="382" decoding="async" src="../assets/0246bdd85cbaa9bb7853ce6d.webp" loading="lazy" alt="Echocardiogram for case D, with structures numbered 1 to 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="21%" y1="16%" x2="49%" y2="27%"/><circle class="mark-tip" cx="49%" cy="27%" r="3"/><circle class="mark-badge" cx="21%" cy="16%" r="11"/><text x="21%" y="16%" dy=".35em">1</text></g><g data-mark="2"><line x1="88%" y1="73%" x2="66%" y2="62%"/><circle class="mark-tip" cx="66%" cy="62%" r="3"/><circle class="mark-badge" cx="88%" cy="73%" r="11"/><text x="88%" y="73%" dy=".35em">2</text></g><g data-mark="3"><line x1="12%" y1="48%" x2="33.2%" y2="56.0%"/><circle class="mark-tip" cx="33.2%" cy="56.0%" r="3"/><circle class="mark-badge" cx="12%" cy="48%" r="11"/><text x="12%" y="48%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Watch the loop</summary>
+                    <div class="player">
+                      <video src="../assets/61341dc80e4750370ee319b6.mp4" data-web-poster="../assets/0246bdd85cbaa9bb7853ce6d.webp" id="quiz-g-film"
+                             controls loop muted playsinline preload="none" aria-label="Echo loop for case D"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-g-film">Play loop</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-g-film" aria-pressed="false"
+                                aria-label="Toggle half-speed playback">Speed ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Identify each numbered structure.</p><ol class="quiz-questions"><li>Which organ is in front of the heart? Which ventricle lies closer to it?</li><li>Find the septum between the atria. Where does it lead?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-liver" data-correct="liver"><legend>Which organ is labeled 1?</legend><label class="test-option"><input type="radio" name="quiz-g-marked-liver" value="liver" required><span>Liver</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-liver" value="spleen" required><span>Spleen</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-liver" value="kidney" required><span>Kidney</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-lv" data-correct="lv"><legend>Which chamber is labeled 2?</legend><label class="test-option"><input type="radio" name="quiz-g-marked-lv" value="ra" required><span>Right atrium</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-lv" value="lv" required><span>Left ventricle</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-lv" value="rv" required><span>Right ventricle</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-ra" data-correct="ra"><legend>Which chamber is labeled 3?</legend><label class="test-option"><input type="radio" name="quiz-g-marked-ra" value="rv" required><span>Right ventricle</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-ra" value="ra" required><span>Right atrium</span></label><label class="test-option"><input type="radio" name="quiz-g-marked-ra" value="la" required><span>Left atrium</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="chamber" data-correct="rv"><legend>Which ventricle lies closer to organ 1?</legend><label class="test-option"><input type="radio" name="quiz-g-chamber" value="lv" required><span>Left ventricle</span></label><label class="test-option"><input type="radio" name="quiz-g-chamber" value="rv" required><span>Right ventricle</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="septum" data-correct="crux"><legend>Follow the interatrial septum toward the ventricles. Which landmark does it reach?</legend><label class="test-option"><input type="radio" name="quiz-g-septum" value="apex" required><span>The apex</span></label><label class="test-option"><input type="radio" name="quiz-g-septum" value="root" required><span>The aortic root</span></label><label class="test-option"><input type="radio" name="quiz-g-septum" value="crux" required><span>The junction of the septa and the atrioventricular valves</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="apex" data-correct="right"><legend>Where does the cardiac apex point in this image?</legend><label class="test-option"><input type="radio" name="quiz-g-apex" value="left" required><span>To the left of the screen</span></label><label class="test-option"><input type="radio" name="quiz-g-apex" value="top" required><span>Toward the top of the screen</span></label><label class="test-option"><input type="radio" name="quiz-g-apex" value="right" required><span>To the right of the screen</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-g-reason">My reasoning <small>Optional</small></label><textarea id="quiz-g-reason" data-reasoning rows="2" maxlength="1500" placeholder="Which landmarks helped you decide?"></textarea><div class="test-actions"><button class="test-check" type="submit">Check my answers</button><a href="#quiz-d" data-next-case hidden>Go to case E</a></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Hint</summary><p>Compare this with the apical view. Where does the cardiac apex point on this screen?</p></details>
+                  <details class="quiz-answer">
+                    <summary>Show answer</summary>
+                    <div class="quiz-explanation">
+                      <h4>Subcostal four-chamber view</h4>
+                      <p>The tissue in front of the heart is the liver. The right ventricle lies between the liver and the left ventricle. The apex points to the right of this image.</p><p>The interatrial septum separates the right and left atria. Follow it to the junction of the septa and the atrioventricular valves.</p><p>Label 3 is in the right atrium. From there, follow the flow through the tricuspid valve into the right ventricle next to the liver.</p>
+                      <ol class="quiz-mark-key" aria-label="Numbered structures"><li>Liver</li><li>Left ventricle</li><li>Right atrium</li></ol>
+                      <a class="quiz-compare" href="#subcostal">Compare with the labeled view</a>
+                      <p class="quiz-source"><small>I. A. C. van der Bilt (Vdbilt), CardioNetworks / ECHOpedia, AMC Echocardiography Department. Still extracted and cropped.
+                      <a href="https://commons.wikimedia.org/wiki/File:Subcostal_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Source</a>
+                      · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article>
+            <article class="quiz-card" id="quiz-d" data-case-id="quiz-d" aria-labelledby="quiz-d-name">
+              <h3 class="quiz-heading" id="quiz-d-name">Case E</h3>
+              <div class="quiz-grid">
+                <figure class="quiz-frame">
+                  <div class="quiz-still">
+                    <img width="410" height="292" decoding="async" src="../assets/c5d41cbc420903e8fac4f047.webp" loading="lazy" alt="Echocardiogram for case E, with structures numbered 1 to 3.">
+                    <svg class="quiz-marks" aria-hidden="true" focusable="false"><g data-mark="1"><line x1="21%" y1="23%" x2="43%" y2="37%"/><circle class="mark-tip" cx="43%" cy="37%" r="3"/><circle class="mark-badge" cx="21%" cy="23%" r="11"/><text x="21%" y="23%" dy=".35em">1</text></g><g data-mark="2"><line x1="17%" y1="66%" x2="37.6%" y2="51.4%"/><circle class="mark-tip" cx="37.6%" cy="51.4%" r="3"/><circle class="mark-badge" cx="17%" cy="66%" r="11"/><text x="17%" y="66%" dy=".35em">2</text></g><g data-mark="3"><line x1="7.5%" y1="39%" x2="23.9%" y2="49.3%"/><circle class="mark-tip" cx="23.9%" cy="49.3%" r="3"/><circle class="mark-badge" cx="7.5%" cy="39%" r="11"/><text x="7.5%" y="39%" dy=".35em">3</text></g></svg>
+                  </div>
+                  <details class="quiz-motion">
+                    <summary>Watch the loop</summary>
+                    <div class="player">
+                      <video src="../assets/b5769873904bc4b31a03b694.mp4" data-web-poster="../assets/c5d41cbc420903e8fac4f047.webp" id="quiz-d-film"
+                             controls loop muted playsinline preload="none" aria-label="Echo loop for case E"></video>
+                      <div class="bar">
+                        <button type="button" data-play hidden aria-controls="quiz-d-film">Play loop</button>
+                        <button type="button" data-speed hidden aria-controls="quiz-d-film" aria-pressed="false"
+                                aria-label="Toggle half-speed playback">Speed ×1</button>
+                      </div>
+                    </div>
+                  </details>
+                </figure>
+                <div class="quiz-body">
+                  <noscript><p>Identify each numbered structure.</p><ol class="quiz-questions"><li>Which vessel is seen in cross-section beneath the aortic arch?</li><li>In what order do the three branches of the arch usually arise?</li></ol></noscript>
+                  <form data-case-form hidden><fieldset data-question-id="marked-arch" data-correct="arch"><legend>Which part of the aorta is labeled 1?</legend><label class="test-option"><input type="radio" name="quiz-d-marked-arch" value="ascending" required><span>Ascending aorta</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-arch" value="arch" required><span>Aortic arch</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-arch" value="descending" required><span>Descending aorta</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-rpa" data-correct="rpa"><legend>Which vessel is labeled 2?</legend><label class="test-option"><input type="radio" name="quiz-d-marked-rpa" value="svc" required><span>Superior vena cava</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-rpa" value="rpa" required><span>Right pulmonary artery</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-rpa" value="lpa" required><span>Left pulmonary artery</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="marked-ascending" data-correct="ascending"><legend>Which part of the aorta is labeled 3?</legend><label class="test-option"><input type="radio" name="quiz-d-marked-ascending" value="arch" required><span>Aortic arch</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-ascending" value="descending" required><span>Descending aorta</span></label><label class="test-option"><input type="radio" name="quiz-d-marked-ascending" value="ascending" required><span>Ascending aorta</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="branches" data-correct="usual"><legend>From the ascending to the descending aorta, in what order do the branches of the arch usually arise?</legend><label class="test-option"><input type="radio" name="quiz-d-branches" value="carotid-first" required><span>Left common carotid → brachiocephalic trunk → left subclavian</span></label><label class="test-option"><input type="radio" name="quiz-d-branches" value="usual" required><span>Brachiocephalic trunk → left common carotid → left subclavian</span></label><label class="test-option"><input type="radio" name="quiz-d-branches" value="subclavian-second" required><span>Brachiocephalic trunk → left subclavian → left common carotid</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="plane" data-correct="cross"><legend>Look at the shape of the lumen of vessel 2. How does the imaging plane cut through this vessel?</legend><label class="test-option"><input type="radio" name="quiz-d-plane" value="cross" required><span>Across the vessel (short axis)</span></label><label class="test-option"><input type="radio" name="quiz-d-plane" value="long" required><span>Along the vessel (long axis)</span></label><p data-question-feedback hidden></p></fieldset><fieldset data-question-id="continuation" data-correct="descending"><legend>Follow the arch in the direction of blood flow. Which part of the aorta comes next?</legend><label class="test-option"><input type="radio" name="quiz-d-continuation" value="ascending" required><span>Ascending aorta</span></label><label class="test-option"><input type="radio" name="quiz-d-continuation" value="descending" required><span>Descending thoracic aorta</span></label><label class="test-option"><input type="radio" name="quiz-d-continuation" value="abdominal" required><span>Abdominal aorta</span></label><p data-question-feedback hidden></p></fieldset><label class="reason-label" for="quiz-d-reason">My reasoning <small>Optional</small></label><textarea id="quiz-d-reason" data-reasoning rows="2" maxlength="1500" placeholder="Which landmarks helped you decide?"></textarea><div class="test-actions"><button class="test-check" type="submit">Check my answers</button></div><p data-case-result role="status" aria-live="polite"></p></form>
+                  <details class="test-hint"><summary>Hint</summary><p>Tilt the probe slightly to follow the origins of the arch branches.</p></details>
+                  <details class="quiz-answer">
+                    <summary>Show answer</summary>
+                    <div class="quiz-explanation">
+                      <h4>Suprasternal aortic arch view</h4>
+                      <p>The ascending aorta continues into the arch and then into the descending aorta. Beneath the arch, the right pulmonary artery is seen in cross-section.</p><p>In the usual branching pattern, the brachiocephalic trunk arises first, followed by the left common carotid artery and then the left subclavian artery.</p><p>Start at label 3 and follow the curve toward label 1 to trace the ascending aorta into the arch. The round lumen beneath the arch shows the right pulmonary artery in cross-section.</p>
+                      <ol class="quiz-mark-key" aria-label="Numbered structures"><li>Aortic arch</li><li>Right pulmonary artery</li><li>Ascending aorta</li></ol>
+                      <a class="quiz-compare" href="#arch">Compare with the labeled view</a>
+                      <p class="quiz-source"><small>Atif Qasim, Echocardiographer.org. Still extracted from the loop and cropped.
+                      <a href="https://www.echocardiographer.org/tte-suprasternal" target="_blank" rel="noopener noreferrer">Source</a>
+                      · <a href="https://www.echocardiographer.org/about-3" target="_blank" rel="noopener noreferrer">Author’s terms</a></small></p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </article></div><div class="test-finish"><p data-test-summary role="status" hidden></p><button type="button" data-reset-test hidden>Retake the test</button><a href="#feedback">Rate the atlas</a></div></div></section><section id="feedback" data-rating-api="https://echo-atlas-rating.zhdanovich-rg.workers.dev/api/rating" data-page aria-label="Rate the atlas"><h2 class="position-name">Rate the atlas</h2>
+      <div class="rating-card" data-rating-panel hidden>
+        <form data-rating-form hidden>
+          <fieldset><legend>How useful was the atlas to you?</legend>
+            <div class="rating-choices"><label><input type="radio" name="score" value="1" required aria-label="1 out of 5. Not useful at all"><span class="rating-choice" aria-hidden="true"><span class="rating-star"></span>1</span></label><label><input type="radio" name="score" value="2" required aria-label="2 out of 5. Slightly useful"><span class="rating-choice" aria-hidden="true"><span class="rating-star"></span>2</span></label><label><input type="radio" name="score" value="3" required aria-label="3 out of 5. Moderately useful"><span class="rating-choice" aria-hidden="true"><span class="rating-star"></span>3</span></label><label><input type="radio" name="score" value="4" required aria-label="4 out of 5. Useful"><span class="rating-choice" aria-hidden="true"><span class="rating-star"></span>4</span></label><label><input type="radio" name="score" value="5" required aria-label="5 out of 5. Very useful"><span class="rating-choice" aria-hidden="true"><span class="rating-star"></span>5</span></label></div>
+            <p class="rating-scale"><span>1 — Not useful at all</span><span>5 — Very useful</span></p>
+          </fieldset>
+          <div class="rating-comment">
+            <label for="rating-comment">What worked well for you? What was missing?</label>
+            <div class="rating-comment-meta"><span id="rating-comment-hint">Optional · up to 1,000 characters</span>
+              <span data-comment-count aria-hidden="true">0 / 1000</span></div>
+            <textarea id="rating-comment" name="comment" rows="4" aria-describedby="rating-comment-hint rating-privacy"></textarea>
+          </div>
+          <p id="rating-privacy" class="rating-privacy">Only the author can read your comment. The average rating and number of ratings are public.</p>
+          <p class="rating-once">You can submit one rating and comment from this browser.</p>
+          <div class="rating-actions">
+            <button class="rating-submit" type="submit">Submit rating</button>
+          </div>
+        </form>
+        <p data-rating-status role="status"></p>
+        <div class="rating-receipt" data-rating-receipt hidden><strong>Your comment</strong>
+          <p data-rating-own-comment></p></div>
+        <p data-rating-storage class="rating-privacy" hidden></p>
+        <div class="rating-results"><p data-rating-results></p>
+          <button data-rating-retry type="button" hidden>Try again</button>
+        </div>
+      </div>
+      
+      <noscript><p class="rating-privacy">Enable JavaScript in your browser to submit a rating.</p></noscript></section><section id="sources" data-page aria-label="Sources"><h2 class="position-name">Images and sources</h2><div class="source-grid"><article class="source-item"><h3>Long-axis, apical four-chamber and subcostal views</h3><p>The cine loops by I. A. C. van der Bilt (CardioNetworks / ECHOpedia, AMC) were cropped and re-encoded. Labels were added to the still frames. The loops are licensed under CC BY-SA 3.0. The separate moderator band image is adapted from Figure 6A in M. J. Kim and H. O. Jung (2013). The panel was cropped and a label was added. The image is licensed under CC BY-NC 3.0.</p><div class="source-links"><a href="https://commons.wikimedia.org/wiki/File:PLAXnormal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">PLAX loop</a><a href="https://commons.wikimedia.org/wiki/File:A4C_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Apical four-chamber loop</a><a href="https://commons.wikimedia.org/wiki/File:Subcostal_normal_(CardioNetworks_ECHOpedia).webm" target="_blank" rel="noopener noreferrer">Subcostal loop</a><a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a><a href="https://doi.org/10.4250/jcu.2013.21.3.103" target="_blank" rel="noopener noreferrer">Kim and Jung · Figure 6A</a><a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 3.0</a></div></article><article class="source-item"><h3>Short-axis view and aortic valve cusps</h3><p>Atif Qasim, MD, MSCE, Echocardiographer.org. The overview and the close-up of the aortic valve come from separate recordings. Excerpts and stills were selected, cropped and annotated. The author permits reuse with attribution.</p><div class="source-links"><a href="https://www.youtube.com/watch?v=Xmf_tCZhBZo" target="_blank" rel="noopener noreferrer">Overview loop</a><a href="https://www.youtube.com/watch?v=xbpzwJRL0iA" target="_blank" rel="noopener noreferrer">Aortic valve close-up</a><a href="https://www.echocardiographer.org/tte-psax" target="_blank" rel="noopener noreferrer">Author’s annotated views</a><a href="https://www.echocardiographer.org/about-3" target="_blank" rel="noopener noreferrer">Author’s terms</a></div></article><article class="source-item"><h3>Suprasternal aortic arch loop</h3><p>Atif Qasim, MD, MSCE, Echocardiographer.org. An excerpt from the longitudinal view of the aortic arch was cropped, and labels were added to the still frame.</p><div class="source-links"><a href="https://www.youtube.com/watch?v=Za7dgzuzsA0" target="_blank" rel="noopener noreferrer">Original loop</a><a href="https://www.echocardiographer.org/tte-suprasternal" target="_blank" rel="noopener noreferrer">Author’s annotated views</a><a href="https://www.echocardiographer.org/about-3" target="_blank" rel="noopener noreferrer">Author’s terms</a></div></article><article class="source-item"><h3>The three aortic arch branches</h3><p>L. Corbett and colleagues, British Society of Echocardiography, 2022. The echocardiogram is from Table 1 on page 27. The original BCA, LCCA and LSA labels are retained and explained in the diagram and key.</p><div class="source-links"><a href="https://doi.org/10.1186/s44156-022-00006-5" target="_blank" rel="noopener noreferrer">BSE guideline and original image</a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></div></article><article class="source-item"><h3>Independent recording used in Case A</h3><p>Monica Luiza de Alcantara and colleagues, Brazilian Society of Cardiology, 2026. Supplement 2, Video 03. The still and the cine loop come from the same examination. The excerpt was cropped and re-encoded, and the audio was removed.</p><div class="source-links"><a href="https://pubmed.ncbi.nlm.nih.gov/42307308/" target="_blank" rel="noopener noreferrer">Publication</a><a href="https://abccardiol.org/supplementary-material/2026/12304/PosicionamentoPOCUS/Video%2003%20A4C%20normal.mp4" target="_blank" rel="noopener noreferrer">Video 03</a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></div></article><article class="source-item"><h3>Clinical guidelines</h3><p>Standard transthoracic views and assessment of aortic valve morphology.</p><div class="source-links"><a href="https://www.asecho.org/wp-content/uploads/2019/01/2019_Comprehensive-TTE.pdf" target="_blank" rel="noopener noreferrer">ASE · Comprehensive transthoracic examination, 2019</a><a href="https://www.asecho.org/wp-content/uploads/2017/04/2017ValveStenosisGuideline.pdf" target="_blank" rel="noopener noreferrer">EACVI and ASE · Aortic valve stenosis, 2017</a></div></article></div></section></main>
+<footer class="signature"><a href="#contents">Back to contents</a><span>Roman Zhdanovich · Echocardiography</span></footer>
+<script>(() => {
+  const pages = Array.from(document.querySelectorAll('main > [data-page]'));
+  const tabs = Array.from(document.querySelectorAll('.menu a'));
+  const menu = document.getElementById('contents');
+  const english = document.documentElement.lang === 'en';
+  const languageLinks = Array.from(document.querySelectorAll('.language-link'));
+  let current = pages[0];
+  const videos = Array.from(document.querySelectorAll('video'));
+
+  function navigate({scroll = true, focus = false} = {}) {
+    const key = location.hash.slice(1);
+    const target = document.getElementById(key);
+    const choice = target?.closest('main > [data-page]') ?? (key === 'contents' ? current : pages[0]);
+    current = choice;
+    for (const link of languageLinks) {
+      const url = new URL(link.href);
+      url.hash = key === 'contents' && current !== pages[0] ? current.id : target ? key : '';
+      link.href = url.href;
+    }
+    for (const page of pages) {
+      page.hidden = page !== choice;
+      if (page.hidden) {
+        for (const video of page.querySelectorAll('video')) video.pause();
+      }
+    }
+    for (const tab of tabs) {
+      if (tab.hash === '#' + choice.id) tab.setAttribute('aria-current','page');
+      else tab.removeAttribute('aria-current');
+    }
+    if (!scroll) return;
+    const anchor = target?.matches('#feedback, .quiz-card, video[id], .position-name') ? target : menu;
+    const collapsedLoop = anchor.closest('details.quiz-motion:not([open])');
+    if (collapsedLoop) collapsedLoop.open = true;
+    anchor.scrollIntoView({block:'start', behavior:'instant'});
+    if (focus) {
+      const heading = anchor.matches('video') ? anchor : anchor.classList.contains('quiz-card') ? anchor.querySelector('h3') :
+                      key === 'contents' ? menu : choice.querySelector('h2');
+      if (heading) {
+        heading.setAttribute('tabindex','-1');
+        heading.focus({preventScroll:true});
+      }
+    }
+  }
+
+  document.addEventListener('click', event => {
+    const a = event.target.closest('a[href^="#"]');
+    if (!a || !a.hash || event.button !== 0 || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
+    if (!document.getElementById(a.hash.slice(1))) return;
+    event.preventDefault();
+    if (location.hash !== a.hash) {
+      // File attachments may disallow pushState. Changing the hash also
+      // preserves deep links and browser back/forward in that context.
+      try { history.pushState(null,'',a.hash); }
+      catch { location.hash = a.hash; }
+    }
+    navigate({focus:event.detail===0 || a.classList.contains('projection-next')});
+  });
+  window.addEventListener('hashchange', () => navigate());
+  window.addEventListener('popstate', () => navigate());
+  navigate({scroll:Boolean(location.hash)});
+
+  for (const player of document.querySelectorAll('.player')) {
+    const video = player.querySelector('video');
+    const play = player.querySelector('[data-play]');
+    const speed = player.querySelector('[data-speed]');
+    if (!video || !play || !speed) continue;
+    play.hidden = speed.hidden = false;
+    const status = document.createElement('p');
+    status.setAttribute('role','status'); status.className='player-message'; status.hidden=true;
+    player.append(status);
+    const appearance = () => {
+      play.textContent = video.paused ? (english ? 'Play loop' : 'Запустить петлю') : (english ? 'Pause' : 'Пауза');
+      const slow = video.playbackRate===0.5;
+      speed.setAttribute('aria-pressed', String(slow));
+      speed.textContent = english ? (slow ? 'Speed ×0.5' : 'Speed ×1') : (slow ? 'Скорость ×0,5' : 'Скорость ×1');
+    };
+    const warn = () => {
+      status.hidden = false;
+      status.textContent = english ? 'Open the atlas in your browser to play the video.' : 'Открой скачанный HTML в браузере, чтобы запустить встроенное видео.';
+      appearance();
+    };
+    play.addEventListener('click', () => {
+      if (video.paused) video.play().catch(warn);
+      else video.pause();
+    });
+    speed.addEventListener('click', () => {
+      video.playbackRate = video.playbackRate === 1 ? 0.5 : 1;
+      appearance();
+    });
+    video.addEventListener('play', () => {
+      for (const other of videos) if (other !== video && !other.paused) other.pause();
+      status.hidden=true; appearance();
+    });
+    video.addEventListener('error',warn);
+    video.addEventListener('pause',appearance);
+    video.addEventListener('ratechange',appearance);
+    appearance();
+  }
+  for (const details of document.querySelectorAll('details')) {
+    details.addEventListener('toggle', () => {
+      if (!details.open) for (const video of details.querySelectorAll('video')) video.pause();
+      const summary = details.querySelector(':scope > summary');
+      if (details.classList.contains('quiz-answer')) {
+        summary.textContent = english ? (details.open ? 'Hide answer' : 'Show answer') : (details.open ? 'Скрыть ответ' : 'Открыть ответ');
+      } else if (details.classList.contains('quiz-motion')) {
+        summary.textContent = english ? (details.open ? 'Return to numbered frame' : 'Watch the loop') : (details.open ? 'Вернуться к кадру с номерами' : 'Посмотреть в движении');
+      }
+    });
+  }
+  for (const button of document.querySelectorAll('[data-phase-time]')) {
+    const video = document.getElementById(button.getAttribute('aria-controls'));
+    if (!video) continue;
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      video.pause();
+      video.currentTime = Number(button.dataset.phaseTime);
+      const bounds = video.getBoundingClientRect();
+      if (bounds.top < 0 || bounds.bottom > innerHeight) video.scrollIntoView({block:'center'});
+      video.focus({preventScroll:true});
+    });
+  }
+})();
+
+(() => {
+  const test = document.querySelector('[data-atlas-test]');
+  if (!test) return;
+  const en = document.documentElement.lang.split('-')[0] === 'en';
+  const wording = en ? {
+    completed: (score, total) => `Test complete. ${score} of ${total} answers correct.`,
+    progress: (count, total) => `Cases checked: ${count} of ${total}`,
+    checked: ', checked',
+    correct: 'Correct.',
+    correction: answer => 'Correct answer: ' + answer + '.',
+    caseScore: (score, total) => `${score} of ${total} answers correct.`,
+  } : {
+    completed: (score, total) => `Тест пройден. Верных ответов — ${score} из ${total}.`,
+    progress: (count, total) => `Проверено заданий — ${count} из ${total}`,
+    checked: ', проверено',
+    correct: 'Верно.',
+    correction: answer => 'Правильный ответ — ' + answer + '.',
+    caseScore: (score, total) => `Верных ответов — ${score} из ${total}.`,
+  };
+
+  const progress = test.querySelector('[data-test-status]');
+  const summary = test.querySelector('[data-test-summary]');
+  const reset = test.querySelector('[data-reset-test]');
+  const indexLinks = Array.from(document.querySelectorAll('.exercise-index a'));
+  const cases = Array.from(test.querySelectorAll('.quiz-card[data-case-id]'), card => {
+    const indexLink = indexLinks.find(link => link.hash === '#' + card.id);
+    return {
+      key: 'zhdanovich.echo.practice.v1.' + card.dataset.caseId,
+      form: card.querySelector('[data-case-form]'),
+      fields: Array.from(card.querySelectorAll('fieldset[data-question-id]')),
+      note: card.querySelector('[data-reasoning]'),
+      result: card.querySelector('[data-case-result]'),
+      explanation: card.querySelector('details.quiz-answer'),
+      next: card.querySelector('[data-next-case]'),
+      indexLink,
+      indexLabel: indexLink?.getAttribute('aria-label') || card.querySelector('h3')?.textContent,
+      graded: false,
+      score: 0,
+    };
+  });
+  if (!cases.length) return;
+
+  const totalQuestions = cases.reduce((total, item) => total + item.fields.length, 0);
+  const selected = field => field.querySelector('input[type="radio"]:checked');
+
+  function renderProgress() {
+    const completed = cases.filter(item => item.graded).length;
+    const finished = completed === cases.length;
+    const score = cases.reduce((total, item) => total + item.score, 0);
+    const scoreText = wording.completed(score, totalQuestions);
+    const progressText = finished ? scoreText : wording.progress(completed, cases.length);
+    progress.hidden = false;
+    if (progress.textContent !== progressText) progress.textContent = progressText;
+    summary.hidden = !finished;
+    const summaryText = finished ? scoreText : '';
+    if (summary.textContent !== summaryText) summary.textContent = summaryText;
+    reset.hidden = !cases.some(item => item.note?.value || item.fields.some(selected));
+  }
+
+  function renderGrade(item, graded) {
+    item.graded = graded && item.fields.every(selected);
+    if (item.next) item.next.hidden = !item.graded;
+    if (item.indexLink) {
+      item.indexLink.classList.toggle('is-graded', item.graded);
+      item.indexLink.setAttribute('aria-label', item.indexLabel + (item.graded ? wording.checked : ''));
+    }
+    item.score = 0;
+    for (const field of item.fields) {
+      const options = Array.from(field.querySelectorAll('input[type="radio"]'));
+      const correct = options.find(option => option.value === field.dataset.correct);
+      const chosen = selected(field);
+      const feedback = field.querySelector('[data-question-feedback]');
+      for (const option of options) {
+        const label = option.closest('.test-option') || option.labels[0];
+        label.classList.toggle('is-correct', item.graded && option === correct);
+        label.classList.toggle('is-incorrect', item.graded && option === chosen && chosen !== correct);
+      }
+      feedback.hidden = !item.graded;
+      feedback.textContent = '';
+      if (item.graded) {
+        if (chosen === correct) {
+          item.score++;
+          feedback.textContent = wording.correct;
+        } else {
+          const answer = correct.labels[0].textContent.trim();
+          feedback.textContent = wording.correction(answer);
+        }
+      }
+    }
+    item.result.hidden = !item.graded;
+    item.result.textContent = item.graded ? wording.caseScore(item.score, item.fields.length) : '';
+  }
+
+  function save(item) {
+    const answers = {};
+    for (const field of item.fields) {
+      const choice = selected(field);
+      if (choice) answers[field.dataset.questionId] = choice.value;
+    }
+    const record = {answers, reasoning: item.note?.value || '', graded: item.graded};
+    try {
+      localStorage.setItem(item.key, JSON.stringify(record));
+    } catch {
+      // The form also works in browsers that disable persistent storage.
+    }
+  }
+
+  function restore(item) {
+    let record;
+    try {
+      record = JSON.parse(localStorage.getItem(item.key));
+    } catch {
+      // Invalid or unavailable storage leaves this case ready for a fresh attempt.
+    }
+    item.form.reset();
+    for (const field of item.fields) {
+      const value = record?.answers?.[field.dataset.questionId];
+      for (const option of field.querySelectorAll('input[type="radio"]')) {
+        option.checked = option.value === value;
+      }
+    }
+    if (item.note && typeof record?.reasoning === 'string') item.note.value = record.reasoning;
+    renderGrade(item, record?.graded === true);
+    if (item.explanation) item.explanation.open = item.graded;
+  }
+
+  for (const item of cases) {
+    restore(item);
+    item.form.hidden = false;
+    item.form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!item.form.reportValidity()) return;
+      renderGrade(item, true);
+      if (item.explanation) item.explanation.open = item.graded;
+      save(item);
+      renderProgress();
+    });
+    item.form.addEventListener('change', event => {
+      if (!event.target.matches('input[type="radio"]')) return;
+      if (item.graded) {
+        renderGrade(item, false);
+        if (item.explanation) item.explanation.open = false;
+      }
+      save(item);
+      renderProgress();
+    });
+    item.note?.addEventListener('input', () => {
+      save(item);
+      renderProgress();
+    });
+  }
+  renderProgress();
+
+  reset.addEventListener('click', () => {
+    for (const item of cases) {
+      item.form.reset();
+      renderGrade(item, false);
+      if (item.explanation) item.explanation.open = false;
+      try {
+        localStorage.removeItem(item.key);
+      } catch {
+        // In-memory answers have already been cleared.
+      }
+    }
+    renderProgress();
+    cases[0].form.querySelector('input[type="radio"]').focus();
+  });
+
+  window.addEventListener('storage', event => {
+    const affected = cases.filter(item => event.key === null || event.key === item.key);
+    if (!affected.length) return;
+    for (const item of affected) restore(item);
+    renderProgress();
+  });
+})();
+
+(() => {
+  const section = document.getElementById('feedback');
+  if (!section || !['https:', 'http:'].includes(location.protocol)) return;
+
+  const panel = section.querySelector('[data-rating-panel]');
+  const form = panel.querySelector('form');
+  const comment = form.elements.comment;
+  const commentCount = form.querySelector('[data-comment-count]');
+  const submit = form.querySelector('[type=submit]');
+  const retry = panel.querySelector('[data-rating-retry]');
+  const results = panel.querySelector('[data-rating-results]');
+  const status = panel.querySelector('[data-rating-status]');
+  const receipt = panel.querySelector('[data-rating-receipt]');
+  const ownComment = receipt.querySelector('[data-rating-own-comment]');
+  const storageNote = panel.querySelector('[data-rating-storage]');
+  const key = 'zhdanovich.echo.rating.token.v1';
+  const draftKey = key + '.draft';
+  const submittedKey = key + '.submitted';
+  const endpoint = section.dataset.ratingApi || '/api/rating';
+  const validToken = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i;
+  const language = document.documentElement.lang;
+  const english = language === 'en';
+  const plural = new Intl.PluralRules(language);
+  const decimal = new Intl.NumberFormat(language, {maximumFractionDigits: 1});
+  let busy = false;
+  let confirmedToken = null;
+
+  function restoreDraft() {
+    try {
+      const draft = JSON.parse(sessionStorage.getItem(draftKey));
+      if (!draft) return;
+      if (/^[1-5]$/.test(draft.score)) form.elements.score.value = draft.score;
+      if (typeof draft.comment === 'string') comment.value = draft.comment;
+      updateCommentCount();
+    } catch {
+      // Fields still retain their contents in this page when storage is unavailable.
+    }
+  }
+
+  function saveDraft() {
+    try {
+      sessionStorage.setItem(draftKey, JSON.stringify({
+        score: form.elements.score.value, comment: comment.value
+      }));
+    } catch {
+      // The form stays usable without session storage.
+    }
+  }
+
+  function alreadySubmitted(token) {
+    if (!token) return false;
+    if (confirmedToken === token) return true;
+    try { return localStorage.getItem(submittedKey) === token; } catch { return false; }
+  }
+
+  function storedToken(locationName) {
+    try {
+      const value = window[locationName].getItem(key);
+      return value && validToken.test(value) ? value : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function persistToken() {
+    const persistent = storedToken('localStorage');
+    if (persistent) return persistent;
+    const token = storedToken('sessionStorage') || crypto.randomUUID();
+    try {
+      localStorage.setItem(key, token);
+      return storedToken('localStorage');
+    } catch {
+      return null;
+    }
+  }
+
+  async function durableToken() {
+    const persistent = storedToken('localStorage');
+    if (persistent) return persistent;
+    try {
+      if (navigator.locks) return await navigator.locks.request(key, persistToken);
+    } catch {
+      // A browser may deny Web Locks independently of persistent storage.
+    }
+    return persistToken();
+  }
+
+  function showStorageNote() {
+    storageNote.textContent = english ? 'Allow this site to store data in your browser so it can record your rating once.' : 'Чтобы отправить оценку один раз, разреши сайту сохранять данные в браузере.';
+    storageNote.hidden = false;
+    form.hidden = true;
+    retry.hidden = false;
+  }
+
+  function updateCommentCount() {
+    const length = Array.from(comment.value).length;
+    commentCount.textContent = length + ' / 1000';
+    const limitMessage = english ? 'Please shorten your comment to 1,000 characters.' : 'Сократи отзыв до 1000 символов.';
+    comment.setCustomValidity(length > 1000 ? limitMessage : '');
+    if (length > 1000) comment.setAttribute('aria-invalid', 'true');
+    else comment.removeAttribute('aria-invalid');
+  }
+
+  function showResult(data, thanks, token) {
+    const count = data.count;
+    if (english) {
+      results.textContent = count
+        ? 'Average reader rating: ' + decimal.format(data.average) + ' out of 5 (' + count + (count === 1 ? ' rating).' : ' ratings).')
+        : 'No ratings yet.';
+    } else {
+      const word = {one:'оценка', few:'оценки', many:'оценок', other:'оценки'}[plural.select(count)];
+      results.textContent = count
+        ? 'Средняя оценка читателей — ' + decimal.format(data.average) + ' из 5 (' + count + ' ' + word + ').'
+        : 'Пока никто не оценил атлас.';
+    }
+    form.hidden = data.own !== null;
+    if (data.own !== null) {
+      confirmedToken = token;
+      try { localStorage.setItem(submittedKey, token); } catch {}
+      try { sessionStorage.removeItem(draftKey); } catch {}
+      form.reset();
+      updateCommentCount();
+      status.textContent = english ? (thanks ? 'Thank you! ' : '') + 'Your rating is ' + data.own + ' out of 5.'
+        : (thanks ? 'Спасибо! ' : '') + 'Твоя оценка — ' + data.own + ' из 5.';
+    }
+    ownComment.textContent = data.ownComment || '';
+    receipt.hidden = !ownComment.textContent;
+  }
+
+  async function request(method) {
+    const reading = method === 'GET';
+    if (busy || (!reading && form.hidden)) return;
+    busy = true;
+    submit.disabled = retry.disabled = true;
+    form.querySelector('fieldset').disabled = !reading;
+    comment.disabled = !reading;
+    retry.hidden = storageNote.hidden = true;
+    status.textContent = '';
+    if (reading) {
+      form.hidden = alreadySubmitted(storedToken('localStorage'));
+      receipt.hidden = true;
+      ownComment.textContent = '';
+      results.textContent = english ? 'Loading ratings…' : 'Загружаем оценки…';
+    }
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 12000);
+    let persistent;
+    try {
+      persistent = await durableToken();
+      const token = persistent || (reading ? storedToken('sessionStorage') : null);
+      const score = Number(form.elements.score.value);
+      const text = comment.value.trim();
+      if (!reading && !token) {
+        showStorageNote();
+        return;
+      }
+      if (!reading && navigator.onLine === false) {
+        status.textContent = english ? 'You are offline. Your rating and comment are still in the form. Reconnect to send them.' : 'Нет соединения. Оценка и отзыв не отправлены. Введённое осталось в форме.';
+        return;
+      }
+      const headers = {};
+      if (token) headers.Authorization = 'Bearer ' + token;
+      const options = {method, headers, signal:controller.signal, cache:'no-store', credentials:'omit'};
+      if (!reading) {
+        headers['Content-Type'] = 'application/json';
+        options.body = JSON.stringify({score, comment:text});
+      }
+      const response = await fetch(endpoint, options);
+      const data = await response.json();
+      const conflict = !reading && response.status === 409 && data?.error === 'already_rated';
+      if (!response.ok && !conflict) throw Error('Response');
+      const isScore = value => Number.isInteger(value) && value >= 1 && value <= 5;
+      if (!Number.isInteger(data?.count) || data.count < 0 ||
+          (data.count ? !(Number.isFinite(data.average) && data.average >= 1 && data.average <= 5) : data.average !== null) ||
+          (data.own !== null && !isScore(data.own)) ||
+          (data.ownComment != null && typeof data.ownComment !== 'string') ||
+          ((data.own === null || data.count === 0) && data.ownComment) ||
+          (!reading && data.own === null) ||
+          (!reading && !conflict && (data.own !== score || (data.ownComment ?? '') !== text))) throw Error('Result');
+      showResult(data, !reading && !conflict, token);
+      if (data.own === null && !persistent) showStorageNote();
+    } catch {
+      if (reading) {
+        results.textContent = english ? 'Reader ratings could not be loaded.' : 'Не удалось загрузить оценки читателей.';
+        form.hidden = alreadySubmitted(persistent);
+        if (form.hidden) status.textContent = english ? 'Your rating has already been received.' : 'Твою оценку уже приняли ранее.';
+        if (!persistent) showStorageNote();
+        retry.hidden = false;
+      } else {
+        status.textContent = english ? 'Your submission could not be confirmed. Your entries are still in the form. You can try again.' : 'Подтверждение не пришло. Введённое осталось в форме. Можно повторить отправку.';
+      }
+    } finally {
+      clearTimeout(timer);
+      busy = false;
+      submit.disabled = retry.disabled = false;
+      form.querySelector('fieldset').disabled = false;
+      comment.disabled = false;
+    }
+  }
+
+  restoreDraft();
+  comment.addEventListener('input', updateCommentCount);
+  form.addEventListener('input', saveDraft);
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (form.reportValidity()) request('PUT');
+  });
+  retry.addEventListener('click', () => request('GET'));
+  panel.hidden = false;
+  const offlineLink = section.querySelector('[data-rating-link]');
+  if (offlineLink) offlineLink.hidden = true;
+  function whenVisible() {
+    if (!section.hidden) request('GET');
+  }
+  new MutationObserver(whenVisible).observe(section, {attributes:true, attributeFilter:['hidden']});
+  whenVisible();
+})();
+</script><script type="text/plain" id="font-license">Copyright © 2017 IBM Corp. with Reserved Font Name "Plex"
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+</script><script>(() => {
+  const videos = document.querySelectorAll('video[data-web-poster]');
+
+  function showPoster(video) {
+    video.poster = video.dataset.webPoster;
+    delete video.dataset.webPoster;
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          showPoster(entry.target);
+          observer.unobserve(entry.target);
+        }
+      }
+    }, {rootMargin: '180px'});
+    videos.forEach(video => observer.observe(video));
+  } else {
+    videos.forEach(showPoster);
+  }
+
+  // Some static hosts return the whole MP4 to Range requests. Such a URL plays
+  // normally but reports a seekable interval of [0, 0] in Chromium.
+  const pendingPhases = new WeakMap();
+  document.addEventListener('click', event => {
+    const button = event.target.closest('button[data-phase-time]');
+    if (!button) return;
+    const video = document.getElementById(button.getAttribute('aria-controls'));
+    if (!video) return;
+    const seconds = Number(button.dataset.phaseTime);
+    const pending = pendingPhases.get(video);
+    if (pending) {
+      pending.seconds = seconds;
+      return;
+    }
+    if (video.src.startsWith('blob:')) return;
+    const selection = {seconds};
+    pendingPhases.set(video, selection);
+    fetch(video.src).then(async response => {
+      if (!response.ok) throw new Error('Cannot load the phase loop');
+      const file = await response.blob();
+      const resume = !video.paused;
+      video.addEventListener('loadedmetadata', () => {
+        video.currentTime = selection.seconds;
+        pendingPhases.delete(video);
+        if (resume) video.play().catch(() => {});
+      }, {once: true});
+      video.preload = 'auto';
+      video.src = URL.createObjectURL(file);
+      video.load();
+    }).catch(() => {
+      pendingPhases.delete(video);
+      const message = video.closest('.player')?.querySelector('.player-message');
+      if (message) {
+        message.textContent = document.documentElement.lang === 'en'
+          ? 'The loop could not be loaded. Select the frame again to retry.'
+          : 'Не удалось загрузить петлю. Нажми на кнопку кадра ещё раз.';
+        message.hidden = false;
+      }
+    });
+  }, true);
+})();
+</script></body></html>
